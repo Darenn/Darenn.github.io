@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+  <script src="https://kit.fontawesome.com/212cf630d5.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/darkmodebutton.js"></script>
+  <script src="/assets/js/reward_progression.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
+  <title></title>
+</head>
+<div class ="page-status">
+    <i class="fas fa-moon fa-lg black"></i>
+    <button id="theme-toggle" class="fas fa-toggle-off"></button>
+    -
+    
+        <a href="/fr/lueur_playtest_1_analysis/" onclick="storeLang('/fr/')" class="language-link">English</a>
+    
+      
+</div>
+<aside id="fixed-zone">
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <nav id = "table_of_content"></nav>
+  </div>
+</aside>
+
+<div id="right_fixed-zone">
+    <!--<div id="xp_zone">
+      <p id="level_label">level 0</p>
+      <p id="xp_label">0 XP</p>
+      <p id="rank-label">GD Noob</p>
+      
+      <div id="level_bar_background" class="w3-center">
+        <div id="level_bar" class="" style="height:12px; width:20%; background-color:#00cc99"></div>
+      </div>
+    </div>
+
+
+    <div id="support-zone">  
+      <p style="float: right; text-align:right;">
+        Level Up !<br/>
+        You're a better GD now.<br/>
+        </p>
+        <script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <div>
+          <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
+        </div>
+        
+      <div style="float:right;">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      </div>
+    </div>-->
+
+    <!--<iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:5%; float: right; border-radius:5px;"></iframe>-->
+
+  </div>
+
+
+<div class="header">
+ <nav class="socials">
+    <a class="twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-twitter-square fa-lg"></i></a>
+    <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
+    <a class="github-icon" href="https://github.com/Darenn" target="_blank"> <i class="fab fa-github-square fa-lg"></i></a>
+    <a class="itch-icon" href="https://darenn.itch.io/" target="_blank"> <i class="fab fa-itch-io fa-lg"></i></a>
+    <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+    <a class="medium-icon" href="https://medium.com/@keller.darenn" target="_blank"> <i class="fab fa-medium fa-lg"></i></a>
+    <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
+  </nav>
+  <a class="site-title-link" href= "/"><h1 id="site-title">Darenn Keller</h1></a>
+  <p id="header-description">Game Designer at Ubisoft.<br/>
+    Writing about Game Development and Lifestyle.</p>
+    <iframe src="https://store.steampowered.com/widget/2308630/" style="margin-left: auto;
+      margin-right: auto; display: block;
+  float: center;" frameborder="0" width="646" height="190"></iframe>
+  <nav class="topnav">
+    <a id="home_nav" href="/">home</a>
+    <!--<a id="articles_nav" href="/pages/articles">articles</a>-->
+    <!--<a id="devlogs_nav" href="/pages/devlogs">devlogs</a>-->
+    <!--<a id="portfolio_nav" href="/pages/portfolio">portfolio</a>-->
+  </nav>
+</div>
+
+<div class="main-content">
+    
+
+<div class="leftcolumn">
+<p></p>
+</div>
+<div class="middlecolumn">
+  <article>
+    <h1>Lueur's Playtest Analysis</h1>
+    <h2>The first playtest for Lueur lasted 10 days with over 40 participants. What can I get from it ?</h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
+    <p class=post-date>Posted on December 17, 2022 · 15 minutes read</p>
+    <div id="content">
+      <h4>Introduction</h4>
+<p>I organized my first playtest for Lueur, a minimalist strategy game.
+In this post I would like to share the results and how I use them to improve the game, hoping to inspire you for your next playtests. I'm no statistician or expert in data analysis, so I'll keep things simple and intuitive.</p>
+<p>Here are some things to know about the 46 playtesters who participated :</p>
+<ul>
+<li>58% of them are game developers.</li>
+<li>52% of them usually play strategy/management games.</li>
+<li>26% of them know me personally.</li>
+<li>22 of them played a &quot;version 1&quot; of the game, 24 played a supposedly improved &quot;version 2&quot;.</li>
+</ul>
+<p>This means :</p>
+<ul>
+<li>With only 46 testers, I can't extrapolate the results to the whole player base. But I can still make some conclusions about this sample.</li>
+<li>My results might be strongly biased (more about this at the end of the article).</li>
+</ul>
+<h3>Closed questions analysis</h3>
+<h4>Did you have a good time ? How fun was it to play Lueur ?</h4>
+<p>Let's look at the enjoyment and fun. It's basically how much they liked Lueur.</p>
+<p>This is a very important question to ask as it will guide me in analyzing the feedback.</p>
+<p>People who rated 1/4 do not like the game and it will be hard/impossible to change that. People who rated 2/4 could come to like the game with appropriate changes. People who rated 3/4 liked the game, and could come to really love it with appropriate changes. People who rated 4/4 really loved the the game, I need to be careful not to loose them with inappropriate changes.</p>
+<p>That being said, I want to focus my intention on feedback from 2/4 and 3/4 ratings to improve the game.</p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/fun_version.png" alt="fun by version chart"></p>
+<p>Analysis : Seems like the version 2 brought better ratings than version 1</p>
+<p>Takeaways : Adding the better difficulty and tutorial improved the experience</p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/fun_expertise.png" alt="fun by expertise chart"></p>
+<p>Analysis : The expertise does not seem to influence the fun.</p>
+<p>Takeaways : On the good track ! I was expecting experts to be bored faster and as such enjoy the game less. As Lueur is aiming for both experts and beginners, that's great. Important to note that I still got frustrations about the game not being complex enough.</p>
+<h4>Would you buy the final game for 8$ ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/price_reduced.png" alt="price chart"></p>
+<p>Analysis : People could put a custom answer, I regrouped them. A large portion of players are ready to buy the game at this price.</p>
+<p>Takeaways : A final price of 7.99$ will be good for 60% of the players. Of course some players are not interested in the game (here 15%) and I can't really do something about that. The remaining will buy the game during promotions which are bound to happen. It's also good to know that expert players have the same distribution. I was afraid more experts would not buy the game or find it too expensive compared to other strategy games.</p>
+<h4>Which game mode did you play ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/gamemode.png" alt="game mode chart">
+Analysis : Most players played the classic mod. Looking deeper, I discovered that almost all the players who played the other gamemodes were experts. And I noticed in the comments that most of them actually played peaceful after classic, just to try.</p>
+<p>Takeaways : No surprises here, the classic mode is the way to go for most people. They are still some people interested in the other game modes. I think more people will play the other game modes after buying the game.</p>
+<h4>What do you think of the level duration ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/duration_v1.png" alt="level duration chart v1"></p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/duration_v2.png" alt="level duration chart v2"></p>
+<p>Analysis : Most people think it's just right or maybe a bit too long or short. A few people think it's way too long in version 1. We can see the version 2 improved the results. The expertise does not change the results.</p>
+<p>Takeaways : Lueur needs to be a short game. You don't need to save, and you can quickly play a level for 30 minutes or so and be done with it. I'm happy to see most people are ok with this duration. The skip day button from version 2 might be the key improvement here.</p>
+<h4>Would you play again to complete the optional challenges ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/reward.png" alt="replayability chart"></p>
+<p>Analysis : 70% of players would play again.</p>
+<p>Takeaways : I expected more people to not care about optional challenges. That's good news since I really want the challenges to be part of the game experience.</p>
+<h4>Which reward would you prefer ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/favorite_reward.png" alt="reward chart"></p>
+<p>Analysis : Achievements and Skins are in front.</p>
+<p>Takeaways : Achievements/Card/Emotes are gonna be done anyway, so that's a good thing. Make new skins for some buildings won't be too costly so I'm gonna do it too. I'll pass on harder challenges and new menu background image which were not my favorites in the first place.</p>
+<h4>Was the game simple to understand ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/complexity.png" alt="complexity"></p>
+<p>Analysis : Most people thing the game is very simple to understand. But a fair amount think it's a bit complex.</p>
+<p>Takeaways : The game is very simple, so that's a given most players will find it simple. I think it was still a bit complex for some because of 3 reasons :</p>
+<p>- The UI is not the most readable</p>
+<p>- The low resolution sprites can be hard to read</p>
+<p>- The tutorial is very light</p>
+<h4>How much do you like the music ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/music.png" alt="music"></p>
+<p>Analysis : The music is very appreciated.</p>
+<p>Takeaways : Really surprised by the result considering it's a 40 second loop. I think most the 3/4s come from the lack of diversity. I'll make a longer music loop, but I'll keep the same minimalist sad piano style which seems to be very liked.</p>
+<h4>How much do you like the sounds ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/sounds.png" alt="sounds"></p>
+<p>Analysis : Sounds are mostly liked but a fair share of people are still neutral about it.</p>
+<p>Takeaways : Overall players really liked the idea of having different environment sounds on each tile type. But some of the sounds were too loud, inappropriate or annoying which led to lower ratings.</p>
+<h4>How much do you like the graphics ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/graphics.png" alt="graphics"></p>
+<p>Analysis : There is a large portion of bad or neutral ratings. Seems like a subjective question.</p>
+<p>Takeaways : It's pixel art, not everyone likes pixel art. Moreover, it's very low resolution pixel art, which is even more niche. Knowing this, these are pretty good results, way better than I expected. I'm working on more detailed visuals and I think it's gonna help make the game grasps a bigger audience, especially amateur players.</p>
+<h4>How hard is the game ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/difficulty_v1.png" alt="difficulty v1"></p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/difficulty_v2.png" alt="difficulty v2"></p>
+<p>Analysis : Results are all over the place in version 1. It gets better in version 2, with almost everyone between easy and hard (but not too much).</p>
+<p>Takeaways : This is hard to measure since some people will crush the game first try and others will need a few tries to barely win. But It seems like the current difficulty level added in version 2 is very good so far. I'm gonna keep this difficulty and add a secondary objective to complete the level faster for very good players. But I like when the player wins the first game, so I might add dynamic difficulty to help the less skilled players win.</p>
+<h4>Did you get bored at some point ?</h4>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/boredom_v1.png" alt="boredom v1"></p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/boredom_v2.png" alt="boredom v2"></p>
+<p>Analysis : Almost 70% of players got bored during version 1. Version 2 did way better, but still 30% of them got bored at some point.</p>
+<p>Takeaways : I'm happy to see that the skip day button/quests/difficulty changes in version 2 really helped. But there are still a lot of people who got bored. I verified and those are people that rated fun 2 or below. I think it comes from the end game and the waves. In the end game, you don't have much more stuff to discover and explore, you mainly just survive. Resisting a wave is not interesting enough too. Tactical choices are kind of limited. I need to add new things to explore in the end game, and to add a new way to fight off darkness as well as new ways for darkness to attack.</p>
+<h3>Analyze of the comments</h3>
+<p>I read through all of the comments, and regrouped them in 3 groups : Dislikes, Likes and Wishes.</p>
+<p>You can find below the different groups, with my notes about each point.</p>
+<h4>Top dislikes</h4>
+<table>
+<thead>
+<tr>
+<th>count</th>
+<th>feedback</th>
+<th>solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13</td>
+<td>descriptions for buildings/upgrade/research</td>
+<td>Maybe I need to add a very concise description somewhere. OR find a way to make them understand without descriptions. OR remove things that are not clear.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>not enough tutorial would have like something somewhere to say building in dark do not produce</td>
+<td>Related to the problem above I think. Because the tutorial seems ok. But it’s true that is it lacking in information about darkness</td>
+</tr>
+<tr>
+<td>6</td>
+<td>move to the border to find red darkness/hard to find darkness</td>
+<td>I will add an arrow showing the direction of the last red darkness (disappears after a few seconds)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>not enough buildings and upgrades</td>
+<td>I have a few ideas for new buildings. Basically, upgrades for every building but it will consumes resources.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>waiting for the end of the day for resources</td>
+<td>fixed with skip day</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Not enough ways to fight off darkness</td>
+<td>It was kind of the point tbh. The only thing you can do is produce resources and consume it.<br>What could I add for more tactical choice ? A darkness hole ? Once destroyed, darkness around is cleared and darkness strengh lowers ?<br>A stronger illuminate that illuminates adjacents cells ?<br>A building or action that clears one random cell (upgrade light crater)<br>A building that reduce the price of illuminating around or on it<br>A building that stop darkness but get destroyed in the process<br>Heart of darkness who spawn during wave and you can destroy it to reduce wave power</td>
+</tr>
+<tr>
+<td>4</td>
+<td>more than one action in the action wheel</td>
+<td>YES ok I’m gonna do it</td>
+</tr>
+<tr>
+<td>4</td>
+<td>skip intro button</td>
+<td>Alright I’ll do it</td>
+</tr>
+<tr>
+<td>4</td>
+<td>did not see the upgrades on buildings,hard to see and hard to know if there is more</td>
+<td>Might be partially fixed by the bigger action wheel. Should I add a little “Arrow Up” icon on upgradable buildings when you have the funds ? But player could believe it is always the better choice</td>
+</tr>
+<tr>
+<td>4</td>
+<td>too easy</td>
+<td>let’s ignore this one because of v1 and v2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>can’t get enough resources fast enough</td>
+<td>let’s ignore, it’s just because of balancing and no skip day button</td>
+</tr>
+<tr>
+<td>4</td>
+<td>desert/treasure are frustrating</td>
+<td>maybe I should stop putting chest in deserts only. But I think it’s gonna be fixed with the new visuals.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>hard to see darkness</td>
+<td>kinda fix but need more brightness</td>
+</tr>
+<tr>
+<td>3</td>
+<td>too easy at the end</td>
+<td>will be fixed by introducing new ways to fight darkness and rebalancing the stuff</td>
+</tr>
+<tr>
+<td>3</td>
+<td>hard to see if a building is buildable or not</td>
+<td>the transparency alone might not be enough, but in dark it might invisible hard to see the icon. Put the whole text in gray too ?</td>
+</tr>
+<tr>
+<td>3</td>
+<td>lighthouse placement is confusing</td>
+<td>I shoud remove the constraint, church is actually stronger</td>
+</tr>
+<tr>
+<td>3</td>
+<td>would love generated map</td>
+<td>yeah will see</td>
+</tr>
+<tr>
+<td>3</td>
+<td>not enough music variation</td>
+<td>will make a longer loop in the same style</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pacing (1 slow and rythme cassé pendant vague)</td>
+<td>that’s actually because 1. no skip day button 2. you don’t really have aynthing to do during waves.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>day counter not explicit enough (see seconds)</td>
+<td>make a more detailed clock where you can clearly see the aiguille turn</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Don’t like inconsistent pixel size</td>
+<td>do I care ? I will try from now on but that’s ok.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>no keymapping in options</td>
+<td>Yes it’s actually important to be able to remap for accessibility and all</td>
+</tr>
+<tr>
+<td>2</td>
+<td>encylopedia</td>
+<td>not really sure I want to do it</td>
+</tr>
+<tr>
+<td>2</td>
+<td>hold button to move</td>
+<td>yes will do</td>
+</tr>
+<tr>
+<td>2</td>
+<td>option menu in pause</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>2</td>
+<td>did not understood how darkness worked/spread</td>
+<td>I won´t explain</td>
+</tr>
+<tr>
+<td>2</td>
+<td>disable tuto</td>
+<td>the tuto is actually the quests so…</td>
+</tr>
+<tr>
+<td>2</td>
+<td>thought light crater were one use only</td>
+<td>kinda same problem with trader. Do I need a cooldown ui ?</td>
+</tr>
+<tr>
+<td>2</td>
+<td>thought the hut would be automatically upgraded</td>
+<td>will be fixed if I add a description I think or upgrade icon</td>
+</tr>
+<tr>
+<td>2</td>
+<td>darkness price</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>once the wave attack, you take less time to understand things</td>
+<td>I don’t think I can put it later. I don’t think it’s a problem, you’ll discover things at the second game</td>
+</tr>
+<tr>
+<td>2</td>
+<td>disliked humhum sound</td>
+<td>yeah I need to find a replacement</td>
+</tr>
+<tr>
+<td>1</td>
+<td>screen flashes and shaking can bother some people</td>
+<td>add option in menus</td>
+</tr>
+<tr>
+<td>1</td>
+<td>did not get the illuminate mechanic</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>felt unbalanced with too much RNG (lumberjack and fishing cabin placement)</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>more sounds variants</td>
+<td>maybe on some of them that you hear very often ? Or maybe the stream should start at a random point in the sound ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>trader not understood</td>
+<td>same as crater, do I need a cooldown icon ? Or description will do ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>campment name not clear</td>
+<td>not proper english</td>
+</tr>
+<tr>
+<td>1</td>
+<td>hard to complete the challenges</td>
+<td>They are optionnal so that’s the point and not a worry</td>
+</tr>
+<tr>
+<td>1</td>
+<td>cursor slugish</td>
+<td>Optimisation to do (HUD)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>with game pad, the select button icon is not clear</td>
+<td>replace it with B instead ? NO because you can’t PAUSE in choice wheel. Actually need to remap start to a special pause button. Maybe make a higher resolution button ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>nightmare too hard</td>
+<td>will be reabalanced at some point, but it has to be very hard</td>
+</tr>
+<tr>
+<td>1</td>
+<td>huts and fishing huts are confusing names</td>
+<td>huts become tents</td>
+</tr>
+<tr>
+<td>1</td>
+<td>did not understand that tree regrow and sheeps breed</td>
+<td>will be in tutorials and descriptions</td>
+</tr>
+<tr>
+<td>1</td>
+<td>defeat conditions are not clear</td>
+<td>Remind each time that you need to protect the castle during the wave</td>
+</tr>
+<tr>
+<td>1</td>
+<td>remove tuto in nightmare</td>
+<td>yes it wil be</td>
+</tr>
+<tr>
+<td>1</td>
+<td>did not understand the adacency bonus</td>
+<td>will be more clear with descriptions</td>
+</tr>
+<tr>
+<td>1</td>
+<td>escape key too far away from space</td>
+<td>maybe remap it to maj or ctrl ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>woud like to pause the game to think</td>
+<td>hated fast days at the start. But if you can take your time the game might become way too easy</td>
+</tr>
+<tr>
+<td>1</td>
+<td>was wondering if people eat food ??/</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>game over make you restart automatically</td>
+<td>need to suggest restart or back to menu</td>
+</tr>
+<tr>
+<td>1</td>
+<td>red number == can’t</td>
+<td>need to make a better UI to know if you can or cannot build. Put emphasis on the ressources you have and don´t have.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>day change is not marked enough</td>
+<td>The clock needs to grow up each day and have a special sfx</td>
+</tr>
+<tr>
+<td>1</td>
+<td>illuminate cost should be visible without clicking</td>
+<td>will be visible thanks to darkness strengh ? Not sure</td>
+</tr>
+<tr>
+<td>1</td>
+<td>woud like to know how much I can get back when clearing darkness</td>
+<td>modifydescriptions to see what’s below the rampant darkness ? Not sure I want to do that.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>did not notice wave timer in the quest</td>
+<td>not gonna change that.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>no exciting actions</td>
+<td>what kind of mini game could I add ? LUMIEREs ! Critical. Launched a mini game sometimes ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>some unpleasnat sfx (sawmill)</td>
+<td>maybe I can lower it and make it less aggressive ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>uninteresting art style</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>failing challenge by accident</td>
+<td>he wants a mod to activate the challenge so that you can’t make it by mistake. Huuuuuh.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>slow</td>
+<td>feedback was for v1 (before skip turn)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>crt filter</td>
+<td>you can deactivate it</td>
+</tr>
+<tr>
+<td>1</td>
+<td>same map</td>
+<td>other maps coming</td>
+</tr>
+<tr>
+<td>1</td>
+<td>price increase on darkness is not explained</td>
+<td>true, I need to find some excuse. Maybe a darkness strengh or something</td>
+</tr>
+<tr>
+<td>1</td>
+<td>destroyed by mistake</td>
+<td>hummmm it would make an exception to my action system, don’t really like it. Maybe I should just remove destroy from the light crater ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>hard to read</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>darkness workings confusion</td>
+<td>do I want to explain it ?</td>
+</tr>
+</tbody>
+</table>
+<h4>Top likes</h4>
+<table>
+<thead>
+<tr>
+<th>count</th>
+<th>feedback</th>
+<th>solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14</td>
+<td>Mood</td>
+<td>I need to be careful not to destroy that mood with later updates</td>
+</tr>
+<tr>
+<td>11</td>
+<td>music</td>
+<td>Will make the music longer but in the same style</td>
+</tr>
+<tr>
+<td>7</td>
+<td>exploration and discovery</td>
+<td>Can I add more stuff to discover ?<br>Abandonned buildings ? (already built on the map and ready to use)<br>Darkness cult church ?<br>Curiosities ? (? on interesting darkness cells)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>controls feels good and are intuitive</td>
+<td>I need to stick to those simple controls</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&quot;real-time, but tick-based&quot;</td>
+<td>Key pillar, gonna keep that</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Gameflow/pace</td>
+<td>Still some problem during waves though</td>
+</tr>
+<tr>
+<td>6</td>
+<td>sfx on each tiles</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>lowrez pixel art</td>
+<td>Hope the change won’t hurt that</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sound design</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>UI</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>minimalism</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>most things in the game were very easy to understand</td>
+<td>great, but at the same time if I add descriptions…</td>
+</tr>
+<tr>
+<td>3</td>
+<td>challenges</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>challenging</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Map reveal at the end</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Visual style</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>gameplay</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Quests</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>clear pixel art</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>adjacency mechanics</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nice tuto</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Aesthetic</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Skip day button</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>micromanaging in the market</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>gamemodes</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>chill</td>
+<td>new visuals will help feel more cozy</td>
+</tr>
+<tr>
+<td>1</td>
+<td>optimizing buildings</td>
+<td>maybe I can add more ways to optimize placements ?<br>building that boosts boosters ?<br></td>
+</tr>
+<tr>
+<td>1</td>
+<td>distinctive art style</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>game feel</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>abilities in buildings</td>
+<td>can I add more abilities ?<br>Override ?<br>Food boost ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Crt filter</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>City Building</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Menu</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Short integrated Tutorial</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Crater which gives light from time to time</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Change in music pitch in wave</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Screen effect on wave</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>would love to see a speedrun</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>liked that everything is not exposed</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4>Wishes</h4>
+<table>
+<thead>
+<tr>
+<th>count</th>
+<th>feedback</th>
+<th>solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>more worldbuilding</td>
+<td>Starting cinematics<br>Narrative hints ? Maybe you can find those in chests or abandonned buildings ?<br>Maybe some narrative can be told when finding things for the first time ?</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Goal/Impact explanations</td>
+<td>The intro will help. The ending should be more explicit. You built the first city of light in this darkness age. Now the road opens up for more.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>would like to plant trees</td>
+<td>Trees are things out of the player control (and that’s cool). But it’s intuitive to be able to grow them back. An action that costs a lot of food to regrow a forest on a meadow tile faster ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>“big moments”</td>
+<td>each wave should be a big moment</td>
+</tr>
+<tr>
+<td>1</td>
+<td>better pacing</td>
+<td>the skip day helped with that, difficulty too</td>
+</tr>
+<tr>
+<td>1</td>
+<td>things to do outside buildings</td>
+<td>see the minigames idea</td>
+</tr>
+<tr>
+<td>1</td>
+<td>endless mod</td>
+<td>It’s doable</td>
+</tr>
+<tr>
+<td>1</td>
+<td>more levels</td>
+<td>in progress</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Different ways for darkness to be a threat</td>
+<td>eyes of darkness ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>loop button menus</td>
+<td>nth</td>
+</tr>
+<tr>
+<td>1</td>
+<td>would like building to use diagonals</td>
+<td>maybe the upgrades can ?</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Intro cinematic to explain the game</td>
+<td>gonna be done</td>
+</tr>
+<tr>
+<td>1</td>
+<td>button to display a”production view”</td>
+<td>aaaah not sure about that</td>
+</tr>
+</tbody>
+</table>
+<h3>Fun Biases</h3>
+<p>Let's review some of the biases and other things that could make this data less reliable. To be honest I just looked at them for fun and I'm not sure it's that useful.</p>
+<h4>Are game devs harsher than players ?</h4>
+<p>Half of the players are game developers, naturally biased because of their job. They do give more precise feedback. They also tend to analyse the game instead of simply playing it. You need to be careful when reading their feedback as they are more likely to give solutions to problems they analyzed but not necessarily experienced during their session. I had a few feedback telling me &quot;this is really bad for players, you need to remove it&quot; while the &quot;players&quot; actually liked it most of the time.</p>
+<p>Because of that, we could think they are harsher than players ?</p>
+<p>They are the bulk of 2/4 and 1/4 that's true. But most of them are around 3/4 and 4/4, in equal proportion with the non game devs. We can't really say they are harsher and it seems it might not have biased the test too much.</p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/fun_players.png" alt="fun gamedev"></p>
+<h4>Are my friends too kind ?</h4>
+<p>26% of the players were &quot;friends&quot;. By friend I mean any persons that knows me personally and talked with me a few times. Surely it must bias the results ?</p>
+<p><img src="/assets/images/devlogs/playtest_lueur_1/fun_friends.png" alt="fun friends"></p>
+<p>A funny thing to observe on this sample is that the closer the friend, the lower the rating. Also, 50% of the 2/4 ratings are from my friends. So, they definitely weren't too kind. Their mean rating is also lower which suggests they were actually a bit harsher.</p>
+<h3>Things I should have done in the survey</h3>
+<p>Ask : 
+Which controller did you use ? - Gamepad - Keyboard</p>
+<p>What do you think of the controls ? not good 1-5 good</p>
+<p>Remove :</p>
+<p>&quot;What is missing from the game ? &quot; got similar answers that &quot;something you disliked&quot;</p>
+<h3>One important thing I learned</h3>
+<p>Some people are convinced that something in your game is completely wrong. But if you find others that are convinced it's not, then you have on your hands a subjective choice. There won´t be a good answer. You can go with the majority to please more players, or go with your initial idea to stay true to your intentions.</p>
+
+    </div>
+  </article>
+</div>
+<div class="rightcolumn">
+
+<p></p>
+</div>
+
+<script>
+
+function transformIntoCollapsible(elements, includeFunction) {
+  for (var i = 0; i < elements.length; i++) {
+      var div = document.createElement('div');
+      elements[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = elements[i].nextElementSibling;
+      while (includeFunction(content)) {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      elements[i].insertAdjacentElement('afterend', div);
+  }
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", onCollapsibleButtonClicked);
+  }
+}
+
+function onCollapsibleButtonClicked() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    content.style.maxHeight = content.scrollHeight + "px";
+    lastContentOpened = content;
+  }
+}
+
+htmlTableOfContents();
+
+/*var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && content.nodeName != "H3" && content.nodeName != "H2"
+});*/
+
+var coll = document.getElementsByClassName("h3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && !content.classList.contains("h3")
+});
+
+
+</script>
+
+</div>
+
+<footer>
+  <div>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me write more articles', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  </div>
+  <p>© Darenn Keller 2021 </p>
+</footer>
+
+<script>
+  plugDarkModButton("/assets/css/");
+  window.location.href = '/linktree/';
+  //initProgression ();
+</script>
+</body>
+</html>

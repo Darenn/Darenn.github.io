@@ -1,0 +1,142 @@
+.main-content {
+    color: #FAF2EC;
+}
+
+h1 {
+    color:#FAF2EC;
+}
+
+h2, h3, h4, h5, h6 {
+    color:#FAF2EC;
+}
+
+.topnav {
+    border-bottom: 2px solid #FAF2EC;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    color: #FAF2EC;
+}
+
+.topnav a.active {
+    color: #FAF2EC;
+  }
+
+  /* Style the topnav links */
+.topnav a {
+    color: #6F8995;
+  }
+
+  .socials a {
+    color: #FAF2EC;
+  }
+
+  #header-description {
+    color: #FAF2EC;
+  }
+
+  article a {
+    color: #00cc99;
+  }
+
+  body {
+    background-color: #413B40
+  }
+
+  .post-card-title {
+    color: #FAF2EC;
+  }
+
+  .post-card-brief {
+    color: #FAF2EC;
+  }
+
+  blockquote {
+    background-color: #413B40;
+    color:#FAF2EC;
+  }
+
+  th, td {
+    border-bottom: 1px solid #FAF2EC;
+  }
+
+  th {
+    background-color: #FAF2EC;
+    color: #413B40;
+  }
+  
+  tr:hover {background-color: #FAF2EC;}
+
+  #theme-toggle {
+    background-color: #413B40;
+    color: #FAF2EC;
+  }
+
+  #theme-zone {
+      color: #FAF2EC;
+      
+  }
+
+  .support-zone {
+    color: #FAF2EC;
+  }
+
+  .page-status {
+    color: #FAF2EC;
+  }
+
+  #level_bar_background {
+    border: 1px solid #FAF2EC;
+  }
+
+  hr {
+    color: #FAF2EC;
+  }
+
+  #level_label {
+    color: #FAF2EC;
+  }
+  
+  #xp_label {
+    color: #FAF2EC;
+  }
+
+  
+  #rank-label {
+    color: #00cc99;
+  }
+
+  footer {
+    color: #FAF2EC;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #413B40; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #FAF2EC; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #006a4e; 
+  }
+
+  #support-zone p {
+    color: #FAF2EC;
+  }
+
+  .h3, .h2, .h4{
+    color: #FAF2EC;
+  }
+
+  h3  {
+    background-color: #413B40;
+
+  }
+
+  pre {
+    background-color: #FAF2EC; 
+    color:#413B40;
+  }

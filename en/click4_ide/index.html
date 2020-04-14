@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+  <script src="https://kit.fontawesome.com/212cf630d5.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/darkmodebutton.js"></script>
+  <script src="/assets/js/reward_progression.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
+  <title></title>
+</head>
+<div class ="page-status">
+    <i class="fas fa-moon fa-lg black"></i>
+    <button id="theme-toggle" class="fas fa-toggle-off"></button>
+    -
+    
+        <a href="/fr/click4_ide/" onclick="storeLang('/fr/')" class="language-link">English</a>
+    
+      
+</div>
+<aside id="fixed-zone">
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <nav id = "table_of_content"></nav>
+  </div>
+</aside>
+
+<div id="right_fixed-zone">
+    <!--<div id="xp_zone">
+      <p id="level_label">level 0</p>
+      <p id="xp_label">0 XP</p>
+      <p id="rank-label">GD Noob</p>
+      
+      <div id="level_bar_background" class="w3-center">
+        <div id="level_bar" class="" style="height:12px; width:20%; background-color:#00cc99"></div>
+      </div>
+    </div>
+
+
+    <div id="support-zone">  
+      <p style="float: right; text-align:right;">
+        Level Up !<br/>
+        You're a better GD now.<br/>
+        </p>
+        <script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <div>
+          <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
+        </div>
+        
+      <div style="float:right;">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      </div>
+    </div>-->
+
+    <!--<iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:5%; float: right; border-radius:5px;"></iframe>-->
+
+  </div>
+
+
+<div class="header">
+ <nav class="socials">
+    <a class="twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-twitter-square fa-lg"></i></a>
+    <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
+    <a class="github-icon" href="https://github.com/Darenn" target="_blank"> <i class="fab fa-github-square fa-lg"></i></a>
+    <a class="itch-icon" href="https://darenn.itch.io/" target="_blank"> <i class="fab fa-itch-io fa-lg"></i></a>
+    <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+    <a class="medium-icon" href="https://medium.com/@keller.darenn" target="_blank"> <i class="fab fa-medium fa-lg"></i></a>
+    <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
+  </nav>
+  <a class="site-title-link" href= "/"><h1 id="site-title">Darenn Keller</h1></a>
+  <p id="header-description">Game Designer at Ubisoft.<br/>
+    Writing about Game Development and Lifestyle.</p>
+    <iframe src="https://store.steampowered.com/widget/2308630/" style="margin-left: auto;
+      margin-right: auto; display: block;
+  float: center;" frameborder="0" width="646" height="190"></iframe>
+  <nav class="topnav">
+    <a id="home_nav" href="/">home</a>
+    <!--<a id="articles_nav" href="/pages/articles">articles</a>-->
+    <!--<a id="devlogs_nav" href="/pages/devlogs">devlogs</a>-->
+    <!--<a id="portfolio_nav" href="/pages/portfolio">portfolio</a>-->
+  </nav>
+</div>
+
+<div class="main-content">
+    
+
+<div class="leftcolumn">
+<p></p>
+</div>
+<div class="middlecolumn">
+  <article>
+    <h1>Create an IDE with Godot</h1>
+    <h2>I wanted to create a game, but I created a basic IDE for the Click4 fantasy console.</h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
+    <p class=post-date>Posted on March 30, 2022 · 15 minutes read</p>
+    <div id="content">
+      <h3>I wanted to create a game, I wrote a compiler.</h3>
+<p><strong>Click4</strong> is a fantasy console with an original creation constraint and <strong>very strong technical limitations</strong>. So strong, that I ended up writing my own compiler and IDE to successfully create a game on it.</p>
+<p>In this article, learn more about fantasy consoles, cpu, assembler, compilers and Godot.</p>
+<p>No complex details, I promise.</p>
+<p>DISCLAIMER: My implementation is probably very naive and far from what a real compiler and IDE could be. The goal is to understand the basics.</p>
+<h3>Why Click4 is a real challenge.</h3>
+<p>Click4 uses virtual &quot;cartridges&quot; to store its games. <strong>The cartridge is actually an image</strong>, a .png file that the console can read. <strong>Each pixel</strong> of this image will be interpreted by the console as an <strong>instruction</strong>, a color, a value, a sound.</p>
+<p>For example, a black pixel will be read either as &quot;do nothing&quot;, or as the color black, or as the value 0. The meaning of each pixel will depend on the pixels that precede it.</p>
+<p>It is possible to <strong>create your game by drawing an image, pixel by pixel</strong>, in an image editor. You can also do it directly in the console.</p>
+<p><img src="/assets/images/devlogs/click4ide/ezgif.com-gif-maker.gif" alt="Creating a game directly in the Click4 console"></p>
+<p>In addition to this surprising constraint, there are also very strong technical limitations:</p>
+<ul>
+<li>A <strong>4-bit</strong> CPU (16 possible values, from 0 to 15)</li>
+<li>Only <strong>13 operations</strong> in assembly, a difficult language to use, very close to the machine.</li>
+<li>A memory of <strong>4096 4-bit numbers</strong>, which must contain everything (code, RAM, sprites).</li>
+<li>No stack, no heap, so a <strong>complex memory management</strong>.</li>
+</ul>
+<p>To succeed in creating a game on this console, I decided to create a simple IDE. Yes, it sounds a bit exaggerated, but it's for fun.</p>
+<h3>How to transform code into an image?</h3>
+<p>Click4 reads each pixel of the image one by one, and translates it into an assembly instruction or a value.</p>
+<p><img src="/assets/images/devlogs/click4ide/click4_workings.gif" alt="How Click4 interprets each pixel"></p>
+<p>At first, my plan was simple:</p>
+<ol>
+<li>To be able to program a game by writing assembler operations in a text editor.</li>
+<li><em>Transform</em> this text into an image readable by Click4.</li>
+</ol>
+<p><img src="/assets/images/devlogs/click4ide/click4_traduction_to_png.png" alt="We want to go from code to pixels"></p>
+<p>Just write a program that reads each line of code, associates it with the right color and draws it on an image. Let's call it a <strong>Parser</strong>.</p>
+<p>But as you guessed from the title, I'm not just going to do that...</p>
+<h3>Godot to program the editor?</h3>
+<p>I chose to <strong>create my editor with the Godot game engine</strong>. I know, it doesn't seem appropriate. But Godot has everything you need to quickly make a working application.</p>
+<p>In fact, the <strong>Godot editor is itself programmed with Godot</strong>. So there are already a lot of widgets and systems to manage the GUI.</p>
+<p><strong>In only 1 hour, I already had a basic application</strong> to type text.</p>
+<p><img src="/assets/images/devlogs/click4ide/basic_editor_test.gif" alt="Click4 IDE"></p>
+<p>Everything is automatically responsive thanks to Godot's container system. And there is already a <em>TextEdit</em> node with many parameters (display line numbers, display a minimap of the code, highlight the current line, etc...).</p>
+<p>I won't detail the IDE implementation in Godot. The important thing to note is that <strong>I had no trouble doing everything I needed with Godot</strong>.</p>
+<h3>How I came to create a language and its compiler</h3>
+<h4>Too many simple errors to handle</h4>
+<p>I was making a lot of simple errors; forgetting a parameter, using the wrong statement, etc...</p>
+<p>I decided to improve my Parser, so that it analyzes the code and helps me to find quickly the simple errors.</p>
+<p><img src="/assets/images/devlogs/click4ide/click4_IDE_debuglog.png" alt="Errors in the debugger"></p>
+<h4>Difficult to make conditions or loops</h4>
+<p>In assembler, there is no concept of condition or loop. Instead, we use <strong>conditionnal jumps</strong> which allow to <em>jump</em> to a precise address in memory according to a certain condition. The CPU continues to execute the program from that address.</p>
+<p>But with Click4, it's a different story. The &quot;jmp&quot; operation takes the position (x, y) on the image as a parameter.</p>
+<p>Let's complicate things a little more? The final image has a resolution of 64x64 pixels. So we could imagine wanting to jump to position (35, 36) for example.</p>
+<p>However, our cpu is 4-bits, so we can't represent a number higher than 15. We have to use 2 memory blocks (2 4-bits numbers) to represent a number higher than 15.</p>
+<p>So I'm not going to give you a lecture on binary, but if we wanted to jump to (35, 36) we should write this instruction.</p>
+<pre><code>jmp 2 3 2 4
+</code></pre>
+<p>And that's not all.
+As soon as we add an instruction to our code, we have to update the jump address.</p>
+<p>We will see later how I implemented <strong>labels</strong> to solve this problem.</p>
+<h4>Not enough operations</h4>
+<p>Here is the list of the 13 assembly operations available for Click4:</p>
+<ul>
+<li>0 <strong>nop</strong> : <em>no op</em>eration (do nothing)</li>
+<li>1 <strong>set</strong> &amp;arg1 arg2 : Set contents of register defined by ARG1 with value of ARG2.</li>
+<li>2 <strong>copy</strong> &amp;arg1 &amp;arg2 : Copy the contents of register defined by ARG2 to the contents of register defined by ARG1.</li>
+<li>3 <strong>inc</strong> &amp;arg1 : Increment register defined by ARG1.</li>
+<li>4 <strong>dec</strong> &amp;arg : Decrement register defined by ARG1.</li>
+<li>5 <strong>nand</strong> &amp;arg1 &amp;arg2 &amp;arg3 : NAND the values of registers defined by ARG2 and ARG3 and store in register defined by ARG1.</li>
+<li>6 <strong>crsz</strong> &amp;arg1 : Increment program counter by 2 if register defined by ARG1 is zero.</li>
+<li>7 <strong>jmp</strong> &amp;arg1 &amp;arg2 &amp;arg3 &amp;arg4 : Change program counter to position X(ARG1,ARG2) Y(ARG3,ARG4). Notice each coordinate is composed of two nibbles to be able to jmp on the whole screen.</li>
+<li>8 <strong>rjmp</strong> arg1 : Increment program counter by ARG1 plus 1.</li>
+<li>9 <strong>load</strong> : Load contents of X(R1+R2), Y(R3+R4) to R0 (X and Y use two nibbles).</li>
+<li>10 <strong>save</strong> : Save contents of R0 to X(R1+R2), Y(R3+R4).</li>
+<li>11 <strong>input</strong> &amp;arg1 : Copy values of WASD or Up, Right, Down, Left into the register defined by ARG1.</li>
+<li>12 <strong>draw</strong> : Draw area of screen with SourceX(R0+R1), SourceY(R2+R3), Width(R4) plus 1, Height(R5) plus 1, TargetX(R6+R7), TargetY(R8+R9)</li>
+<li>13 <strong>qsnd</strong> &amp;arg1 : Enqueue sound from register defined by ARG1.</li>
+</ul>
+<p>No addition, division, logical operations or way to jump according to specific conditions.</p>
+<p>However, it is possible to recreate these features from these 13 operations. For example, here is the code to add two numbers stored in the r0 and r1 registers:</p>
+<pre><code>;; add r1 to r0 and store the result in r0
+@add
+crsz r1 ;; if r1 == 0 return
+rjmp 4 ;; otherwise jump to increment
+jmp @endadd
+inc r0
+dec r1
+jmp @add
+@endadd
+</code></pre>
+<p>Note that I use labels for the jumps.</p>
+<p>It takes a lot of code and more than twenty memory blocks just to do an addition. I wrote another version of the addition for 8-bit numbers. It uses 42 memory blocks...</p>
+<p>The code will be unreadable and hard to maintain if you have to rewrite this each time. It should be possible to add operations, like &quot;add&quot; for example. The Parser recognizes the add instruction, and replaces it with the corresponding code.</p>
+<p>From now on, we won't talk about a Parser anymore, but about a Compiler.</p>
+<h3>Creating a language and my compiler</h3>
+<h4>Keywords and comments</h4>
+<p>I added a comment system, content that will be ignored by the compiler.</p>
+<p>I also added a lot of keywords for registers, colors, sounds, numbers etc...
+They are then replaced by opcodes (0 to 15) at compile time.</p>
+<pre><code>set r0 0 ;; r0 will be replaced by the number 0 at compile time
+set r2 red ;; red will be replaced by the number 1 at compile time
+set r4 c# ;; c# (the musical note) will be replaced too
+set r6 b0010 ;; binary notation will be replaced by 2 
+</code></pre>
+<h4>The Defines</h4>
+<p>I added a way to <strong>associate a value to a name</strong>.
+Very useful to create constants that can be easily modified and used in several places in the code.</p>
+<pre><code>#define player_start_pos_x 10
+#define another_const 2
+#define starting_HP 15
+</code></pre>
+<h4>Labels</h4>
+<p>The labels are there to answer the problem of the jump.
+Here is an infinite loop that increments register 0.</p>
+<pre><code>@mylabel
+inc r0
+jmp @monlabel
+</code></pre>
+<p>At compile time, the &quot;@monlabel&quot; argument to jmp is replaced with the correct position on the image.</p>
+<pre><code>@monlabel
+inc r0
+jmp 0 0 0 0
+</code></pre>
+<p>The important thing for the compiler here is to read the labels once we have all the instructions.
+Indeed, imagine that we have this code:</p>
+<pre><code>jmp skip_line
+inc r0
+@skip_line
+</code></pre>
+<p>At the time of the jmp, the existence of the skip_line label is not yet known. Therefore, we need to:</p>
+<ol>
+<li>Read all the instructions a first time</li>
+<li>Store all the existing labels (and associate them with a position in memory)</li>
+<li>Replace the labels in all jumps with the right position.</li>
+</ol>
+<h4>Sprites</h4>
+<p>Sprites must be stored in memory. This memory also contains our code. We have to be careful to differentiate them and not to overwrite our code with sprites and vice versa.</p>
+<p>I have dedicated an area of the memory to the sprites.</p>
+<p><img src="/assets/images/devlogs/click4ide/click4_sprite_memory_layout.png" alt="Location of sprites in memory"></p>
+<p>We &quot;draw&quot; our sprites directly in the code.</p>
+<pre><code>;; put your game code here
+
+== sprites
+
+;; sprite 1
+0 0 0 0 0 0 0 0
+0 0 0 1 1 0 0 0
+0 0 0 1 1 0 0 0
+0 1 1 1 1 1 1 0
+0 1 1 1 1 1 1 0
+0 0 0 1 1 0 0 0
+0 0 0 1 1 0 0 0
+0 0 0 0 0 0 0 0
+
+;; sprite 2
+0 0 0 0 0 0 0 0
+0 0 0 4 4 0 0 0
+0 0 0 3 3 0 0 0
+0 0 0 2 2 0 0 0
+0 0 0 1 1 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+</code></pre>
+<p>The compiler will automatically place them in our reserved memory.</p>
+<p><img src="/assets/images/devlogs/click4ide/click4_sprites_demo.png" alt="Sprites placed in memory"></p>
+<p>We can then use some #define to store the position of our sprites, and use the draw operation of Click4.</p>
+<h4>The heap</h4>
+<p>Click4 has 15 registers to store values temporarily. To store variables flong term, we need to store them in our memory (which also contains the code and sprites).</p>
+<p>We can use the save and load instructions of Click4.
+Let's store 5 at position (15,15) in memory.</p>
+<pre><code>set r0 5
+save 0 15 0 15
+</code></pre>
+<p>This is not very easy to use. You have to remember all the positions, and make sure you never store multiple things in the same place.</p>
+<p>I created a basic heap. A heap is a place in memory where you can store values and change them. When you make a call to new in C++, generally a space on the heap is reserved for you.</p>
+<p><img src="/assets/images/devlogs/click4ide/click4_heap_memory_layout.png" alt="Area of memory reserved for the heap"></p>
+<p>It is the operating system that takes care of giving the memory to the programs. In our case, we have to manage it ourselves.</p>
+<p>Here is an example of how to use my heap.</p>
+<pre><code>#alloc player_pos_x 15
+
+hload player_pos_x ;; load the value stored on the heap in r0
+dec r0
+hsave player_pos_x ;; save the value of r0 on the heap
+</code></pre>
+<p>At each <em>#alloc</em>, the compiler reserves a memory block to store our variable. I chose a starting position for my heap (63, 55). At each new allocation :</p>
+<ol>
+<li>We reserve the current position for the variable.</li>
+<li>We store its default value (15 in the example)</li>
+<li>Decrease the position for the next variable.</li>
+</ol>
+<p><img src="/assets/images/devlogs/click4ide/click4_heap_demo.gif" alt="click4_heap_demo.gif"></p>
+<p>In the final code, the hload and hsave statements are replaced by <em>load</em> and <em>save</em>.</p>
+<p>Normally in a heap you can also free variables, to free memory space. This one can't do that, the spaces are reserved <em>forever</em>.</p>
+<h4>Logical operators</h4>
+<p>We want to be able to use logical operators like OR, NOT, AND, etc...</p>
+<p>We only have NAND with Click4.
+NAND has a very special property called <strong>functional completeness</strong>. <a href="https://en.wikipedia.org/wiki/NAND_logic">From NAND we can recreate all the other logical operations!</a></p>
+<p>One could even <a href="https://nandgame.com/">recreate a computer</a> only with NAND.</p>
+<p>An example with NOR:</p>
+<pre><code>;; r0 NOR r1 into r0
+;; A NOR B &lt;=&gt; (A NAND A) NAND (B NAND B)
+;; 						  NAND
+;; 			   (A NAND A) NAND (B NAND B)
+nand r0 r0 r0
+nand r1 r1 r1
+nand r0 r0 r1
+nand r0 r0 r0  
+</code></pre>
+<h4>Conditions</h4>
+<p>In general we use logical operators in conditions.</p>
+<p>Click4 only gives us <em>crsz</em>, which jumps 2 memory blocks away if r0 == 0 (otherwise it goes to the next memory block).</p>
+<p>Well... <strong>this is enough for us to implement every other type of conditions</strong>.</p>
+<p>We are going to implement two concepts found in other assembly languages:</p>
+<ul>
+<li>cmp</li>
+<li>a conditional jump set</li>
+</ul>
+<p>The cmp operation compares the values in r0 and r1, and modifies r15 according to the comparison.</p>
+<p>If r0 &lt; r1, r15 = 1.</p>
+<p>If r0 == r1, r15 = 2.</p>
+<p>If r0 &gt; r1, r15 = 0.</p>
+<p>Then we can implement a set of conditional jumps, which will use r15.</p>
+<ul>
+<li>je (jump if equal)</li>
+<li>jne (jump if not equal)</li>
+<li>jg (jump if greater)</li>
+<li>jge (jump if greater or equal)</li>
+<li>jl (jump if lower)</li>
+<li>jle (jump if lower or equal)</li>
+</ul>
+<p>You must always call cmp before any conditional jump, to update r15 properly.</p>
+<p>Here is an example of use, if r0 is greater than r1 then we increment r1.</p>
+<pre><code>set r0 5
+set r1 2
+cmp
+jg @r0_greater_than_r1
+inc r1
+@r0_greater_than_r1
+;; more code...
+</code></pre>
+<h4>arithmetic operations</h4>
+<p>You can only increment and decrement with Click4. I have rewritten addition and subtraction from these two instructions.</p>
+<p>Adding two numbers means adding 1 several times (and vice versa for subtraction).</p>
+<p>Then for division and multiplication, same system. Multiplying by X means adding X several times.</p>
+<p>The algorithms were a bit more complex so to simplify my task, I wrote and tested them in python before translating them into assembler.</p>
+<p>Here is an example with the addition of two 8-bit numbers. I created a <strong>int4</strong> class to reproduce the behavior of a 4-bit number.</p>
+<pre><code class="language-python">def add(r0, r1, r2, r3):
+    while r2 &gt; 0 or r3 &gt; 0:
+        if r3 == 0:
+            r2 -= 1
+        r3 -= 1
+        r1 += 1
+        if r1 == 0:
+            r0 += 1     
+    return r0, r1
+    
+# unit tests
+assert(add(0, 0, 0, 0) == (0, 0)) # adding zero to zero
+assert(add(0, 0, 0, 1) == (0, 1)) # adding 1 to zero
+assert(add(0, 1, 0, 0) == (0, 1)) # adding zero to 1
+assert(add(0, 1, 0, 4) == (0, 5)) # no carry
+assert(add(0, 10, 0, 6) ==(1, 0)) # carry
+assert(add(1, 2, 0, 3) == (1, 5)) # carry + non null r0
+assert(add(0, 3, 1, 3) == (1, 6)) # carry + non null r2
+assert(add(1, 3, 1, 2) == (2, 5)) # carry + non null r0 and r2
+</code></pre>
+<p>I try to use as much as possible the operations available in Click4. That's why I only do increments, decrements and comparisons to 0.</p>
+<p>I also did some unit tests to be sure that it works.</p>
+<p>Here is the 8-bit add in assembler.</p>
+<pre><code>;; Add two 8-bit numbers
+;; adds r2-r3 to r0-r1 into r0-r1
+
+@8bitadd
+;; while r2 &gt; 0 or r3 &gt; 0 {
+;; or r3 r2 into r4
+nand r4 r2 r2	
+nand r5 r3 r3
+nand r4 r4 r5
+crsz r4 ;; if r2 or r3 == 0 then return
+rjmp 4
+jmp @end8bitadd
+crsz r3 ;; if r3 underflow then dec r2 too
+rjmp 1
+dec r2
+dec r3
+inc r1
+crsz r1 ;; if r1 overflow then inc r0 too
+rjmp 1
+inc r0
+jmp @8bitadd
+@end8bitadd
+;; }
+</code></pre>
+<h4>Better input management</h4>
+<p>I have added an easier way to handle keyboard input.</p>
+<p>Click4 has the <em>input</em> instruction which stores the state of the keyboard directional keys in a given register.</p>
+<p>It is better to represent it in binary.</p>
+<p>Let's say we use input :</p>
+<pre><code>input r0
+</code></pre>
+<p>If the up key is pressed, r0 = 1 or b0001 in binary.
+If the right key is pressed, r0 = 2 or b0010 in binary.
+If the up and right keys are pressed, r0 = 3 or b0011 in binary.</p>
+<p>So I created a <em>jump_if_pressed</em> operation, which jumps only if a certain key is pressed. Here is an example, if the right key is pressed, we increment r0 :</p>
+<pre><code>jmp_if_pressed key_right @right_pressed
+jmp @right_not_pressed
+@right_pressed
+inc r0
+@right_not_pressed
+;; do stuff
+</code></pre>
+<h4>What I would have liked to add</h4>
+<p>With more time, I would have implemented :</p>
+<ul>
+<li>A stack, to be able to create functions and make recursive calls.</li>
+<li>A fixed size array, to store a sequence of values.</li>
+</ul>
+<h3>How compilation is orchestrated</h3>
+<p>In general we use the term compilation to talk about the process of transforming code into machine language, understandable by the CPU.</p>
+<p>In reality there are several steps, and compilation is one of them.</p>
+<p>I was inspired by these steps to create my compiler. The idea is to <strong>decompose the &quot;compiler&quot;</strong> into several parts, each with its own responsibilities.</p>
+<p>A few terms to define to understand :</p>
+<ul>
+<li><strong>Click 4 Assembler (C4ASM)</strong> : the operations included by default in click 4.</li>
+<li><strong>Extended Click 4 Assembler (EC4ASM)</strong> : all operations and other features I added.</li>
+<li><strong>Click 4 script (.cs4)</strong> : A file written in EC4ASM.</li>
+<li><strong>Mnemonic</strong> : the name of the operation, for example <em>set</em>.</li>
+<li><strong>Opcode</strong> : The code that must be transmitted to the CPU to execute the operation (for set it is 1).</li>
+</ul>
+<p>This is how my compiler works:
+<img src="/assets/images/devlogs/click4ide/click4_compilation_process.png" alt="click4_compilation_process.png"></p>
+<ol>
+<li>Preprocessor
+<ul>
+<li>Removes <strong>comments</strong>.</li>
+<li>Replaces all <strong>#define</strong> with the correct value.</li>
+<li>Reserves memory for the <strong>heap</strong>.</li>
+<li>Transforms the script (a string) into an easier to use data structure for the next steps.</li>
+</ul>
+</li>
+<li>Compile
+<ul>
+<li>Replace all <strong>EC4ASM operations with C4ASM</strong>.</li>
+<li>Registers the <strong>labels</strong> and replaces them with the correct addresses.</li>
+<li>Checks the <strong>validity</strong> of all C4ASM operations and their arguments.</li>
+</ul>
+</li>
+<li>Assemble
+<ul>
+<li>Transform all code into <strong>machine code</strong> (all mnemonics and keywords are replaced by their opcode).</li>
+</ul>
+</li>
+<li>Drawer
+<ul>
+<li>Draws the operations on the image.</li>
+<li>Draws sprites on the image.</li>
+<li>Draw the heap on the image.</li>
+</ul>
+</li>
+</ol>
+<h3>And here is the final game !</h3>
+<p>I stayed on a very simple game, because even with this IDE, it's very complicated to create a game. The most complicated part was the debugging, I could only rely on my logs.</p>
+<p>I made a clone of the game Kaboom on Atari 2600. But you collect cats instead of bombs. I chose cats because besides the musical notes, the Click4 can also play a meowing sound.</p>
+<p><img src="/assets/images/devlogs/click4ide/its_raining_cats.gif" alt="its_raining_cats.gif"></p>
+<p>The game is called &quot;It's raining Cats&quot;, which comes from the expression, <em>It's raining cats and dogs</em> in English.</p>
+<p>You can see the c4script on my <a href="https://gist.github.com/Darenn/131bf842ad94ebbeeb8d16576e55621b">github</a>.</p>
+<h3>Actionable</h3>
+<ul>
+<li>Here are some Youtube channels to <strong>learn more about low level programming, stack, heap</strong> and the functioning of a computer in general.
+<ul>
+<li><a href="https://www.youtube.com/watch?v=tpIctyqH29Q&amp;list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye">Crash Course Computer Science</a></li>
+<li><a href="https://www.youtube.com/watch?v=fTBwD3sb5mw&amp;list=PLP29wDx6QmW5DdwpdwHCRJsEubS5NrQ9b">Low Level Javascript</a></li>
+</ul>
+</li>
+<li><strong>Make a game for the Click4</strong> and send it to me. Even using the IDE it's still a challenge but I'm sure some of you will be able to do some amazing stuff.</li>
+<li><strong>Try to create your own IDE and compiler</strong> for another fantasy console. There are many others, here is a <a href="https://paladin-t.github.io/fantasy/">list</a>.</li>
+<li><strong>Become a member of my Patreon</strong> to get access to exclusive content like the IDE source code, my day to day progress in video format with lots of interesting details, free games and lots more.</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li><a href="https://darenn.itch.io/click4-ide">Click4 IDE</a></li>
+<li><a href="https://josefnpat.itch.io/click4">Click4 Fantasy Console</a></li>
+</ul>
+<h3>Acknowledgements</h3>
+<p>Thanks to @josefnpat for creating this <em>toy</em>, but also for helping me to understand how it works (he's working on a <a href="http://yokoredux.com/">great game</a>, check it out!).</p>
+<p>It's thanks to these people who support me on Patreon and Ko-fi that I can work :
+Moey Mei, Rascal, Staren, Kel Pat, Poupipnou, les Tartines, Dysphobia (aka la crapule de l'espace).</p>
+
+    </div>
+  </article>
+</div>
+<div class="rightcolumn">
+
+<p></p>
+</div>
+
+<script>
+
+function transformIntoCollapsible(elements, includeFunction) {
+  for (var i = 0; i < elements.length; i++) {
+      var div = document.createElement('div');
+      elements[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = elements[i].nextElementSibling;
+      while (includeFunction(content)) {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      elements[i].insertAdjacentElement('afterend', div);
+  }
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", onCollapsibleButtonClicked);
+  }
+}
+
+function onCollapsibleButtonClicked() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    content.style.maxHeight = content.scrollHeight + "px";
+    lastContentOpened = content;
+  }
+}
+
+htmlTableOfContents();
+
+/*var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && content.nodeName != "H3" && content.nodeName != "H2"
+});*/
+
+var coll = document.getElementsByClassName("h3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && !content.classList.contains("h3")
+});
+
+
+</script>
+
+</div>
+
+<footer>
+  <div>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me write more articles', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  </div>
+  <p>© Darenn Keller 2021 </p>
+</footer>
+
+<script>
+  plugDarkModButton("/assets/css/");
+  window.location.href = '/linktree/';
+  //initProgression ();
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+  <script src="https://kit.fontawesome.com/212cf630d5.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/darkmodebutton.js"></script>
+  <script src="/assets/js/reward_progression.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
+  <title>Meaningful Choices in a Magic Circle, a Game Design blog by Darenn Keller</title>
+</head>
+<div class ="page-status">
+    <i class="fas fa-moon fa-lg black"></i>
+    <button id="theme-toggle" class="fas fa-toggle-off"></button>
+    -
+    
+        <a href="/en/pages/" onclick="storeLang('/en/')" class="language-link">Français</a>
+    
+      
+</div>
+<aside id="fixed-zone">
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <nav id = "table_of_content"></nav>
+  </div>
+</aside>
+
+<div id="right_fixed-zone">
+    <!--<div id="xp_zone">
+      <p id="level_label">level 0</p>
+      <p id="xp_label">0 XP</p>
+      <p id="rank-label">GD Noob</p>
+      
+      <div id="level_bar_background" class="w3-center">
+        <div id="level_bar" class="" style="height:12px; width:20%; background-color:#00cc99"></div>
+      </div>
+    </div>
+
+
+    <div id="support-zone">  
+      <p style="float: right; text-align:right;">
+        Level Up !<br/>
+        You're a better GD now.<br/>
+        </p>
+        <script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <div>
+          <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
+        </div>
+        
+      <div style="float:right;">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      </div>
+    </div>-->
+
+    <!--<iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:5%; float: right; border-radius:5px;"></iframe>-->
+
+  </div>
+
+
+<div class="header">
+ <nav class="socials">
+    <a class="twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-twitter-square fa-lg"></i></a>
+    <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
+    <a class="github-icon" href="https://github.com/Darenn" target="_blank"> <i class="fab fa-github-square fa-lg"></i></a>
+    <a class="itch-icon" href="https://darenn.itch.io/" target="_blank"> <i class="fab fa-itch-io fa-lg"></i></a>
+    <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+    <a class="medium-icon" href="https://medium.com/@keller.darenn" target="_blank"> <i class="fab fa-medium fa-lg"></i></a>
+    <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
+  </nav>
+  <a class="site-title-link" href= "/"><h1 id="site-title">Darenn Keller</h1></a>
+  <p id="header-description">Game Designer at Ubisoft.<br/>
+    Writing about Game Development and Lifestyle.</p>
+    <iframe src="https://store.steampowered.com/widget/2308630/" style="margin-left: auto;
+      margin-right: auto; display: block;
+  float: center;" frameborder="0" width="646" height="190"></iframe>
+  <nav class="topnav">
+    <a id="home_nav" href="/">home</a>
+    <!--<a id="articles_nav" href="/pages/articles">articles</a>-->
+    <!--<a id="devlogs_nav" href="/pages/devlogs">devlogs</a>-->
+    <!--<a id="portfolio_nav" href="/pages/portfolio">portfolio</a>-->
+  </nav>
+</div>
+
+<div class="main-content">
+    
+  
+<script>
+  document.getElementById("home_nav").classList.add('active');
+</script>
+
+
+  <!-- <h1>Meaningful Choices in a Magic Circle, a Game Design blog by Darenn Keller</h1> -->
+  
+    <div class="post-card">
+      <a href="/en/lueur_playtest_1_analysis/">
+        <div class="post_card_description_bloc">
+          <img src="/assets/images/devlogs/playtest_lueur_1/fun_version.png">
+          <span class="post-card-title">Lueur's Playtest Analysis</span>
+          <p class="post-card-brief">The first playtest for Lueur lasted 10 days with over 40 participants. What can I get from it ?</p>
+          <!--<p>Tags:
+          
+            
+          
+            
+              devlogs 
+            
+          
+            
+          
+            
+              devlogs 
+            
+          
+            
+          
+            
+              posts_en 
+            
+          
+        </p>-->
+          <p class="post-card-date">Posted on December 17, 2022 · 15 minutes read</p>
+        </div>
+
+      </a>
+    </div>
+  
+    <div class="post-card">
+      <a href="/en/click4_ide/">
+        <div class="post_card_description_bloc">
+          <img src="/assets/images/devlogs/click4ide/its_raining_cats.gif">
+          <span class="post-card-title">Create an IDE with Godot</span>
+          <p class="post-card-brief">I wanted to create a game, but I created a basic IDE for the Click4 fantasy console.</p>
+          <!--<p>Tags:
+          
+            
+          
+            
+              devlogs 
+            
+          
+            
+          
+            
+              devlogs 
+            
+          
+            
+          
+            
+              posts_en 
+            
+          
+        </p>-->
+          <p class="post-card-date">Posted on March 30, 2022 · 15 minutes read</p>
+        </div>
+
+      </a>
+    </div>
+  
+    <div class="post-card">
+      <a href="/en/just-one-more-turn/">
+        <div class="post_card_description_bloc">
+          <img src="/assets/images/articles/JustOneMoreTurn/sidmeier.jpg">
+          <span class="post-card-title">Just one more turn.</span>
+          <p class="post-card-brief">Game Development tips and tricks from the creator of Civilization, Sid Meier.</p>
+          <!--<p>Tags:
+          
+            
+          
+            
+              article 
+            
+          
+            
+          
+            
+              book review 
+            
+          
+            
+              posts_en 
+            
+          
+        </p>-->
+          <p class="post-card-date">Posted on July 25, 2021 · 20 minutes read</p>
+        </div>
+
+      </a>
+    </div>
+   <!-- end for posts loop -->
+ <!--
+  <div class="w3-center w3-margin-top">
+    <nav aria-labelledby="post-pagination" class="w3-bar">
+        First
+        &laquo;
+        <a href="/fr/pages/" aria-current="page" class="w3-button">1</a>
+        &raquo;
+        Last
+    </nav>-->
+  </div>
+
+</div>
+
+<footer>
+  <div>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me write more articles', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  </div>
+  <p>© Darenn Keller 2021 </p>
+</footer>
+
+<script>
+  plugDarkModButton("/assets/css/");
+  window.location.href = '/linktree/';
+  //initProgression ();
+</script>
+</body>
+</html>

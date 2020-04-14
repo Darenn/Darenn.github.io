@@ -1,0 +1,138 @@
+.main-content {
+    color: #413B40;
+}
+
+h1 {
+    color:#413B40;
+}
+
+h2, h3, h4, h5, h6 {
+}
+
+.topnav {
+    border-bottom: 2px solid #413B40;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    color: #413B40;
+}
+
+.topnav a.active {
+    color: #413B40;
+  }
+
+  /* Style the topnav links */
+.topnav a {
+    color: #006a4e;
+  }
+
+  .socials a {
+    color: #413B40;
+  }
+
+  #header-description {
+  }
+
+  article a {
+    color: #00cc99;
+  }
+
+  body {
+    background-color: #f5f5f5;
+    /* background-color: #f8f8ff; */
+    /* background-color: #F8fbf8; */
+    /* background-color: #F8F8FF; */
+    /* background-color: #FAF2EC; */
+  }
+
+  .post-card-title {
+    color: #413B40;
+  }
+
+  .post-card-brief {
+  }
+
+  blockquote {
+    color:#413B40;
+  }
+
+  th, td {
+    border-bottom: 1px solid #FAF2EC;
+  }
+
+  th {
+    background-color: #413B40;
+    color: #FAF2EC;
+  }
+  
+  tr:hover {background-color: #f5f5f5;}
+
+  #theme-toggle {
+    background-color: #f5f5f5;
+    color: #413B40
+  }
+
+  #theme-zone {
+      color: #413B40;
+  }
+
+  .support-zone {
+    color: #413B40;
+  }
+
+  .page-status {
+    color: #413B40;
+  }
+
+ #level_bar_background {
+    border: 1px solid #413B40;
+  }
+
+  #level_label {
+    color: #413B40;
+  }
+  
+  #xp_label {
+    color: #413B40;
+  }
+
+  
+  #rank-label {
+    color: #006a4e;
+  }
+
+  footer {
+    color: #413B40;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FAF2EC; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #413B40; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #006a4e; 
+  }
+
+  #support-zone p {
+    color: #413B40;
+  }
+
+  .h3, .h2, .h4{
+    color: #413B40;
+  }
+
+  h3 {
+    background-color: #f5f5f5;
+  }
+
+  pre {
+    background-color: #413B40;
+    color: #FAF2EC;   
+  }
+
+  

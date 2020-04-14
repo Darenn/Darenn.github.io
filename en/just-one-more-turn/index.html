@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+  <script src="https://kit.fontawesome.com/212cf630d5.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <script src="/assets/js/lang.js"></script>
+  <script src="/assets/js/darkmodebutton.js"></script>
+  <script src="/assets/js/reward_progression.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
+  <title></title>
+</head>
+<div class ="page-status">
+    <i class="fas fa-moon fa-lg black"></i>
+    <button id="theme-toggle" class="fas fa-toggle-off"></button>
+    -
+    
+        <a href="/fr/just-one-more-turn/" onclick="storeLang('/fr/')" class="language-link">English</a>
+    
+      
+</div>
+<aside id="fixed-zone">
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <nav id = "table_of_content"></nav>
+  </div>
+</aside>
+
+<div id="right_fixed-zone">
+    <!--<div id="xp_zone">
+      <p id="level_label">level 0</p>
+      <p id="xp_label">0 XP</p>
+      <p id="rank-label">GD Noob</p>
+      
+      <div id="level_bar_background" class="w3-center">
+        <div id="level_bar" class="" style="height:12px; width:20%; background-color:#00cc99"></div>
+      </div>
+    </div>
+
+
+    <div id="support-zone">  
+      <p style="float: right; text-align:right;">
+        Level Up !<br/>
+        You're a better GD now.<br/>
+        </p>
+        <script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <div>
+          <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
+        </div>
+        
+      <div style="float:right;">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      </div>
+    </div>-->
+
+    <!--<iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:5%; float: right; border-radius:5px;"></iframe>-->
+
+  </div>
+
+
+<div class="header">
+ <nav class="socials">
+    <a class="twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-twitter-square fa-lg"></i></a>
+    <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
+    <a class="github-icon" href="https://github.com/Darenn" target="_blank"> <i class="fab fa-github-square fa-lg"></i></a>
+    <a class="itch-icon" href="https://darenn.itch.io/" target="_blank"> <i class="fab fa-itch-io fa-lg"></i></a>
+    <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+    <a class="medium-icon" href="https://medium.com/@keller.darenn" target="_blank"> <i class="fab fa-medium fa-lg"></i></a>
+    <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
+  </nav>
+  <a class="site-title-link" href= "/"><h1 id="site-title">Darenn Keller</h1></a>
+  <p id="header-description">Game Designer at Ubisoft.<br/>
+    Writing about Game Development and Lifestyle.</p>
+    <iframe src="https://store.steampowered.com/widget/2308630/" style="margin-left: auto;
+      margin-right: auto; display: block;
+  float: center;" frameborder="0" width="646" height="190"></iframe>
+  <nav class="topnav">
+    <a id="home_nav" href="/">home</a>
+    <!--<a id="articles_nav" href="/pages/articles">articles</a>-->
+    <!--<a id="devlogs_nav" href="/pages/devlogs">devlogs</a>-->
+    <!--<a id="portfolio_nav" href="/pages/portfolio">portfolio</a>-->
+  </nav>
+</div>
+
+<div class="main-content">
+    
+
+<div class="leftcolumn">
+<p></p>
+</div>
+<div class="middlecolumn">
+  <article>
+    <h1>Just one more turn.</h1>
+    <h2>Game Development tips and tricks from the creator of Civilization, Sid Meier.</h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
+    <p class=post-date>Posted on July 25, 2021 · 20 minutes read</p>
+    <div id="content">
+      <p><img src="/assets/images/articles/JustOneMoreTurn/sidmeier.jpg" alt="Photo Of Sid Meier"></p>
+<h3>Introduction</h3>
+<p>Sid Meier's most famous work is one of my favorite strategy games: <em>Civilization</em>.</p>
+<p>In his memoir, he talks about the key moments of his career and shares funny and interesting anecdotes that make it a real pleasure to read.</p>
+<p>There are also a lot of <strong>Game Development tips and lessons</strong> throughout the book. I'm gonna make sure you can get them all in this article.</p>
+<p><img src="/assets/images/articles/JustOneMoreTurn/sidmeierbook.jpg" alt="Photo of Sid Meier's Memoir book front cover"></p>
+<p>If you need more details or want to enjoy a nice story, I invite you to get the <a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">book</a>.</p>
+<h4>Sid's long career (in very short).</h4>
+<p>Sid started as an engineer in accounting programming. During a trip to Las Vegas, he associated with Bill Stealy to create the <a href="https://fr.wikipedia.org/wiki/MicroProse">MicroProse</a> game studio. He started creating flight simulation games in his free time.</p>
+<p>He worked more and more at MicroProse, only leaving his first job when money was not a problem anymore. They were making the copy themselves on floppy disks. They even sold them to the small stores across the country, one by one.</p>
+<p><img src="https://s2.qwant.com/thumbr/0x0/5/4/03ea17029c2cbfaa416fd9a5e3bdde826f6fe1fa5bd20cb8590abe5a4fff85/s-l400.jpg?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FI-AAAOSw-OVf94TI%2Fs-l400.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="Photo of civilization floppy disks" title="Photo of civilization floppy disks"></p>
+<p>In the beginning, Sid was doing everything. Visuals, programming, sound, music, game design. In later games, they hired artists and sound designers. This allowed Sid to focus on programming and game design.</p>
+<p>At some point, they sold the company and both Bill and Sid quit. Soon after that, Sid created his game studio, Firaxis, where he still works.</p>
+<h3>Game Design Tips</h3>
+<h4>Keep the player focus on what's yet to come.</h4>
+<blockquote>
+<p>A huge portion of Civilization happens in this nebulous &quot;after that&quot; realm, stacking potential paths on top of actual.
+A bad game strands you in the past while a mediocre one keeps you in the present. But a really good game keeps you focused on what's yet to come.</p>
+</blockquote>
+<p>Like cliffhangers in series, tease the player enough so that he wants to see the next turn/level/corner. Reward him for getting there, but focus your attention on the <strong>next thing to do</strong>.</p>
+<p>There's a popular quote among <em>Civilization</em>'s players :</p>
+<blockquote>
+<p>Just one more turn.</p>
+</blockquote>
+<h4>Losing comes later, after the rewards have been established.</h4>
+<p>In 1985, he released <a href="https://www.youtube.com/watch?v=UYJCZPT68Bs"><em>Silent Service</em></a>, a strategy naval war game. He demonstrated it to a major buyer,  the AI crushed him in an instant.</p>
+<blockquote>
+<p>When you are defeated during a demo, everyone in the room feels the letdown, and it’s very hard to erase that first impression of disappointment.</p>
+<p>Of course the game shouldn't always be easy, but the time for losing comes later, after the rewards have been firmly established. In those first crucial minutes, the player absolutely must win, whether it’s a kid alone on his computer or a gaggle of salespeople around a conference table.</p>
+</blockquote>
+<h4>Interesting Decisions are all about investment.</h4>
+<p>Sid is very well known for the following quote :</p>
+<blockquote>
+<p>A game is a series of interesting decision.</p>
+</blockquote>
+<p>But what we actually like are the interesting decisions, that you already take in everyday life.</p>
+<blockquote>
+<p>[...] games weren't the defining theme of my childhood after all. Rather, it was their precursor: the interesting decision. I've always been fascinated by every type of interesting decision, and game just happens to be a well-curated series of them.</p>
+</blockquote>
+<p>But what's an interesting decision then?</p>
+<blockquote>
+<p>Interesting decisions are not about the specifics of what you let the player choose between, but whether the investment feels both personal and significant to the outcome.</p>
+</blockquote>
+<p>A decision needs to have some kind of <strong>impact</strong> (or at least the player should believe it has). The player needs to have some <strong>investment</strong> in the choice and feel like its his <strong>personal</strong> choice.</p>
+<h4>A Game Designer does not create the Fun, he Finds it.</h4>
+<p>We should have some knowledge about human psychology (humanity's flaws). Then, use this knowledge to find what makes our gameplay experience fun.</p>
+<blockquote>
+<p>The thing I like about Mel Brooks, and comedians in general, is that they're actually very analytical. To dig down and figure out what's funny about a particular phrase or story is not so different from isolating what makes a gameplay experience compelling.</p>
+<p>Both are trying to engage the audience with a sharpened version of reality, and both require an <strong>appreciation for humanity's flaws</strong> in order to know where the hook fits best.</p>
+<p>Try to get the habit of analyzing how things work, examine their effect on people and find out what is really compelling.</p>
+<p>Once you have isolated all of the interesting part of any decision, then you’re ready to build an interactive experience that feels new but familiar.</p>
+</blockquote>
+<p>For example, what makes the battle system in Civilization so compelling?</p>
+<p>The system is partly random, you can estimate the outcome, but you can't be sure of it. When launching a battle, you see the soldiers fighting but have to wait a few seconds to see the final result. Chances of winning are faked. If you're told you have a 50% chance of winning, then the game will let you win half the battles. If you have 90% of winning, you will lose very rarely.</p>
+<p>We know humans love surprises, it's a very strong feeling. The waiting of the result amplifies the effect. But they don't like unfairness, losing 2 fights in a row with a 50% chance of winning seems unfair to a human.</p>
+<p>We can say the system is fun because :</p>
+<ol>
+<li>The player can estimate the outcome and decide to fight -- Complete randomness is not an interesting choice.</li>
+<li>The pseudo-randomness adds an element of surprise to the outcome.</li>
+<li>The player has to wait for the result, creating some tasty suspense.</li>
+<li>The battle system seems fair.</li>
+</ol>
+<h4>No wrong answers, and more than one right answer, but not too many.</h4>
+<p>While working on <em>Sid Meier's Pirates</em>, he stumbled upon a common problem of textual adventure games. For a given puzzle, there is only one solution. For example, to open a door with a key, you have only one good answer <em>&quot;Unlock door with key&quot;</em> and a lot of wrong answers <em>&quot;Open door with key&quot;</em>, <em>&quot;Use key to open door&quot;</em>, etc...</p>
+<p><img src="https://s1.qwant.com/thumbr/700x0/b/c/9446d630b882042bc4bb3dd680cd3566e5313363d551b40137021355b13c2c/Colossal-Cave-Adventure.png?u=https%3A%2F%2Fwww.raspberrypi.org%2Fapp%2Fuploads%2F2019%2F03%2FColossal-Cave-Adventure.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Handheld text-based adventure gaming with Quest Smith ..."></p>
+<blockquote>
+<p>Our brains'executive function, or decision-making capability, tires out over time. [...] the importance of the task has no bearing on your exhaustion. Insignificant decisions take just as much brain power as interesting ones, but without any of the satisfaction.</p>
+</blockquote>
+<p>A <a href="https://pubmed.ncbi.nlm.nih.gov/18444745/">scientific article</a> seems to confirm this concept. We call it <strong>Decision Fatigue</strong>.</p>
+<blockquote>
+<p>[...] We want to try everything, which leads to frustration when we can't. We don't ever want to feel like we've missed out on something good.[...]</p>
+</blockquote>
+<p>Nowadays, AAA is all about open worlds with endless places to be, dungeons to explore, side quests to complete, collectibles to get... endless choices. I observed that it's common practice to quit or ignore all side content and focus on the <em>&quot;main path&quot;</em>.</p>
+<p><img src="https://s2.qwant.com/thumbr/0x380/e/1/ef051b11245e65625ba4b2bd1d01c3e3c7d301e1349e60c3095ad4bf00fb4c/wildlands-interactivemap2.jpg?u=http%3A%2F%2Fwww.ghostrecon.net%2Fghost-recon%2Fwp-content%2Fuploads%2F2017%2F06%2Fwildlands-interactivemap2.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="60 Million Pixel Interactive Wildlands Map - Ghost Recon Net"></p>
+<p>We need to <strong>control how much content is available at all times and guide the player</strong>. It's nice to have a lot of content and let the player choose his own way. It's not good to burden the player with endless small choices to make each time he's looking at the map for his next move. It's even more true in games that are more about action than mental skills.</p>
+<h4>Don't forget to design what happens in the head of the player.</h4>
+<blockquote>
+<p>Another more general concept that I took from Seven Cities of Gold was that the anticipation of each new story line was at least as important as the story itself.
+Dan didn't just design the game you could see and play, he also designed parts of the game that would take place entirely in your head.</p>
+</blockquote>
+<h4>Make sure the player is the one having fun.</h4>
+<p>While creating <a href="https://www.youtube.com/watch?v=bekpo1o6rh4"><em>Sid Meier Railroad Tycoon</em></a>, Sid added floods that sporadically destroy bridges. His colleague Bruce, found it very unfair. Sid insisted but realized it was <strong>something fun to create</strong> for him, <strong>not something fun to play</strong> for the player.</p>
+<blockquote>
+<p>The game isn't supposed to be about us. The player must be the star, and the designer has to be as invisible as possible.</p>
+</blockquote>
+<p><img src="https://s1.qwant.com/thumbr/0x380/b/f/34fe2f625c48b8e4ef1cabf706336944208240fbad27152016bbc4cb090754/558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png?u=https%3A%2F%2Fwww.mobygames.com%2Fimages%2Fshots%2Fl%2F558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Sid Meier's Railroad Tycoon Deluxe Screenshots for DOS ..."></p>
+<p>In my opinion, it's a trap we can easily fall into. Stay in control and keep the ability to judge if it really has its place in your game or if it's just something you wanted to try.</p>
+<h4>Always give the player a fighting chance.</h4>
+<p>To continue about these floods in Railroad Tycoon, he agreed it was unjust. The player could not fight back.</p>
+<blockquote>
+<p>A sudden reversal of fortune is only exciting or dramatic when it happens to someone else. When it happens to you, it's just a bummer. The key difference between a gameplay challenge and a betrayal, I realized, was whether the player has a fighting chance to avoid it.</p>
+</blockquote>
+<p>To resolve the problem, he added two types of bridges :</p>
+<ul>
+<li>A Wooden bridge, cheap, fast to build but with a high chance of getting flood.</li>
+<li>A Stone bridge, expansive, long to build, but impervious to flood.</li>
+</ul>
+<p>This way the player has control over the risk and the flood actually became a source of genuine reward.</p>
+<h4>Simple plus simple equals complex.</h4>
+<p>Don't try to design a very complex system from the start. Design small and simple systems that will interact in a complex manner.
+For example, a lot of games use the rock-paper-scissors design. It keeps a certain balance while giving you choices.</p>
+<h4>Avoid brilliant and effective AI.</h4>
+<blockquote>
+<p>Highly realistic AI gets accused of cheating even more often than its dishonest brethren, because on some level, all players are unnerved by the idea that a computer could outsmart them.</p>
+<p><strong>Part of the fun is learning the patterns of the AI and successfully predicting them</strong>,
+and when computer don't act like computers, the only psychologically safe assumption is that they must have accessed information they shouldn't have.</p>
+<p>AI isn't allowed to gamble, or behave randomly, or basis--not because we can't program it, but because experience tells us that players will get frustrated and quit.</p>
+<p>[...] Thus, from the designer's perspective, brilliant AI is usually not our highest priority.</p>
+</blockquote>
+<p>It's undeniable when you're playing against AI, we need a fun one, not a clever one. But I can think of two examples where we should try to have brilliant AI.</p>
+<ol>
+<li>
+<p><strong>To scare the player</strong> - In <em>Alien Isolation</em> the player tries to survive and progress in the story while being tracked by an Alien. The &quot;brilliant&quot; AI serves the purpose of this horror game. A clever AI is scary because of this unpredictability that is usually not fun.</p>
+</li>
+<li>
+<p><strong>To help the player</strong> - When you're teaming up with AI, in competitive games likes Overwatch or League Of Legends. It's nice to have a pretty good AI to play with. At least to compensate players leaving the game early for example.</p>
+</li>
+</ol>
+<h4>Games do not need to be realistic.</h4>
+<p>Like many of his games later, Sid based <a href="https://www.youtube.com/watch?v=0H5NhhmnwBU">Formula 1</a> on reality. Even in this kind of game, we don’t need a real driver with a backstory.</p>
+<p>What games need is :</p>
+<blockquote>
+<p>A combination of emotional and psychological hooks that make you believe, however fleetingly, that you yourself are the driver.</p>
+</blockquote>
+<h4>The most elementary, defining feature of gaming is its interactivity</h4>
+<p>In a &quot;Dinosaur RTS game&quot; that he never released, he removed all the micromanagement actions. The idea was to let the AI do most of the &quot;boring&quot; stuff. The problem: the player did not have anything interesting to do anymore.</p>
+<p>Be sure to focus on what your player is doing in your game, but <strong>don't remove too much control from him</strong>.</p>
+<blockquote>
+<p>Players may not be rewarded for every choice, but the control over the outcome must be primarily in their hands, otherwise they're just watching a movie that demands occasional button jabs.</p>
+</blockquote>
+<h4>When should you use Real-time versus Turn-based?</h4>
+<blockquote>
+<p>When the clock keeps running and everyone can play at once, there is an immediate increase in excitement. Quick thinking is rewarded over precision, and those with short attention span finally get their day in the sun.
+But while the payoff is instant and ongoing, the ratcheting intensity can easily overflow into confusion and frustration.</p>
+<p>Turn-based gaming, on the other hand, is slow and methodical, and any excitement felt in the beginning is anticipatory at best. The comparative lack of intensity can risk sinking into boredom, but by the end, the payoff is usually bigger, because you've invested more time and personal choice into the outcome.</p>
+</blockquote>
+<p>Let's summarize the characteristics of both designs :</p>
+<table>
+<thead>
+<tr>
+<th>Game Speed</th>
+<th>Excitement</th>
+<th>Brain</th>
+<th>Intensity</th>
+<th>Payoff on choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real-Time</td>
+<td>Immediate</td>
+<td>Quick Thinking</td>
+<td>High, can be overflow or confused</td>
+<td>Small, instant, and ongoing</td>
+</tr>
+<tr>
+<td>Turn-Based</td>
+<td>Anticipatory</td>
+<td>Slow and Methodical</td>
+<td>Low, can be bored</td>
+<td>Big and personal choice into the outcome</td>
+</tr>
+</tbody>
+</table>
+<p>Now think about your game, and choose a design depending on the characteristics you want.</p>
+<h4>Be gentle with the player ego.</h4>
+<blockquote>
+<p>In our line of work everything must be in service to fun, and it happens that learning history often is fun. But sometimes, it's also super depressing.</p>
+<p>We have to offer a moral clarity to our players and eliminate the painful quandaries, because unlike other forms of storytelling, they are personally standing in for our main character.</p>
+<p>Their ego is on the line, and we have to be gentle with it.</p>
+</blockquote>
+<p>I'm reading that he thinks the player should feel like he is playing the good guy.</p>
+<p>A lot of games have shown us that it's not the case, players like to play the bad guys. On the other hand, you have to keep in mind that ego issue. It's probably not fun to play a character that's being ridiculed or that doesn't match your values.</p>
+<h4>Be Reductive in a Balanced and Polite way.</h4>
+<blockquote>
+<p>[About historical figures and event being caricatured in Civ] All games are inherently reductive. But we strive to be reductive in a balanced and polite way, and always with the goal of improving the overall experience for the player.</p>
+</blockquote>
+<p>In <em>Civilization</em>, each civ has its own unique buildings, units, and perks. For example in Civ 6, Norway has bonuses for naval units, naval raids, and pillages.</p>
+<p>Imagine the number of unique perks needed to &quot;truthfully&quot; represent Norway. They chose the best ones for a satisfying game experience, based on historical facts.</p>
+<p>Moreover, you are not playing the Norway nation, but the leader Harald Hardrada of Norway. It's a subtle but important distinction to avoid some backlash -- &quot;Are you saying that Norway people are savage pillagers?&quot;.</p>
+<p>It's delicate to craft art about historical events. The more famous your game is, the more important it is to manage that. At Ubisoft, we have entire teams working on this specific subject. And we still have problems like NPCs wearing the wrong type of shields for the time.</p>
+<p>Let's list a few rules to deal with historical figures and events in a historically accurate game :</p>
+<ol>
+<li><strong>Always use historical facts, not prejudices</strong> -- Lot of pillages and raids were effectively done under Harald.</li>
+<li><strong>Stay neutral</strong> -- Nothing tells you that Norway people are savages because of the raids.</li>
+<li><strong>Avoid targeting a large group of people, be more specific</strong> -- The game talks about the potential &quot;Norway of Harald&quot;, not actual Norway.</li>
+</ol>
+<h3>Game Development Tips</h3>
+<h4>Not every culture view games the same way.</h4>
+<p>We see and create games through the lens of our culture.</p>
+<blockquote>
+<p>[...] not every culture viewed games the same way, and that there was definitely such a thing as an American game.
+What would a truly international game look like, I wondered, with no cultural bias, and universal appeal?</p>
+</blockquote>
+<p>If you target a specific culture it might be a good idea to keep that in mind. But I believe <strong>we should create games the way we see them through our own culture and personal experience</strong>.</p>
+<p>It's always refreshing to play games from a different culture (compare the Street of Rage with Aurion : Legacy of the kori idan, the first professional game of Central Africa that I discovered during indiecade).</p>
+<p><img src="https://s1.qwant.com/thumbr/0x0/0/0/edcdc0ad64bf5501872ef84a7493d42f372c54f6bea82634b77bea3905cfdb/Aurion-1.jpg?u=https%3A%2F%2Fi1.wp.com%2Foperationrainfall.com%2Fwp-content%2Fuploads%2F2019%2F04%2FAurion-1.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="REVIEW: Aurion: Legacy of the Kori-Odan - Page 2 of 2 ..."></p>
+<p><img src="https://s2.qwant.com/thumbr/0x380/7/d/8fded6e25caf6f78f17c1bbbc2084609758761af6f56bbbe59a4084c477af5/Streets-of-Rage-4-3.png?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2018%2F09%2FStreets-of-Rage-4-3.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Streets of Rage 4 won’t rely on its past to knock you out ..."></p>
+<h4>Implement and try instead of pondering for hours.</h4>
+<blockquote>
+<p>[...] I don't let the possibility of mistakes hold me back. I won't ponder for hours whether a feature would be a good idea, I just throw it in the game and find out for sure. If it's clunky, I cut it back out again.</p>
+</blockquote>
+<p>It will depend on your skill in programming, and the scope of the design you're thinking about.</p>
+<ul>
+<li>Is it really interesting?</li>
+<li>Is it mandatory for the game to work?</li>
+<li>Can I implement it quickly?</li>
+</ul>
+<p>But in any case, don't lose too much time trying to figure out if it will work out. <strong>Playing is the best way to know</strong>. You should not be afraid to make mistakes.</p>
+<h4>When balancing a value, double it, or cut it in half.</h4>
+<p>Say you're trying to find the perfect movement speed in your FPS game. Instead of adjusting it by small amounts, directly double it or cut it, and observe the result. If it's way too slow, just double the speed again and repeat the process.</p>
+<p>This method is actually inspired by the <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">binary search algorithm</a>.</p>
+<h4>One good game is better than two great games.</h4>
+<blockquote>
+<p>Deciding what doesn't go into the game is sometimes more important than deciding what does.
+One good game is better than two great games.</p>
+</blockquote>
+<p>It's better to make one good game than making two great games into one. You will be creating several games. Avoid applying all your ideas into one game if it seems like it would be better off in another game.</p>
+<h4>The rule of third.</h4>
+<p>Civ designers pursue a rule of thirds. One-third of the previous version stays in place, one-third is updated, and one-third is completely new.</p>
+<p>In my experience, at Ubisoft it's more like 90% reused or updated and 10% new.</p>
+<h4>Seek joy elsewhere, because you never know where inspiration will strike.</h4>
+<p>As designers, part of our job is very rigorous and analytical. But the other part is based on creativity, which we fed with our everyday experiences.</p>
+<p>One of the first games ever created was based on tennis, and I bet the designer did love playing tennis.</p>
+<p>Of course, you can get inspired by other games. But be careful to avoid serving the same plate every time and bring about your own unique designs. <strong>Make sure you read, learn, and seek joy elsewhere.</strong> You never know where inspiration will strike.</p>
+<h4>See technology in terms of progress, rather than limitations.</h4>
+<blockquote>
+<p>I generally saw technology in terms of progress, rather than limitations, and lived in a nearly perpetual state of excitement over what we could accomplish.</p>
+</blockquote>
+<p>I'm wondering if it's still true nowadays. It seems like there are no limits anymore unless you're talking about realism and size. A lot of new technologies aren't widely applied to video games yet. It might be because of price, comfort, and the lack of interest from developers.</p>
+<p>However, some of them have a huge impact on the design of games. Pokémon Go is a huge hit that used Augmented Reality technology, you don't see that in every mobile game.</p>
+<p><img src="https://s2.qwant.com/thumbr/474x842/e/d/067595d8ef0202d6697c949f11dd98a9c7413bfbe503cdca7f014d1daaff65/th.jpg?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2WGpqiE4iwl4FshNWLzNVwHaNK%26pid%3DApi&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="pokemon-go-.jpg"></p>
+<p>I feel like a lot of developers have no desire to transform the media. I develop games to play with a pad or keyboard. I keep the exotic techs for small and <a href="https://www.youtube.com/watch?v=YqzS-1oZxA0">funny projects</a>. It's not a bad thing to keep doing what you love -- There are games that are still released on retro consoles and people enjoy it.</p>
+<p>But <strong>let's keep updated about new technologies</strong> and think about what we can achieve with all this new stuff.</p>
+<h3>Teamwork Tips</h3>
+<h4>Feedback is fact.</h4>
+<blockquote>
+<p>Feedback is fact insofar as it reveals how our game makes people feel, but after that, it's our job to come up with the right solution to that problem.</p>
+</blockquote>
+<p>My take on this: <strong>Feedback is not a debate</strong>.</p>
+<p>You received feedback you disagree with? Thank them without trying to find excuses or explain yourself. Ask questions if you need to and find the source of the problem. If it is actually pertinent for you, resolve it.</p>
+<p>Feedback is free and only there to help you make a better game. Don't lose time arguing over it to convince people that they should not feel that way.</p>
+<h4>When giving feedback, look into the heart of what the game is really about.</h4>
+<blockquote>
+<p>[Bruce Shelley] often saw a glimmer of value in an idea that I was ready to scrap. At the same time, he never got distracted by the parts of the game that weren't finished yet.</p>
+<p>I could hand him a broken prototype with terrible graphics, overpowered enemies, and a crash bug three turns in, and he could look right past these immaterial complaints into the heart of what the game was really about.</p>
+<p>Where there was potential, he saw potential, and he could isolate areas for subtle improvement without getting distracted by what we both knew was easily fixable.</p>
+</blockquote>
+<p>When prototyping or giving feedback to another developer, look right past the details into the heart of what the game is really about. Don't focus on insignificant bugs or graphical glitches. You know they are there temporary and will be fixed eventually.</p>
+<h4>Sit in all the chairs.</h4>
+<blockquote>
+<p>[...] it's important as a designer to sit in all the chairs.
+Understanding the needs of each department and learning their requisite tools will improve your output,
+ease communication with your coworkers, and provide a critical perspective when it comes time to admit you were wrong about an idea.</p>
+<p>But most importantly, it will make you more self-sufficient.</p>
+</blockquote>
+<p>I already met some people with this versatility. Experts in their domain, and familiar with their colleagues' disciplines.</p>
+<p>I studied computer science for 5 years. First, it helps me interact with programmers. It also <strong>alters my design process in a positive way.</strong> I am organized, rigorous and I prefer designing complex game systems more than stories. And of course, I can create games or prototypes on my own, which is very useful.</p>
+<p>For example, I'm sure &quot;artists game designers&quot; have their own advantages too. They can draw the design, make it appealing but clear. Much better than the ugly-cold squares filled with text that I use.</p>
+<h4>In a team, avoid sharing the same duties.</h4>
+<p>Learning teamwork is hard, and making video games is usually a team effort.</p>
+<blockquote>
+<p>The dichotomy between someone else's talent and your own is a cause for celebration, because the further apart you are, the more you can offer each other.
+But the opposite is also true. I know where my own talents are, and I find that sharing those duties usually falls somewhere between inefficient or frustrating.</p>
+<p>I want to combine other people's unique expertise with mine, and create something that none of us could have made alone -- not compromise on the same task until it's less than the sum of its parts.</p>
+</blockquote>
+<p>At Ubisoft, each game designer is the owner of specific features. For example, I was responsible for the procedural quests on Ghost Recon: Breakpoint. The game designer works on the design; the lead or director validates it before starting the production.</p>
+<p>Good game designers listen to the rest of the team to improve the design. But <strong>you don't have to compromise; you're the only one responsible for it, and that makes it more manageable.</strong></p>
+<p>Imagine if the whole 200 people on the team had to agree on everything?</p>
+<p>One of the drawbacks is that it's harder to link the different game systems together. You're so busy with your feature that you don't know how the development is progressing on the other ones. You can feel a bit on the side, or be in total disagreement with how the other game systems work.</p>
+<h3>Sid's Opinions</h3>
+<h4>Cheating can be fun.</h4>
+<p>Sid despised cheats in games.</p>
+<blockquote>
+<p>The faster and easier gameplay becomes, the less it starts to count as a game at all.</p>
+</blockquote>
+<p>But the designer in charge of releasing Civ II ignored Sid advice. He shipped the game with an accessible cheat menu. After seeing his son played with cheats, Sid changed his mind.</p>
+<p><img src="https://fartinvite.com/pics/civilization-2-pc-cheats-3.png" alt="civilization-2-pc-cheats-2.jpg"></p>
+<blockquote>
+<p>I happened to watch over my son Ryan's shoulder as he gleefully spawned a legion of tanks into the middle ages to squash a few pike men, and I realized that there might be some level of fun behind cheating after all, at least once it becomes sufficiently gratuitous.</p>
+</blockquote>
+<p>In my opinion, <strong>we should give the opportunity to break or tweak the game</strong>, via cheat codes or modding tools. It can be hard to accept that players tempered what you've designed, but a lot of games proved it was very fun to do it. I've started &quot;creating games&quot; with the world map editor of Warcraft 3. It's also on this game that I've enjoyed my first cheat codes.</p>
+<p>While modding tools should be available from the start, <strong>cheat codes should be earned</strong>.</p>
+<p>For example, after winning the game at least once, playing by the rules. The player still enjoys the game as we intend to but is able to destroy all the rules they respected so far.</p>
+<h4>Micro-Transactions are hated but effective.</h4>
+<blockquote>
+<p>If you were to ask a group of gamers their opinion on these so-called &quot;micro transactions&quot;, most would probably respond with a string of rude words. But the revenues tell a different story.
+But there's no escaping the fact that many free-to-play games are predatory, especially when they target young children, or blur the line between upgrades and necessary content.
+There has to be a worthwhile product underneath, and a respectful, honest relationship with players about what they're getting for their money.</p>
+</blockquote>
+<p>I hate them too. I never buy from these stores, I would be a poor designer on this subject.
+Not that I don't like the content they are offering. But I don't want to pay for optional content that I should have been able to deserve by playing.</p>
+<p>Of course, in most games, you can gain some decorative content by playing. But it's rarely the sought-after stuff. A counterexample is Overwatch, you can unlock almost everything by playing.</p>
+<p>On the other side, I like DLCs because <strong>you actually buy more gameplay content</strong>, not optional skins. You usually buy DLCs because you love the game and crave for more, not because you must to enjoy the game.</p>
+<p>Big studios like Ubisoft actually sell different packages for the same game. The premium package includes all coming DLCs. There are several advantages for the developer :</p>
+<ol>
+<li>The DLCs are already paid -- You can budget your production.</li>
+<li>You can change the DLCs content by taking into account players' feedback.</li>
+<li>DLCs are cheaper to make.</li>
+<li>You can start the development of the DLCs before the game is even released -- at Ubisoft, DLCs are planned way ahead of time and the development is shared between several teams.</li>
+</ol>
+<p>But we should stay vigilant: the original game (without any DLCs) must be complete.</p>
+<p>Players are paying for something that does not exist yet. They will be very upset if the content is of poor quality.</p>
+<h4>Suspend reality, not examine the pain of real moral dilemmas.</h4>
+<p>Sid gives us his opinion on what he wants to create in his video games, you decide what you want to create in yours.</p>
+<blockquote>
+<p>I've always felt that our role as game designers is to suspend reality, not examine the pain of real moral dilemmas.
+There's a place for that in art, certainly --and videogames do count as art-- but it's generally not a place where people want to spend their time after a long day at the office.</p>
+<p>[...] games are expected to sustain their audience far longer than any other art form. [...]
+Not many people are willing to wallow in life's toughest moments for that long [...]</p>
+</blockquote>
+<p>I  agree  that most games should be relaxing. But <strong>video games have matured, and are not just a relaxation tool anymore</strong>. Moreover, some games examine the pain of real moral dilemmas and are still able to make relaxing and fun gameplay. There is an audience for this kind of game nowadays.</p>
+<h4>Violence is not necessary.</h4>
+<p>As good games should have an impact on the player, he wants to avoid putting too much violence in his games. It can have a negative impact on our players, even mature people that can tell it's fantasy.</p>
+<blockquote>
+<p>Video games are an art form, and it's never a good idea to stifle creativity.
+I can say with personal certainty that gamers are mature and intelligent people, and we have the ability to distinguish between fantasy and reality.
+But when it comes to the creations that happen to inspire me, I don't think violence is necessary. The world is often a very negative place, and I'd rather push it in the opposite direction whenever I can.</p>
+<p>There's an argument to be made that by exposing the unpleasant reality of violence, you can inspire others to push against it, too, but this generally requires a removed perspective, rather than the inherent first-person nature of games.
+It's hard to claim our products are immersive, but somehow insist that the experience has no impact.
+<strong>A game with no impact is simply a bad game.</strong>&quot;</p>
+</blockquote>
+<p>Again, it's his opinion. Feel free to disagree and use violence as a tool to impact the player the way you want (thinking about <em>The Last Of Us 2</em> here).</p>
+<h4>Compelling games should illuminate our deepest fears about ourselves.</h4>
+<blockquote>
+<p>Maybe the thing that makes Civ so compelling is that it illuminates our deepest fears about ourselves.
+It's hard to play out a fantasy of worldwide domination without occasionally wondering whether you're really the best person to put in charge after all.</p>
+<p>In the right context, a game is not just a vehicle for fun, but an exercise in self-determination and confidence.
+Good games teach us that there are trade-offs to everything, actions lead to outcomes, and the chance to try again is almost always out there.</p>
+</blockquote>
+<h4>Connect people through their shared experiences.</h4>
+<p>An interesting way of seeing our role as artists.</p>
+<blockquote>
+<p>Gaming is for everyone--and not just on an individual level, but as a whole. It's for everyone together.
+I haven't always known what appeals to people who aren't specifically me, but I have always been interested in finding out,
+and when it comes to games I thinks addiction is usually just another word for the intense connection we feel toward a work of art.</p>
+<p>As an artist, my job is to foster that connection in a constructive way --and if I'm lucky, to connect people to one another through our shared experience.</p>
+</blockquote>
+<h4>Games are not just a diversion.</h4>
+<p>Sid created his first game, Hostage Rescue, on an Atari in BASIC with the help of magazines. You play as a &quot;Helicopter&quot; trying to save hostages from terrorists. They shoot missiles at you, you shoot missiles at them. But each time you shoot, hostages can die. The headcount is accusingly displayed at the bottom of the screen.</p>
+<p>His mother tried the game, was very focused, very into the game, avoiding missiles with her own body.</p>
+<blockquote>
+<p>But at some point, she dropped the controller and turned the face away. She couldn’t play anymore, her heart was racing and it was too much for her.</p>
+</blockquote>
+<p>Games aren’t a diversion. <strong>Games can make people feel</strong>, like great literature or other forms of art. Maybe even more thanks to the interaction that is a core element of games.
+I already read several times about this <strong>revelation moment</strong>; It seems like a common event we all share.</p>
+<h4>People are generally uncooperative by nature.</h4>
+<blockquote>
+<p>CivWorld had a number of problems, the biggest of which was the generally uncooperative nature of real people when put to the test.
+[...] for the most part everyone chose to let their friends suffer.</p>
+</blockquote>
+<p>The <em>Prisoner's Dilemma</em>, says that humans under specific conditions mostly betray one another.</p>
+<p>But in <em><a href="https://ee.stanford.edu/~hellman/Breakthrough/book/pdfs/axelrod.pdf">The Evolution of Cooperation</a></em>, Robert Axelrod conducted experiments showing the contrary if we use different conditions :</p>
+<ol>
+<li>Persons can talk to each other.</li>
+<li>They can make the choice to cooperate or not through several iterations -- they have an history, a relationship.</li>
+</ol>
+<p>I don't know the specifics of Civ World, but I suspect players could not interact trough several iterations. It's the same problem with many multiplayer games. You play with different players at each new game.</p>
+<p>Remember both these conditions if you want to make cooperative game.</p>
+<h3>Funny Anecdoctes</h3>
+<h4>The Bingosaur.</h4>
+<blockquote>
+<p>[...] I gave up all pretense of realism and invented a dinosaur that could spit poison.
+As a friendly nod to our producer at EA, Bing Gordon, I named my new species the Bingosaur.</p>
+</blockquote>
+<h4>Gandhi bug is Fake.</h4>
+<blockquote>
+<p>But it's not the countless callbacks and references that make the nuclear Gandhi story so funny to me. It's the fact that none of it is true. The overflow error never happened at all.
+[...] To me, the more interesting question is: What makes this particular story so fascinating that it continues to generate traffic every time it's mentioned?</p>
+</blockquote>
+<p><img src="https://s2.qwant.com/thumbr/0x380/5/6/89478e91918c3ab638090bd3320ea6ff1a950405c75b720ec4bdeb2f170c8b/132e1e08428fb2ec1561cad9f84322bfc958a119r1-800-566v2_hq.jpg?u=https%3A%2F%2Fpm1.narvii.com%2F7618%2F132e1e08428fb2ec1561cad9f84322bfc958a119r1-800-566v2_hq.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="Ghandi Nuke Image"></p>
+<h3>Final notes</h3>
+<p>If you need more details, or just want to enjoy a nice story, I invite you to get the <a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">book</a>.</p>
+<ol>
+<li>Which is your favorite lesson?</li>
+<li>Which tips do you disagree with?</li>
+<li>Something to add about any of them?</li>
+</ol>
+<p>Feel free to let me a comment on your favorite platform, I'm eager to read it.</p>
+<h4>Sources</h4>
+<p><a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">Sid Meier's Memoir book</a></p>
+<p><a href="https://www.youtube.com/watch?v=AJ-auWfJTts&amp;list=WL&amp;index=27">GDC Classic Game Postmortem: Sid Meier's Civilization </a></p>
+<p><a href="https://www.youtube.com/watch?v=MtzCLd93SyU&amp;list=WL&amp;index=26">Sid Meier's Psychology of Game Design</a></p>
+<h4>This article is funded by my supporters</h4>
+<p>My biggest thanks to :
+damien and Móey Mei</p>
+<p>And also thanks to Maxime Aupetit for sharing <em>The Evolution of Cooperation</em>.</p>
+
+    </div>
+  </article>
+</div>
+<div class="rightcolumn">
+
+<p></p>
+</div>
+
+<script>
+
+function transformIntoCollapsible(elements, includeFunction) {
+  for (var i = 0; i < elements.length; i++) {
+      var div = document.createElement('div');
+      elements[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = elements[i].nextElementSibling;
+      while (includeFunction(content)) {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      elements[i].insertAdjacentElement('afterend', div);
+  }
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", onCollapsibleButtonClicked);
+  }
+}
+
+function onCollapsibleButtonClicked() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    content.style.maxHeight = content.scrollHeight + "px";
+    lastContentOpened = content;
+  }
+}
+
+htmlTableOfContents();
+
+/*var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && content.nodeName != "H3" && content.nodeName != "H2"
+});*/
+
+var coll = document.getElementsByClassName("h3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && !content.classList.contains("h3")
+});
+
+
+</script>
+
+</div>
+
+<footer>
+  <div>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me write more articles', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  </div>
+  <p>© Darenn Keller 2021 </p>
+</footer>
+
+<script>
+  plugDarkModButton("/assets/css/");
+  window.location.href = '/linktree/';
+  //initProgression ();
+</script>
+</body>
+</html>

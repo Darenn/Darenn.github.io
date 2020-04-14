@@ -1,0 +1,225 @@
+h3, h4, h5, h6 {
+    font-family: "Lato", "Futura", sans-serif;
+}
+
+h2 {
+    font-family: "Lato", "Futura", sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+h3 {
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+    text-align: right;
+    padding: 10px;
+    padding-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 1.8em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 5%;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 600px;
+    transition: 1s;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-radius: 2px;
+  }
+  
+  article img:hover {
+    transition: 1s;
+    transform: scale(1.1);
+  }
+
+  article {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+
+  blockquote {
+    font-style:italic;
+    font-family: "Lato", "Futura", sans-serif;
+    clear: both;
+    padding-left: 15px;
+    border-left: solid 2px #00cc99;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .small-remark {
+    font-style:italic;
+    font-size: 80%;
+    opacity:80%;
+  }
+  
+  .ytb-video {
+    margin-bottom: 5%;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #FAF2EC;
+    padding: 15px;
+    text-align: left;
+    font-size: 80%;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-out;
+  }
+  
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible-button {
+    font-family: "Lato", "Futura", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .collapsible-button.active, .collapsible-button:hover {
+    transition: border 0.1s ease-out;
+  }
+  
+  .collapsible-button:before {
+    content: '\02C3'; /* Unicode character for right arrow */
+    margin-right: 2%;
+    font-size: 15px;
+    color: #00cc99;
+    margin-left: 5px;
+  }
+  
+  .section-read:after {
+    content: '  \2713';
+    color: #00cc99;
+  }
+  
+  .collapsible-button.active:before {
+    content: "\02C5   "; /* Unicode character for down arrow */
+  }
+  
+  blockquote::before {
+    /*//content: "«";*/
+    content: "\1F676";
+    margin: 0;
+    padding-right: 10px;
+    float: left;
+    color: #00cc99;
+    font-size: 15px;
+  }
+
+  blockquote p {
+    margin-top: 0;
+  }
+
+  /*blockquote::after {
+    content: '»';
+    padding-left: 5px;
+  }*/
+  
+  blockquote {
+    font-family: "Lato", "Futura", sans-serif;
+  }
+
+  @media (max-width: 1024px) {
+
+    article img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: 1s;
+      margin-top: 5%;
+      margin-bottom: 3%;
+      border-radius: 2px;
+      opacity: 100%;
+    }
+}
+
+hr {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#table_of_content {
+  
+  overflow-y: auto;
+  max-height: 600px;
+  direction: rtl;
+  
+}
+
+#table_of_content_container {
+  margin-top: 31%;
+  margin-left:-10%;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.h2, .h3, .h4 {
+  margin-left: 2%;
+  direction: ltr;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 400;
+}
+
+.h3 {
+  font-weight: 600;
+}
+
+.h4 {
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+
+.h4::before {
+  content: '  \00B7';
+  color: #00cc99;
+  margin-right: 5px;
+}
+
+.h2 a, .h3 a, .h4 a{
+  font-size: 1em;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.h2 {
+  font-size: 1.2em
+}
+
+.h2 a:hover {
+  font-size: 1.3em;
+}
+
+.h3 a:hover .h4 a:hover {
+  font-size: 1.5em;
+  text-decoration: underline;
+  transition: .3s;
+}
+  

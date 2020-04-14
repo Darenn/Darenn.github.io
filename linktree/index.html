@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+  <script src="https://kit.fontawesome.com/212cf630d5.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f09ab3a925.js" crossorigin="anonymous"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
+  <title>Darenn Keller - Indie Game Developer</title>
+  <!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '317030');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+
+<style>
+  body {
+    margin: auto;
+    font-family: "Lato", "Futura", sans-serif;
+    width:50%;
+    font-weight:400;
+    background-color: whitesmoke;
+    color: #36454f;
+    font-size: large;
+  }
+
+  #page-title {
+    text-align: center;
+    font-weight:300;
+    margin-bottom: 0;
+  }
+
+  #subtitle {
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight:200;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight:400;
+  }
+
+  #profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: -1%;
+  }
+
+  .name {
+    font-style: italic;
+  }
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top:4%;
+  margin-bottom:4%;
+  display:block;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:block;
+}
+
+.btn {
+  margin-bottom:4%;
+  margin-top:2%; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 4%;
+  display: block;
+  max-width: 150px;
+  text-align: center;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: center;
+  max-width: 250px;
+  transition: 0.2s;
+  border-radius: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+a img:hover {
+  transition: 0.2s;
+  max-width: 410px;
+  border-radius: 0%;
+}
+
+.btn i {
+  margin: 0% 5% 0% 0%;
+}
+
+.ko-fi {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  width:20%;
+}
+
+span.blockspam {
+  display: none;
+}
+
+p {
+  text-align: center;
+}
+
+#twitch_player iframe {
+  display:block;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.socials {
+  text-align: center;
+  
+  line-height: 3em;
+  height: 3em;
+  margin-bottom: 3%;
+}
+
+.socials a:hover {
+  font-size: 1.83em;
+  transition: 0.2s;
+  opacity: 100%;
+}
+
+.socials a {
+  font-size: 1.5em;
+  transition: 0.5s;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.itch-icon:hover {
+  color: #fa5c5c;
+  transition: 0.2s;
+}
+
+.twitter-icon:hover {
+  color: #55acee;
+  transition: 0.2s;
+}
+
+.linkdin-icon:hover {
+  color: #0077B5;
+  transition: 0.2s;
+}
+
+.reddit-icon:hover {
+  color: #FF5700;
+  transition: 0.2s;
+}
+
+.medium-icon:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.github-icon:hover {
+  color: purple;
+  transition: 0.2s;
+}
+
+.youtube-icon:hover {
+  color: #FF0000;
+  transition: 0.2s;
+}
+
+.instagram-icon:hover {
+  color: #E1306C;
+  transition: 0.2s;
+}
+
+.threads-icon:hover {
+  color: #000000;
+  transition: 0.2s;
+}
+
+.mastodon-icon:hover {
+  color: #6364FF;
+  transition: 0.2s;
+}
+
+.tumblr-icon:hover {
+  color: #35465C;
+  transition: 0.2s;
+}
+
+.bluesky-icon:hover {
+  color: #4267B2;
+  transition: 0.2s;
+}
+
+.twitch-icon:hover{
+  color: #6441a5;
+  transition: 0.2s;
+}
+
+.twitch-icon:in-range {
+  color: #6441a5;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 150px;
+  }
+
+  a img:hover {
+  max-width: 150px;
+  }
+
+  body {
+    width:95%;
+    margin: 0;
+    padding: a0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .socials a {
+  font-size: 1.5em;
+  transition: 0.5s;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+}
+
+</style>
+
+<body>
+  <img id="profile-picture" src="/assets/images/linktree/rigolo_green.png">
+  <h1 id="page-title">Darenn Keller</h1>
+  <h3 id="subtitle">Indie Game Developer</h3>
+  
+  <!--<nav class="socials">
+    <a class="threads-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-x-twitter fa-lg"></i></a>
+    <a class="instagram-icon" href="https://www.instagram.com/darennkeller/" target="_blank"> <i class="fab fa-instagram-square fa-lg"></i></a>
+    <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+    <a class="twitch-icon" href="https://www.twitch.tv/darennkeller" target="_blank"> <i class="fab fa-twitch fa-lg"></i></a>
+    <a class="threads-icon" href="https://www.patreon.com/darenn" target="_blank"><i class="fab fa-patreon"></i></a>
+  </nav>-->
+  <nav class="socials" style="margin-top: 0; margin-bottom: 5px;">
+    <a class="threads-icon" href="https://www.patreon.com/darenn" target="_blank"><i class="fab fa-patreon"></i></a>
+  </nav>
+
+  <div class="w3-container">
+    <iframe src="https://store.steampowered.com/widget/2308630/" style="margin-left: auto;margin-right: auto; display: block;float: center;" frameborder="0" width="646" height="190"></iframe>
+    <br>
+
+    <h2 style="margin-bottom: 0px;">Live Streaming</h2>
+    <nav class="socials" style="margin-bottom: 5px;">
+      <a class="youtube-icon" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank"> <i class="fab fa-youtube-square fa-lg"></i></a>
+      <a class="twitch-icon" href="https://www.twitch.tv/darennkeller" target="_blank"> <i class="fab fa-twitch fa-lg"></i></a>
+    </nav>
+    <iframe width="560" height="315" style="display:block;margin:auto; aspect-ratio: 16/9;margin-top: 0px;" src="https://www.youtube.com/embed/+lastest?list=PLbpI55gKdE5_Jh0hd6A-RdC4RWf0v_Yiz&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    <br>
+    <h2>New Devlog</h2>
+    <!--<div class="video-container">
+      <iframe width="560" height="315" class="video" src="https://www.youtube.com/embed/+lastest?list=PLbpI55gKdE59llJ0lh5jxNZ8lZGEHq6RR" frameborder="0" allowfullscreen></iframe>
+    </div>-->
+    <iframe width="560" height="315" style="display:block;margin:auto; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/+lastest?list=PLbpI55gKdE59llJ0lh5jxNZ8lZGEHq6RR&autoplay=0&mute=0" frameborder="0" allowfullscreen></iframe>
+    <br>
+    
+    
+
+    
+    <!--<a class="btn w3-btn w3-round w3-red" style= "margin-bottom:10px;" href="https://www.youtube.com/channel/UCwqNghcxrbB2RyW2glFlKuw" target="_blank">
+      <i class="fab fa-youtube-square fa-lg"></i> Youtube
+    </a>-->
+    
+
+    <!--<a class="btn w3-btn w3-round w3-deep-purple" style= "margin-bottom:10px;" href="https://www.twitch.tv/darennkeller" target="_blank">
+      <i class="fab fa-twitch fa-lg"></i> Twitch
+    </a>
+    <div style="display:block; margin:auto; aspect-ratio: 16/9; width:100%; height:330px;"id="twitch_player"></div>
+
+  <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+  
+  <script type="text/javascript">
+    var options = {
+      width: 560,
+      height: 315,
+      channel: "darennkeller",
+      muted: true,
+    };
+    var player = new Twitch.Player("twitch_player", options);
+  </script>
+    </div>-->
+
+  <!--<h2>New Patreon Content</h2>
+  <a href="https://www.patreon.com/posts/how-to-steal-101351573" target="_blank">
+    <img src="/assets/images/linktree/patreon_post.png"></img>
+  </a>-->
+
+
+    
+    <h2>(Free) Extra Content</h2>
+    <a class="btn w3-btn w3-round w3-black" href="https://www.patreon.com/darenn" target="_blank">
+      <i class="fab fa-patreon"></i> Patreon
+    </a>
+    
+    <!--<button class="ml-onclick-form" onclick="ml('show', '0FwqdJ', true)">Click here to show form</button>-->
+    <!--<div class="ml-embedded" data-form="0FwqdJ"></div>-->
+
+    <a class="btn w3-btn w3-round w3-teal" href="https://1a7950ea.sibforms.com/serve/MUIFAOJIxDj4ks6Tz22jhh8FWmbrqNFowes07GvpBtwWHrds4ChjvZ6UQRvj1ho20GiG3HRgiuAHwa-saI5SW4kuqzzHgzUpx0pHLjR_isItFbUPJCsledoJDY3tPnqpX7F2dPwTDkrACygMsdz_lrNnSLkOoDmDlKbydlDHuMO21r7bdUaJgzA94jCcloOnENjt3j71bm3XZEp3" target="_blank">
+      <i class="fa-solid fa-newspaper"></i> Newsletter
+    </a>
+
+    <!--<a class="btn w3-btn w3-round w3-teal ml-onclick-form " onclick="ml('show', '0FwqdJ', true)">
+      <i class="fa-solid fa-newspaper"></i> Newsletter
+    </a>-->
+
+    <h2>Join the Playtesters</h2>
+    <iframe style="display: block; margin: auto; margin-top: 10px; margin-bottom: 20px;" src="https://discord.com/widget?id=1002949310008274994&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <!--<a class="btn w3-btn w3-round w3-deep-purple" href="https://discord.gg/Syja9AEPEU" target="_blank">
+      <i class="fab fa-discord fa-lg"></i> Discord
+    </a>-->
+
+    <h2>Pick your favorite</h2>
+    <nav class="socials">
+      <a class="threads-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-x-twitter fa-lg"></i></a>
+      <a class="instagram-icon" href="https://www.instagram.com/darennkeller/" target="_blank"> <i class="fab fa-instagram-square fa-lg"></i></a>
+      <a class="threads-icon" href="https://www.threads.net/@darennkeller" target="_blank"> <i class="fab fa-threads fa-lg"></i></a>
+      <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
+      <a class="mastodon-icon" href="https://mastodon.gamedev.place/web/@darennkeller" target="_blank"><i class="fab fa-mastodon-square fa-lg"></i></a>
+      <a class="bluesky-icon" href="https://bsky.app/profile/darenn.bsky.social" target="_blank"><i class="fa-solid fa-cloud"></i></a>
+      <a class="tumblr-icon" href="https://darennkeller.tumblr.com/" target="_blank"><i class="fab fa-tumblr-square fa-lg"></i></a>
+      <a class="threads-icon" href="https://www.tiktok.com/@darennkeller" target="_blank"><i class="fab fa-tiktok fa-lg"></i></a>
+      <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
+    </nav>
+
+    <h2>My Games</h2>
+    <iframe style="display: block; margin: auto; margin-top: 3px;" frameborder="0" src="https://itch.io/embed/1582756?linkback=true" width="552" height="167"><a href="https://darenn.itch.io/last-in-space">Last In Space by Darenn Keller</a></iframe>
+    <iframe style="display: block; margin: auto; margin-top: 3px;" frameborder="0" src="https://itch.io/embed/710594?linkback=true" width="552" height="167"><a href="https://darenn.itch.io/bbb">BBB: Boost Boom Boots by Darenn Keller, Joan Sol ROO</a></iframe>
+    <iframe style="display: block; margin: auto; margin-top: 3px;" frameborder="0" src="https://itch.io/embed/693993?linkback=true" width="552" height="167"><a href="https://darenn.itch.io/door-xp">Door XP by Darenn Keller</a></iframe>
+    <iframe style="display: block; margin: auto; margin-top: 3px;" frameborder="0" src="https://itch.io/embed/281684?linkback=true" width="552" height="167"><a href="https://darenn.itch.io/dark-valiance">Dark Valiance by Darenn Keller</a></iframe>
+    <iframe style="display: block; margin: auto; margin-top: 3px;" frameborder="0" src="https://itch.io/embed/239925?linkback=true" width="552" height="167"><a href="https://tae-exe-enjmin-team.itch.io/taeexe">Tae.exe by Tae.exe Team, TheFuel, Darenn Keller, Ervan Silvert, Aredhele</a></iframe>
+    <!--<a class="btn w3-btn w3-round w3-red" href="https://darenn.itch.io/" target="_blank">
+      <i class="fab fa-itch-io fa-lg"></i> Itch.io
+    </a>
+    <a class="btn w3-btn w3-round w3-black" href="https://store.steampowered.com/publisher/darennkeller" target="_blank">
+      <i class="fab fa-steam fa-lg"></i> Steam
+    </a>
+
+    <a class="btn w3-btn w3-round w3-blue twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> 
+      <i class="fab fa-twitter-square fa-lg"></i> Twitter
+    </a>
+    <a class="btn w3-btn w3-round w3-pink" href="https://www.instagram.com/darennkeller/" target="_blank">
+      <i class="fab fa-instagram fa-lg"></i> Instagram
+    </a>
+    <a class="btn w3-btn w3-round w3-black" href="https://www.threads.net/@darennkeller" target="_blank">
+      <i class="fab fa-threads fa-lg"></i> Threads
+    </a>
+    <a class="btn w3-btn w3-round w3-indigo" href="https://mastodon.gamedev.place/web/@darennkeller" target="_blank">
+      <i class="fab fa-mastodon fa-lg"></i> Mastodon
+    </a>
+    <a class="btn w3-btn w3-round w3-blue" href="https://bsky.app/profile/darenn.bsky.social" target="_blank">
+      <i class="fa fa-square fa-lg"></i> BlueSky
+    </a>
+    <a class="btn w3-btn w3-round w3-deep-purple" href="https://darennkeller.tumblr.com/" target="_blank">
+      <i class="fab fa-tumblr fa-lg"></i> Tumblr
+    </a>
+    <a class="btn w3-btn w3-round w3-black" href="https://www.tiktok.com/@darennkeller" target="_blank">
+      <i class="fab fa-tiktok fa-lg"></i> Tiktok
+    </a>
+    <a class="btn w3-btn w3-round w3-indigo" href="https://www.linkedin.com/in/darennkeller/" target="_blank">
+      <i class="fab fa-linkedin fa-lg"></i> Linkdin
+    </a>
+    <a class="btn w3-btn w3-round w3-deep-orange" href="https://www.reddit.com/user/DarennKeller" target="_blank">
+      <i class="fab fa-reddit-square fa-lg"></i> Reddit
+    </a>-->
+    
+    <!--<a class="btn w3-btn w3-round w3-red" href="https://www.youtube.com/channel/UCwtPn_0TFN51UQjmu3JIvGg" target="_blank">
+      <i class="fab fa-youtube-square fa-lg"></i> Gaming
+    </a>-->
+    <!--<a class="btn w3-btn w3-round w3-teal" href="https://darenn.github.io" target="_blank">
+      <i class="fa-solid fa-mug-hot"></i> My blog
+    </a>-->
+    <!--<a class="btn w3-btn w3-round w3-black" href="https://medium.com/@keller.darenn" target="_blank">
+      <i class="fab fa-medium fa-lg"></i>Medium
+    </a>-->
+    
+    <!--<iframe src="https://itch.io/embed/1582756?linkback=true&amp;bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="552" height="167" frameborder="0" style="margin-left: auto;margin-right: auto; display: block;float: center;"><a href="https://darenn.itch.io/last-in-space">Last In Space by Darenn Keller</a></iframe>
+    -->
+    <!--<div class="ko-fi">
+      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  
+      <p></p>
+    </div>-->
+    <!--
+    <a class="" href="https://darenn.itch.io/bbb" target="_blank">
+      <img src="/assets/images/linktree/bbb.gif">
+    </a>
+    
+    <a class="btn w3-btn w3-round w3-deep-purple" href="https://github.com/Darenn" target="_blank">
+      <i class="fab fa-github-square fa-lg"></i> Github
+    </a>-->
+    <h2>Press Kits</h2>
+      <a class="btn w3-btn w3-round w3-teal" style="max-width: 300px;" href="https://darenn.github.io/lueur_presskit/" target="_blank">
+        <i class="fa-solid fa-newspaper"></i> Lueur and the Dim Settlers
+      </a>
+      <a class="btn w3-btn w3-round w3-teal" style="max-width: 160px;" href="https://darenn.github.io/lis_presskit/" target="_blank">
+        <i class="fa-solid fa-newspaper"></i> Last In Space
+      </a>
+      
+    <h2>Contact</h2>
+    <p>darenn.gamedev@<span class="blockspam" aria-hidden="true">PLEASE GO AWAY!</span>gmail.com</p>
+
+  </div>
+  
+</body>
+
+</html>
