@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Duel de mages</h1>
+    <p>This prototype was made during a school workshop: we were asked to design an alt game for <strong>cognitively impaired players</strong>.</p>
+<p>https://www.youtube.com/watch?v=ikI-KbsqheM</p>
+<p>It was a difficult but very enriching exercise to imagine what would be fun for people whose abilities can vary greatly from an individual to the other. We needed to take into account <strong>important guidelines</strong> in our design, from avoiding challenge based on speed or physical skills to making sure the rules were easy to comprehend. We decided to design a game that would make use of the <strong>color association</strong> and the <strong>memorising abilities</strong>, which we were told were stimulating for the cognitively impaired. Playing on a <strong>physical board is more engaging</strong> for these players, and it helps them <strong>focus and visualise</strong> what is happening. The buttons to press, the big figurines to manipulate, as well as the colourful light feedback and animations make for a <strong>joyful experienc</strong>e.</p>
+<p>We were delighted to watch our playtesters build an <strong>emotional bond</strong> with the controller, addressing it respectfully as <em>“Magic Table”</em> when they were validating their spellcasting. Could that have happen on a computer screen?</p>
+<p>We submitted the project to the <em><a href="https://www.gdconf.com/alt.ctrl.gdc">alt.ctrl.GDC</a></em>. It is a prototype, but if it were selected, we would bring an enhanced version as we are still improving the table in order to eventually give it to a local association (<em><a href="https://www.lenfantsoleil.org/">L'Enfant Soleil</a></em>) taking care of disabled people.</p>
+<ul>
+<li>
+<p><img src="images/20180925_104248.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180927_150453.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20181020_163903.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180926_1555421.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180927_2059231.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180927_2302501.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180927_231658.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/20180928_0236211.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/ezgif-com-optimize1.gif" alt=""></p>
+</li>
+<li>
+<p><img src="images/img_20180927_170452.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/img_20180927_223100.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/img_20180928_013426.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/img_20180928_021224.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/img_20180928_143727.jpg" alt=""></p>
+</li>
+</ul>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

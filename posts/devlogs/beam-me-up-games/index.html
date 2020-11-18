@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Beam Me Up Games</h1>
+    <p><em>Beam Me Up Games</em> (<em>BMU</em> for short) is a Canadian video game studio based in Montreal and specialized in virtual reality.  I had the chance to work there as an intern for three months.</p>
+<p>During my internship, BMU was developing a new technology based on the <strong><em>Gear VR</em></strong> headset, called <em><strong>HoloRoom</strong></em>. A set of cameras is used to track in space a sensor put on the headset, to allow the player to move in the game. This looks like the <em>HTC Vive</em> system, but with a Gear VR and without cables. However, the graphic quality is lower as the Gear VR uses a smartphone.</p>
+<p>I worked on several <strong>VR experiences</strong> destined to be used as promotional tools and on <strong>VR games</strong> using the <strong>Unity</strong> Game Engine. The games were destined to be used in the <a href="http://journalmetro.com/actualites/montreal/966622/une-premiere-arcade-de-realite-virtuelle-bientot-a-montreal/">first VR arcade room of Montreal</a>.</p>
+<h1>A VR Chess game</h1>
+<p>The first game we worked on was HoloChess. It's a chess game in VR. As in Harry Potter, the pieces are alive, and fight each other. The player has the same size as the pieces, and is on the board with them. It's a very nice and impressive experience to live. <strong>Designing</strong> how the player can play a chess game in VR was very interesting.</p>
+<p>https://youtu.be/ytQc1vwVpEA</p>
+<h1>A VR aircraft piloting game</h1>
+<p>The second game I worked on was HoloFlight. It was based on a Unity game from the asset store, but reconverted to VR. The player controls a plane with a game pad, and has to collect energy globes before the plane runs out of energy. It's like pilot a remote plane in real life. Here VR is more interesting, because the player has to move around and follow the plane to maneuver it. It's a part of the <strong>game mechanics</strong>, if the player does not move and look around, he can't play. That's what makes the game fun.</p>
+<p>https://youtu.be/rEKvWxmXQJA</p>
+<h1>Conclusion</h1>
+<p>During this internship I learned a lot about <strong>VR Game design</strong> and <strong>programming games with Unity</strong>. I learned about <strong>game assets integration</strong> in unity (3D models and animations, textures, musics and sounds with mixers, chess engine AI) and some other functionalities (network, asset bundles, unity profiler, multi platform builds, Photon plugin, Mecanim). It was my <strong>first experience in professional game development</strong>. I discovered the pros (work with a team of passionate people on games) and the cons (budget constraints, time constraints) of working in a game studio. It made my desire to become Game Developer stronger.</p>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

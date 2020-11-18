@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Dark Valiance</h1>
+    <p><em><strong>Dark Valiance</strong></em> is a <strong>Survival Boss Fight</strong> <strong>RPG</strong> with <strong>turn based battles</strong>. There is <strong>no Farming, no Dungeons to explore, no surprise battles</strong> and it's totally linear. The particularity resides in its specials <strong>Dark Powers</strong>, its <strong>story</strong> and the <strong>way battles are managed</strong>.</p>
+<p>I made it during the RPG Maker Jam with RPG Maker MV, the theme was <strong>Contagion</strong>.</p>
+<p>https://youtu.be/Zdy-Q90JylA?t=529</p>
+<p>RPG Maker Alliance playing Dark Valiance (start at 8:46)</p>
+<p>I learned to use a new tool, <em><strong>RPG Maker MV</strong></em>, good for beginners thanks to its graphical interface, but powerful because of the versatility of its engine, that I modified for my needs using <strong>JS</strong>. I don't think he's good enough for professional game production where we want great modularity for low cost.</p>
+<p>It was very interesting to <strong>balance</strong> the battles, items and classes, to make <strong>2D tiled mapping and creating</strong></p>
+<p>You can find my <strong>devlogs</strong> about the game :</p>
+<ul>
+<li><a href="https://darenn.itch.io/dark-valiance/devlog/41665/first-evening-on-dark-valiance">First evening on Dark Valiance</a></li>
+<li><a href="https://darenn.itch.io/dark-valiance/devlog/41791/day-2-dark-valiance-on-rpg-maker-jam3">Day 2 - Dark Valiance on RPG Maker Jam #3</a></li>
+<li><a href="https://darenn.itch.io/dark-valiance/devlog/42260/design-devlog-dark-valiance-on-rpg-maker-jam3">Design Devlog - Dark Valiance on RPG Maker Jam #3</a></li>
+</ul>
+<p><a href="https://darenn.itch.io/dark-valiance">Download the game here!</a></p>
+<ul>
+<li>
+<p><img src="images/ht7fzv.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/f_ajxc.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/a8xbko.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/8dyc4a.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/mcuui.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/ray0wj.png" alt=""></p>
+</li>
+</ul>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Allô ?</h1>
+    <p>Allô ? is a game I developed during the Ludum Dare 36. The theme was <strong>Ancient Technology.</strong> It's a very interesting theme, I had to think about old things, look at history documentaries, articles and wonder what would make a good game. In this game, the player is a switchboard operator.</p>
+<p><img src="../../assets/images/telephone_operators.jpg" alt="telephone operators"> <em>Switchboard operators. Taken from <a href="https://en.wikipedia.org/wiki/Switchboard_operator">Wikipedia</a>.</em></p>
+<p><em>In the early days of telephony, through roughly the 1960s, companies used manual <a href="https://en.wikipedia.org/wiki/Telephone_switchboard" title="Telephone switchboard">telephone switchboards</a>, and <strong>switchboard operators</strong> connected calls by inserting a pair of <a href="https://en.wikipedia.org/wiki/Phone_connector_%28audio%29" title="Phone connector (audio)">phone plugs</a> into the appropriate jacks.</em></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HA8YXeJCHrg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>When a person wants to call a second one, a colored warning light turns on, on both persons' jacks. Then the player connects them by plugging phone plug in both jacks. The lights turn white, and persons are now talking. At the end of the conversation, lights turn off, the player gains points and the phone plug can be used again. If the conversation is cut, the player doesn't gain points. The player should hurry up, because persons won't wait forever to make their call (lights blink faster and faster until the persons leave the call). If three conversations are missed, the player is fired (life's hard).</p>
+<p>As I didn't have a 2D artist, I made graphics (yeah I call that graphics) and the menu (i'm really sorry about this one). However, It was a real pleasure to create musics, and sound effects (especially the persons' voices).</p>
+<p>You can download the game or play directly in your web browser <a href="https://darenn.itch.io/allo">here</a>.</p>
+<p>And you ? What would you have done with this theme ?</p>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

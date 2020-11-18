@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Codingame AI Challenges</h1>
+    <p>Codingame AI Challenges are contests where you have to create the best possible AI for a given game during a week. The bots of every participants fight each other to determine which is the best. I did some challenges during my IT studies, and hosted CodinHub (several programmers participating in the contest together). My best placement is 89/2715 on the <a href="https://www.codingame.com/leaderboards/challenge/hypersonic/global">Hypersonic challenge</a> (bomberman-like), using a genetic algorithm! I'm planning on doing contests again.</p>
+<p>https://www.youtube.com/watch?v=YMevF-tqwqo</p>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

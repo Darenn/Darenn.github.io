@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Think outside the game</h1>
+    <h1><strong>Digital Art Jam</strong></h1>
+<p>I participated to the <strong>Digital Art Jam</strong> in <em>Paris</em>, from the 2nd to the 4th of March 2018. The jam is organized by the <strong>CNAM ENJMIN</strong> every year, and hosted by the <strong><em>Centre Pompidou</em></strong>. The goal is to create an interactive experience inspired by a visit of the <strong><em>Musée National d'Art Moderne</em></strong>.</p>
+<p><img src="images/logo.jpeg" alt="logo"></p>
+<h1><strong>The game</strong></h1>
+<p>My group visited the <em>Contemporary Art</em> part. I didn't want to focus on a specific artwork or artist, instead I tried to understand what was Contemporary Art and how I can apply it in a video game. <strong>In my opinion</strong> Art is not about making something beautiful or appealing using complex art skills, but about <strong>making someone feel something</strong>, about telling someone something. Contemporary artists try to do so by <strong>breaking or playing with standard methods</strong> used in art. They try to make Art with everything they can find and that's why it can be very strange to experience (like using <em>meat</em> to make clothes). In this way, it's usually hard to really appreciate a piece of Contemporary art just by contemplating it. You need to know <strong>the process and goal</strong> behind it. I didn't read about it, maybe I'm wrong about the intentions of this style, but that was what emerged from the visit.</p>
+<hr>
+<p>With that in mind, I created the concept of <em><strong>&quot;Think outside the game&quot;</strong></em> (reference to the expression <em>&quot;Think outside the box&quot;)</em>. It crosses the usual borders of video game by making the player play outside the game application. In the game, you control an avatar in a 2D world, and you can only move horizontally. There are obstacles on the way that keep you from moving forward. To overcome these, you have to <strong>resolve puzzles outside the game application</strong>, in the game files. For example, one of the first puzzle solution is to change a light color from red to green in order to open a door. The player does that by directly editing the light texture.</p>
+<p>[caption id=&quot;attachment_574&quot; align=&quot;alignnone&quot; width=&quot;1920&quot;]<img src="images/demo-image-totg.png" alt="Demo-image-totg"> The player completes the cable directly into the texture file with Paint.[/caption]</p>
+<p><a href="http://ervan-silvert.fr/">Ervan Silvert</a> and <a href="https://www.linkedin.com/in/williamdesert/">William Désert</a>, two friends that were participating in the game jam were interested in the idea and joined me to create the game.</p>
+<h2><a href="https://thefuel.itch.io/think-outside-of-the-game"><strong>Get the game on Itch !</strong></a></h2>
+<h1><strong>The feedback</strong></h1>
+<p>The play tests were very interesting, and we were happy to see that players mostly reacted as expected and understood the goal. But not unlike Contemporary art, it appeared totally opaque to some of them.</p>
+<p>Some players have struggled to play because they <strong>don't consider modifying or moving files on the system like playing</strong>. Mainly because it's not directly into the game application, but also because they see that like a boring task that you do every day, and can quickly get worked up when confronted with a puzzle in a file explorer during some time.</p>
+<p>On the contrary, there are players who take great pleasure in playing this way. We were surprised to see that some of them <strong>&quot;played&quot; a lot in a text editor</strong>, modifying variables of the game to see what would happen, or modifying the skins of the characters in Paint.</p>
+<p>And there are the experienced ones, those who are used to playing games of this genre and who try to <strong>search the Easter eggs placed in the files</strong>.</p>
+<h1><strong>Quick Post Mortem</strong></h1>
+<p>It was an important jam for me, as it was the first time that I worked with a team on a game based on a <strong>pitch I came up with</strong>. I was seen as a &quot;Game designer with programming skill&quot; and not a &quot;Programmer with game design intentions&quot;.</p>
+<p>The scope and the type of the game was perfect for a jam. The <strong>concept and mechanics were clear from the start</strong>, so we knew exactly where we were going. It was very interesting learning to use the <strong>Godot Engine</strong>, that is well known and very different from Unreal or Unity about the creation process. We just had some <strong>difficulties with the interactions between the operating system and the game</strong> (user permissions) and with loading extern ressources at runtime.</p>
+<p>So, it was a <strong>smooth game jam</strong>. Nothing went wrong (other than the sleeping time maybe), and it was awesome.</p>
+<h1><strong>What's next ?</strong></h1>
+<p>The idea was accepted for <strong>CNAM ENJMIN</strong> first year projects (there was 46 pitches, teachers choose 20 of them, with 5 favorites, this game was one of the favorites). I will be <strong>responsible</strong> for this project and will work on it as a <strong>game designer</strong>. The game jam version of the game is a <strong>proof of concept</strong>. The concept is <strong>fun</strong>, and <strong>technically feasible</strong>. Now we will make it a real game.</p>
+<p>Things to work on :</p>
+<ul>
+<li>Design more <strong>interesting puzzles</strong>, which can possibly have several solutions, for a 15 minutes experience. Maybe add an achievement system for replayability ?</li>
+<li>Give more <strong>freedom</strong> to the player, to let him experience things (change the skin of characters, etc...) but keep control over it.</li>
+<li>Find ways to make the game more <strong>accessible</strong>, so that casual players can take pleasure.</li>
+<li>Create a real <strong>artistic direction</strong>, work on visuals and sounds to create something coherent and that <strong>supports the concept</strong>.</li>
+<li>Find a <strong>better technology</strong> than Godot, to be able to make things we couldn't during the jam, such as changing game music with another.</li>
+<li><strong>Code</strong> all the puzzles. Each puzzle uses a different mechanics, and each mechanic needs a different code.</li>
+</ul>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Speed Shape</h1>
+    <p>Speed Shape is Runner game we developed with Jean-Philippe Detièges as programmer and Vincent Stehly--Calisto as 3D artist during the Ludum Dare 35. The theme was <strong>Shape shift</strong>. It was my first game jam, I was very excited about it. We made it during a week-end in Montreal, so we haven't work long on the game (about 12 hours).</p>
+<p></p>
+<p>https://youtu.be/y9Dfj29V8zQ</p>
+<p>The player controls a mysterious creature, who can metamorphose to face different types of environments. The game-play changes with each metamorphose. The first environment is in the sky. The game-play  here is the same as <strong>Flappy Bird</strong>. When the player collides another bird, he falls and metamorphose into a sort of blob to avoid dying crushed on the floor. Now, The player has to jump over fences. The longer you press the jump button, the higher the blob will jump. Finally, if the blob collides with a fence, he metamorphoses into a ram, that can destroy fences by dashing into them, or jump above rocks. If the player collides a rock, Game Over !</p>
+<p>With hindsight, that wasn't a very good idea for a game jam. We thought of many others mini-game-play like that, but didn't have the time to create them. In fact, the few game-plays we created aren't really polished and contains some bugs (the blob is almost unplayable). We should had focused more on one or two game-plays.</p>
+<p>However, it was very funny and I don't regret it. Vincent loved creating the 3D models and textures (he is a programmer) and I loved creating musics and sound effects (Yeah, the ram's grunt was made with my voice, with a little bit of modifications of course). I was very proud of submitting the game for my first game jam.</p>
+<p><a href="http://ludumdare.com/compo/ludum-dare-35/?action=preview&amp;uid=85267">Here is the Ludum Dare page of the game.</a> You can download the game and try it.</p>
+<p>And you ? How was your first game jam ?</p>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

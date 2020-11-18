@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>My Project Pitches - ENJMIN M2 2018</h1>
+    <p>Here are four pitches I proposed for the JMIN graduation project. <em>RéVolution</em>, a VR God game was selected by the jury, but they weren't enough students interested to launch the project (I keep it in my pocket!).<br>
+It was great and very interesting to think freely of any game concept I want and write <strong>pitches</strong> documents about them . It's hard not to go into too much details and change it into a <strong>Game Design Document</strong>.</p>
+<p>[RéVolution</p>
+<p>](https://darennkeller.files.wordpress.com/2018/12/keller-darenn_rc3a9volution.pdf)<a href="https://darennkeller.files.wordpress.com/2018/12/keller-darenn_rc3a9volution.pdf">Download</a></p>
+<p>[I Believe In What You see</p>
+<p>](https://darennkeller.files.wordpress.com/2018/12/keller-darenn_je-ne-crois-que-ce-que-tu-vois.pdf)<a href="https://darennkeller.files.wordpress.com/2018/12/keller-darenn_je-ne-crois-que-ce-que-tu-vois.pdf">Download</a></p>
+<p>[Dark Valiance</p>
+<p>](https://darennkeller.files.wordpress.com/2018/12/keller-darenn_dark-valiance.pdf)<a href="https://darennkeller.files.wordpress.com/2018/12/keller-darenn_dark-valiance.pdf">Download</a></p>
+<p>[Jiyu The Ninja Princess</p>
+<p>](https://darennkeller.files.wordpress.com/2018/12/keller-darenn_jiyu-the-ninja-princess.pdf)<a href="https://darennkeller.files.wordpress.com/2018/12/keller-darenn_jiyu-the-ninja-princess.pdf">Download</a></p>
+<ul>
+<li>
+<p><img src="images/9xvl6zv0vw1.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/acpx6zfc4b1.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/tfxovdxqev1.jpg" alt=""></p>
+</li>
+<li>
+<p><img src="images/u7ekc3e4x32.png" alt=""></p>
+</li>
+</ul>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

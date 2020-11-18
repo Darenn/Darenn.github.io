@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Mr.Tobro</h1>
+    <h2><strong>BUILD TURRETS. KILL VIRUSES. PROTECT THE CORE. EASY.</strong></h2>
+<blockquote>
+<p>Your computer is being hacked by vicious virus ! It's the eeeeeeeeeend...<br>
+No ! Because <em>Mr.Tobro antivirus</em> is here to save <strong>YOUR</strong> system  !<br>
+At first, you'll be tight in Mr.Tobro small window. But the more you kill viruses, the greater it becomes !</p>
+</blockquote>
+<p><em>Mr.Tobro</em> is a <strong>Shooter Tower Defence</strong> where <strong>tower don't shoot automatically</strong> and <strong>you run out of space</strong> quickly.</p>
+<p>https://youtu.be/tG45WDfIQds?t=134</p>
+<p>Jupiter Hadley playing Mr.Tobro (start at 2:15)</p>
+<p>I submitted this game to <em><strong>Ludum Dare #42</strong></em> and <em><strong>LOWREZJAM</strong></em>.<br>
+I had to create a game with the theme &quot;<strong>Running out of space</strong>&quot; and with  a <strong>64x64 resolution</strong>. The constraint fits perfectly the theme,  I literally ran out of space making this game. Moreover the main mechanic is about building turrets on the few available spaces you got, the more you build, the more you run out of space... It was my first time time using <strong>pico-8</strong>, and it was awesome.</p>
+<ul>
+<li>
+<p><img src="images/lowrezjam_1.gif" alt=""></p>
+</li>
+<li>
+<p><img src="images/lowrezjam_2.gif" alt=""></p>
+</li>
+<li>
+<p><img src="images/lowrezjam_002.png" alt=""></p>
+</li>
+<li>
+<p><img src="images/lowrezjam_004.png" alt=""></p>
+</li>
+</ul>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

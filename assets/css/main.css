@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: printfont;
+  padding: 0% 5% 0% 5%;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+  background-image: url("/assets/images/ac2.jpg"); /* The image used */
+  background-color:black;
+  background-position: 100% 30%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.header h1 {
+  font-size: 50px;
+  margin-bottom: 1px;
+  color:white;
+
+}
+
+.header p {
+  margin-top: 1px;
+  color:white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'print_clearlyregular';
+  font-size: 1.5em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-right: 20px;
+}
+
+/* Middle colum */
+.middlecolumn {
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Post Miniature Image */
+.post_min_image {
+  width: 100%;
+  height: 100%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 1px 2px 4px #888888;
+}
+
+.last-articles-list {
+  text-indent: 2em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[aria-current] {
+  background-color: green;
+}
+
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+}
+
+.iframe-responsive {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+margin: 3%;
+}
+
+.iframe-responsive iframe {
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .middlecolumn, .rightcolumnn  {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+body,
+html {
+    height: 100%
+}
+
+.share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+
+/*
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}*/
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	background: $background
+}
+
+p {
+  font-family: 'print_clearlyregular';
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'print_boldregular';
+}

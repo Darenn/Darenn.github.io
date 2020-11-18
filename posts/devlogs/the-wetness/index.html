@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>The Wetness</h1>
+    <p>The first programming course week at the <em><strong>ENJMIN</strong></em> consisted in an update about <em><strong>C++</strong></em>. We were asked to create a little game in <em>C++</em> using the <strong><em>Windows</em> console</strong> as graphical interface in pair working. I wanted to benefit from this project by learning more about <strong><em>procedural content generation</em></strong> (<strong>PCG</strong>), <strong><em>machine learning</em></strong> (<strong>ML</strong>) and <strong><em>dynamic difficulty adjustment</em></strong> (<strong>DDA</strong>). Vincent, who worked with me on this project was more interested in graphical programming and in the optimization of the <em>path-finding algorithm</em>, which will be called many times. That is how we shared the amount of work to do and how <strong><em>The Wetness</em></strong> project was born.</p>
+<p><em>The Wetness</em> was inspired by the game <em>The Witness</em> designed by <em>Jonathan Blow</em>. The game consists in a series of mazes where the player has to go through a set of different points before arriving at the exit. Mazes are procedurally generated with a <strong><em>genetic algorithm</em></strong>. A lot of optimization has been made on path-finding algorithm to allow real time generation of possible and interesting mazes. An <em>ML</em> algorithm, based on <strong><em>linear regression</em></strong>, study how many time takes a player to complete a maze for a given difficulty. This one is then used by the <em>DDA</em> algorithm, which will increase or decrease the difficulty of next mazes relative to the player’s performance.</p>
+<p>https://youtu.be/vAQzL7QPaHc</p>
+<p>Of course, we had to work on other school projects at the same time, so I  couldn’t work on it as much as I would have liked. For example,   features like the algorithm that measures a maze difficulty could be a lot better. But it works and I’ve achieved my goals.</p>
+<hr>
+<p>To learn about <em>genetic algorithm</em> I used <a href="https://www.tutorialspoint.com/genetic_algorithms/">this tutorial</a>. For the <em>PCG</em> I used <a href="http://pcgbook.com/">this book</a>. I used <a href="https://fr.coursera.org/learn/machine-learning">Andrew Ng courses</a> available for free on <em>Coursera</em> to learn about <em>ML</em>.</p>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>

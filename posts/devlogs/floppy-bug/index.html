@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/w3.css">
+  <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post_card.css">
+  <script src="/assets/js/html_table_of_contents.js"></script>
+  <title>Darenn's place!</title>
+</head>
+<body onload="htmlTableOfContents();">
+<div class="header">
+  <h1>Darenn Keller</h1>
+  <p>Game Designer at Ubisoft</p>
+  <div class="share-buttons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/darennkeller/" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" /></a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/user/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" /></a>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/DarennKeller" target="_blank"><img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+  </div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+</div>
+
+<nav style="position: sticky; top: 0" class="topnav">
+  <a href="/">home</a>
+  <a href="/pages/devlogs">devlogs</a>
+  <a href="/pages/truegamelogic">game logic</a>
+
+  <a href="/pages/about" style="float:right">about me</a>
+  <a href="/pages/portfolio" style="float:right">portfolio</a>
+</nav>
+
+<div class="row">
+  
+
+<div class="leftcolumn">
+  <div class="card" style:"position:fixed;">
+    <h2>Table Of Content</h2>
+    <div id="table_of_content">
+    </div>
+  </div>
+</div>
+<div class="middlecolumn">
+  <article id="content">
+    <h1>Floppy Bug</h1>
+    <p><em>Floppy Bug</em> is <strong>Strategic Shooter 3D</strong> Game made for the <em><strong>Floppy Jam 2018</strong></em>. The goal is to create a complete and original game fitting on a floppy disk uncompressed, that is to say 1.44MB (surely less than your profile picture). The game won the <strong>Design and Quality prices</strong>, but placed second for <strong>Gameplay</strong>.</p>
+<p>We worked two weeks on this project, <a href="https://vincentcalisto.com/about/">Vincent</a> created the <a href="https://vincentcalisto.com/2018/08/25/oom-engine-the-making-of/">OOM</a>, a very lightweight game engine. I designed the <strong>gameplay mechanics</strong>, taking into account the <strong>heavy technical constraints</strong>, and constantly <strong>adapting the design</strong> to the technical problems. I also <strong>design the level directly in code</strong>, and <strong>implementing a large part of the mechanics</strong> (C++ on home made game engine).</p>
+<p><img src="images/floppy_banner_04.png" alt=""></p>
+<p>To save the game, Jean Henri the programmer (the best guy) created you, a super virus. Your mission is to destroy artists assets before they overload the floppy disk.</p>
+<p><img src="images/d7fql7.gif" alt=""></p>
+<p>Assets come from 4 doors, and 4 corridors in direction of the floppy disk. The player can shoot at them to destroy them (Shooter), but the most effective way is to use the integrated console, and type in commands that lock doors or stop assets progression in the corridors temporally, etc (Strategy).</p>
+<h2><a href="https://aredhele.itch.io/floppy-bug">Get the game here !</a></h2>
+
+  </article>
+</div>
+<div class="rightcolumn">
+
+</div>
+
+<script>
+
+// name smth myslide and it will use a slide thing.
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+</div>
+
+<footer class="footer">
+  <h2>Footer</h2>
+</footer>
+</body>
+</html>
