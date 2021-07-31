@@ -3,7 +3,7 @@
  *  present (edit: the heading in the id "content").
  *  Anchors are injected into the document and the
  *  entries in the table of contents are linked to them. The table of
- *  contents will be generated inside of the first element with the id `toc`.
+ *  contents will be generated inside of the first element with the id `table_of_content`.
  * @param {HTMLDOMDocument} documentRef Optional A reference to the document
  *  object. Defaults to `document`.
  * @author Matthew Christopher Kastor-Inare III Darenn Keller

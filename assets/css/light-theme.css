@@ -1,0 +1,78 @@
+.main-content {
+    color: #413B40;
+}
+
+h1 {
+    color:#413B40;
+}
+
+h2, h3, h4, h5, h6 {
+    color:#6F8995;
+}
+
+.topnav {
+    border-bottom: 2px solid #DFD1C6;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    color: #413B40;
+}
+
+.topnav a.active {
+    color: #413B40;
+  }
+
+  /* Style the topnav links */
+.topnav a {
+    color: #6F8995;
+  }
+
+  .socials a {
+    color: #413B40;
+  }
+
+  .header-description {
+    color: #6F8995;
+  }
+
+  article a {
+    color: #99CEC1;
+  }
+
+  body {
+    background-color: #FAF2EC
+  }
+
+  .post-card-title {
+    color: #413B40;
+  }
+
+  .post-card-brief {
+    color: #6F8995;
+  }
+
+  blockquote {
+    background-color: #413B40;
+    color:#DFD1C6;
+  }
+
+  th, td {
+    border-bottom: 1px solid #FAF2EC;
+  }
+
+  th {
+    background-color: #413B40;
+    color: #FAF2EC;
+  }
+  
+  tr:hover {background-color: #f5f5f5;}
+
+  #theme-toggle {
+    background-color: #FAF2EC;
+    color: #413B40
+  }
+
+  #theme-zone {
+      color: #413B40;
+  }
