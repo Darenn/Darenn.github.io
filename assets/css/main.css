@@ -53,21 +53,20 @@ article img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  transition: width 1s;
+  transition: 1s;
   margin-top: 5%;
   margin-bottom: 3%;
   border-radius: 2px;
+  opacity: 50%;
 }
 
 article img:hover {
-  width: 100%;
-  transition: width 0.5s;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  opacity: 100%;
+  transition: 1s;
 }
 
 h1 {
-  font-family: 'Futura';
+  font-family: "Optima", "Lucida Sans", "Helvetica", "Arial", sans-serif;
 }
 
 h2 {
@@ -75,7 +74,7 @@ h2 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Futura';;
+  font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
 }
 
 
@@ -101,7 +100,7 @@ h2, h3, h4, h5, h6 {
   padding: 1% 1%;
   text-decoration: none;
   font-size: 150%;
-  font-family: 'Futura';;
+  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
 }
 
 .site-title {
@@ -166,13 +165,13 @@ h2, h3, h4, h5, h6 {
 }
 
 .header-description {
-  font-family: 'Futura';
+  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
   font-size: 1.5em;
   opacity: 50%;
 }
 
 article {
-  font-family: 'Calibri';
+  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
   font-size: 150%;
 }
 
@@ -293,7 +292,7 @@ th, td {
 .language-link {
   text-decoration: none;
   margin-top: 15px;
-  font-family: 'Futura';;
+  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
   font-size: 1.5em;
 }
 
@@ -305,7 +304,7 @@ th, td {
 
 .support-zone {
   margin-top: 10%;
-  font-family: 'Futura';;
+  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
   font-size: 1.5em;
   opacity: 50%;
   transition: 1s;
