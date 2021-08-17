@@ -244,6 +244,7 @@ blockquote {
 .small-remark {
   font-style:italic;
   font-size: 60%;
+  opacity:50%;
 }
 
 .ytb-video {
@@ -262,6 +263,10 @@ th, td {
 
 #site-title {
   line-height: 100%;
+}
+
+.site-title-link {
+  text-decoration: none;
 }
 
 #theme-toggle {
@@ -302,6 +307,13 @@ th, td {
   margin-top: 10%;
   font-family: 'Futura';;
   font-size: 1.5em;
+  opacity: 50%;
+  transition: 1s;
+}
+
+.support-zone:hover {
+  opacity: 100%;
+  transition: 1s;
 }
 
 .tip-button {
@@ -316,4 +328,14 @@ th, td {
   height: 20%;
   opacity: 90%;
   transition: 0.2s;
+}
+
+.page-status {
+  opacity:50%;
+  transition: 1s;
+}
+
+.page-status:hover {
+  opacity:100%;
+  transition: 1s;
 }

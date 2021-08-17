@@ -7,7 +7,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    color:#6F8995;
+    color:#FAF2EC;
 }
 
 .topnav {
@@ -33,7 +33,7 @@ h2, h3, h4, h5, h6 {
   }
 
   .header-description {
-    color: #6F8995;
+    color: #FAF2EC;
   }
 
   article a {
@@ -76,4 +76,12 @@ h2, h3, h4, h5, h6 {
   #theme-zone {
       color: #FAF2EC;
       
+  }
+
+  .support-zone {
+    color: #FAF2EC;
+  }
+
+  .page-status {
+    color: #FAF2EC;
   }
