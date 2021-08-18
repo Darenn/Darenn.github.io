@@ -63,6 +63,7 @@ article img {
 article img:hover {
   opacity: 100%;
   transition: 1s;
+  transform: scale(1.7);
 }
 
 h1 {
@@ -303,7 +304,7 @@ th, td {
 }
 
 .support-zone {
-  margin-top: 10%;
+  margin-top: 170%;
   font-family: "Consolas", "Monaco", "Monospace", sans-serif;
   font-size: 1.5em;
   opacity: 50%;
@@ -338,3 +339,28 @@ th, td {
   opacity:100%;
   transition: 1s;
 }
+
+@media (max-width: 1024px) {
+
+  article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: 1s;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 2px;
+    opacity: 100%;
+  }
+
+  
+#fixed-zone {
+  position: absolute;
+  display: block;
+  width:20%;
+  opacity: 0%;
+}
+
+}
+
