@@ -75,7 +75,7 @@ h2 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "print_clearlyregular", "Helvetica", "Arial", sans-serif;
 }
 
 
@@ -172,8 +172,8 @@ h2, h3, h4, h5, h6 {
 }
 
 article {
-  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
-  font-size: 150%;
+  font-family: "print_boldregular", "Monaco", "Monospace", sans-serif;
+  font-size: 2em;
 }
 
 article a {
@@ -237,6 +237,7 @@ iframe {
 
 blockquote {
   font-style:italic;
+  font-family: "Monaco";
   border-radius:5px;
   padding: 1% 1% 2% 2%;
 }
@@ -350,7 +351,8 @@ th, td {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-button {
-  font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "print_clearlyregular";
+  font-size: 1.2em;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -362,11 +364,11 @@ th, td {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible-button:hover {
   border: solid;
-  transition: border 0.2s ease-out;
+  transition: border 0.1s ease-out;
 }
 
 .collapsible-button:before {
-  content: '\02C3  '; /* Unicode character for right arrow */
+  content: '\02C3   '; /* Unicode character for right arrow */
   font-size: 22px;
   color: #444;
   margin-left: 5px;
@@ -378,7 +380,7 @@ th, td {
 }
 
 .collapsible-button.active:before {
-  content: "\02C5  "; /* Unicode character for down arrow */
+  content: "\02C5   "; /* Unicode character for down arrow */
 }
 
 blockquote p::before {
@@ -386,6 +388,10 @@ blockquote p::before {
 }
 blockquote p::after {
   content: '»';
+}
+
+blockquote {
+  font-family: 'print_clearlyregular';
 }
 
 @media (max-width: 1024px) {
