@@ -24,7 +24,7 @@
     <button id="theme-toggle" class="fas fa-toggle-off"></button>
     -
     
-        <a href="/en/space-odd-e-t/" onclick="storeLang('/en/')" class="language-link">French</a>
+        <a href="/fr/just-one-more-turn-part-two/" onclick="storeLang('/fr/')" class="language-link">English</a>
     
   </div>
   
@@ -76,18 +76,13 @@
 </div>
 <div class="middlecolumn">
   <article>
-    <h1>Space Odd E.T.</h1>
-    <h2></h2>
-    <p class=post-date>Posted on December 05, 2018 ·  minutes read</p>
+    <h1>Just one more turn... Part Two</h1>
+    <h2>35 Game Development Lessons from the creator of Civilization, Sid Meier.</h2>
+    <p class=post-date>Posted on July 25, 2021 · 15 minutes read</p>
     <!--<h1>Table Of Content</h1>
     <div id="table_of_content"></div>-->
     <div id="content">
-      <p>Space Odd E.T. was made during the <a href="https://itch.io/jam/gmtk-2018">Game Maker's Toolkit Jam</a>. The theme was <a href="https://www.youtube.com/watch?v=_-bA1ZQWhUU">GENRE, but you can’t MECHANIC</a>. We (team of 5) choose to make a <strong>platformer without gravity</strong>. You control a little robot lost in space, trying to reach radio towers by jumping from platform to platform.</p>
-<p>https://www.youtube.com/watch?v=_-bA1ZQWhUU</p>
-<p>I mainly worked on <strong>designing and implementing gameplay mechanics</strong>, but also on <strong>level design</strong> and visual/audio polishing.</p>
-<p>https://www.youtube.com/watch?v=bmxMElmQUBw&amp;t=5s</p>
-<h2><a href="https://darenn.itch.io/spaceoddet">Get the game here!</a></h2>
-
+      
     </div>
   </article>
 </div>
@@ -104,10 +99,9 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
     var div = document.createElement('div');
-    coll[i].classList.add('collapsible-button');
     div.classList.add('collapsible-content');
     var content = coll[i].nextElementSibling;
-    while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
+    while (content != null && content.nodeName != "H3") {
       var nextSiblingToCheck = content.nextElementSibling
       div.appendChild(content);
       var content = nextSiblingToCheck;

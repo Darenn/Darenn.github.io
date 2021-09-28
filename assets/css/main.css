@@ -63,7 +63,7 @@ article img {
 article img:hover {
   opacity: 100%;
   transition: 1s;
-  transform: scale(1.7);
+  transform: scale(1.1);
 }
 
 h1 {
@@ -340,6 +340,54 @@ th, td {
   transition: 1s;
 }
 
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.8s ease-out;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button {
+  font-family: "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible-button:hover {
+  border: solid;
+  transition: border 0.2s ease-out;
+}
+
+.collapsible-button:before {
+  content: '\02C3  '; /* Unicode character for right arrow */
+  font-size: 22px;
+  color: #444;
+  margin-left: 5px;
+}
+
+.section-read:after {
+  content: '\2713';
+  float: right;
+}
+
+.collapsible-button.active:before {
+  content: "\02C5  "; /* Unicode character for down arrow */
+}
+
+blockquote p::before {
+  content: "«";
+}
+blockquote p::after {
+  content: '»';
+}
+
 @media (max-width: 1024px) {
 
   article img {
@@ -360,7 +408,7 @@ th, td {
   display: block;
   width:20%;
   opacity: 0%;
-}
+} 
 
 }
 

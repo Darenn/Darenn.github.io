@@ -117,23 +117,42 @@ It was great and very interesting to think freely of any game concept I want and
 
 <script>
 
-// name smth myslide and it will use a slide thing.
-var slideIndex = 1;
-showDivs(slideIndex);
+var coll = document.getElementsByTagName("H3")
+var lastContentOpened;
+var i;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+for (i = 0; i < coll.length; i++) {
+    var div = document.createElement('div');
+    coll[i].classList.add('collapsible-button');
+    div.classList.add('collapsible-content');
+    var content = coll[i].nextElementSibling;
+    while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
+      var nextSiblingToCheck = content.nextElementSibling
+      div.appendChild(content);
+      var content = nextSiblingToCheck;
+    }
+    coll[i].insertAdjacentElement('afterend', div);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
+  for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    // add the check logo when clicked
+    if(!this.classList.contains("section-read")) {
+        this.classList.add("section-read");
+    } 
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      content.style.maxHeight = content.scrollHeight + "px";
+      lastContentOpened = content;
+    }
+  });
+
+  
 }
 </script>
 
