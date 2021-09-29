@@ -67,15 +67,18 @@ article img:hover {
 }
 
 h1 {
-  font-family: "Optima", "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 1.8em;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "print_clearlyregular", "Helvetica", "Arial", sans-serif;
+  font-family: "Futura", "Helvetica", "Arial", sans-serif;
 }
 
 
@@ -172,8 +175,9 @@ h2, h3, h4, h5, h6 {
 }
 
 article {
-  font-family: "print_boldregular", "Monaco", "Monospace", sans-serif;
-  font-size: 2em;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1.3em;
 }
 
 article a {
@@ -352,7 +356,7 @@ th, td {
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-button {
   font-family: "print_clearlyregular";
-  font-size: 1.2em;
+  font-size: 1.4em;
   cursor: pointer;
   padding: 18px;
   width: 100%;
