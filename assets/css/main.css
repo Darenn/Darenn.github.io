@@ -233,14 +233,11 @@ iframe {
 
   
 #fixed-zone {
-  position: absolute;
-  display: block;
-  width:20%;
-  opacity: 0%;
+  display: none;
 } 
 
 #right_fixed-zone {
-  opacity: 0%;
+  display: none;
 }
 
 }
