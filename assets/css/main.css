@@ -21,6 +21,9 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
+  text-align: center;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 100;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -236,8 +239,11 @@ iframe {
   opacity: 0%;
 } 
 
+#right_fixed-zone {
+  opacity: 0%;
 }
 
+}
 
 #xp_point {   
   height: 50px;

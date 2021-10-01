@@ -22,6 +22,7 @@ function updateRewardLabels() {
 
 // Set all usefull variables and cookies for progression
 function initProgression () {
+  if (isMobile()) return;
   levelBar = document.getElementById("level_bar");
   xpLabel = document.getElementById("xp_label");
   levelLabel = document.getElementById("level_label"); 
@@ -42,6 +43,7 @@ function initProgression () {
 }
 
 function gainOneXp() {
+  if (isMobile()) return;
   new Audio("/assets/sounds/Pickup_XP_03.wav").play();
   var old_xp = parseInt(localStorage.getItem("xp"));
   var new_xp = old_xp + 1;
@@ -74,12 +76,17 @@ function gainOneXp() {
 }
 
 function levelUp() {
+  if (isMobile()) return;
   var new_level = parseInt(localStorage.getItem("level")) + 1;
   support_zone.classList.add("animate__animated", "animate__fadeInRight");
   div.classList.add('collapsible-content'); 
   localStorage.setItem("level", new_level.toString());
   new Audio("/assets/sounds/victory.mp3").play();
   updateRewardLabels();
+}
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
 

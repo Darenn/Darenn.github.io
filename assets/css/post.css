@@ -90,8 +90,7 @@ article img {
   }
   
   .section-read:after {
-    content: '\2713';
-    float: right;
+    content: '  \2713';
     color: #00cc99;
   }
   
