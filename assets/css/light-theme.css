@@ -24,18 +24,18 @@ h2, h3, h4, h5, h6 {
 
   /* Style the topnav links */
 .topnav a {
-    color: #6F8995;
+    color: #006a4e;
   }
 
   .socials a {
     color: #413B40;
   }
 
-  .header-description {
+  #header-description {
   }
 
   article a {
-    color: #99CEC1;
+    color: #006a4e;
   }
 
   body {
@@ -80,4 +80,21 @@ h2, h3, h4, h5, h6 {
 
   .page-status {
     color: #413B40;
+  }
+
+ #level_bar_background {
+    border: 1px solid #413B40;
+  }
+
+  #level_label {
+    color: #413B40;
+  }
+  
+  #xp_label {
+    color: #413B40;
+  }
+
+  
+  #rank-label {
+    color: #006a4e;
   }

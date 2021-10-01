@@ -7,9 +7,6 @@
 /* font-family: 'Helvetica'; */
 }
 
-strong {
-  font-size: 1.2em;
-}
 
 .header {
   text-align: left;
@@ -24,14 +21,13 @@ footer {
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-  color:
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .main-content  {
     width: 100%;
-  margin: 0;
+    margin: 0;
   }
 
   .header {
@@ -48,39 +44,16 @@ footer {
   }
 }
 
-article img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  transition: 1s;
-  margin-top: 5%;
-  margin-bottom: 3%;
-  border-radius: 2px;
-  opacity: 50%;
-}
-
-article img:hover {
-  opacity: 100%;
-  transition: 1s;
-  transform: scale(1.1);
-}
-
 h1 {
-  font-family: "Lato", "Lucida Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", "Futura", sans-serif;
   font-weight: 400;
 }
 
 h2 {
-  font-family: "Lato";
+  font-family: "Lato", "Futura", sans-serif;
   font-weight: 100;
   font-size: 1.8em;
 }
-
-h2, h3, h4, h5, h6 {
-  font-family: "Futura", "Helvetica", "Arial", sans-serif;
-}
-
 
 .topnav {
   text-align: right;
@@ -92,6 +65,8 @@ h2, h3, h4, h5, h6 {
 /* Change color on hover */
 .topnav a:hover {
   font-style: bold;
+  border-top: 1px solid;
+  transition: 0.2s;
 }
 
 .topnav a.active {
@@ -104,7 +79,7 @@ h2, h3, h4, h5, h6 {
   padding: 1% 1%;
   text-decoration: none;
   font-size: 150%;
-  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
+  font-family: "Lato", "Futura", sans-serif;
 }
 
 .site-title {
@@ -168,70 +143,6 @@ h2, h3, h4, h5, h6 {
   transition: 0.2s;
 }
 
-.header-description {
-  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
-  font-size: 1.5em;
-  opacity: 50%;
-}
-
-article {
-  font-family: "Lato";
-  font-weight: 300;
-  font-size: 1.3em;
-}
-
-article a {
-}
-
-body {
-}
-
-#pacman {
-  float: right;
-}
-
-.post-card img {
-  width: 170px;
-  height:170px;
-  object-fit: cover;
-  float: right;
-  margin-right: 10%;
-  border-radius: 2px;
-}
-
-.post-card-title {
-  margin:0;
-  font-size: 270%;
-  line-height: 80%;
-}
-
-.post-card-brief {
-  font-size: 120%;
-  margin:0;
-  line-height: 100%;
-  margin-top: 1%;
-  margin-bottom: 2%;
-  margin-right: 30%;
-}
-
-.post-card-date {
-  margin: 0;
-  font-size: 90%;
-  margin-top: 3%;
-  opacity: 50%;
-}
-
-.post-card a {
-  text-decoration: none;
-}
-
-.post-card {
-  margin-top:6%;
-  margin-bottom:6%;
-  width:85%;
-  height: 30%;
-  margin-left: 2%;
-}
 
 iframe {
   display: block;
@@ -239,34 +150,9 @@ iframe {
   margin-right: auto;
 }
 
-blockquote {
-  font-style:italic;
-  font-family: "Monaco";
-  border-radius:5px;
-  padding: 1% 1% 2% 2%;
-}
-
-.small-remark {
-  font-style:italic;
-  font-size: 60%;
-  opacity:50%;
-}
-
-.ytb-video {
-  margin-bottom: 5%;
-}
-
-th, td {
-  border-bottom: 1px solid #FAF2EC;
-  padding: 15px;
-  text-align: left;
-  font-size: 80%;
-}
-
-#table_of_content {
-}
-
 #site-title {
+  font-family: "Lato";
+  font-weight: 100;
   line-height: 100%;
 }
 
@@ -291,14 +177,11 @@ th, td {
   width:20%;
 }
 
-.post-date {
-  font-size: 70%;
-}
-
 .language-link {
   text-decoration: none;
   margin-top: 15px;
-  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 100;
   font-size: 1.5em;
 }
 
@@ -308,17 +191,14 @@ th, td {
   margin-top: 5%;
 }
 
-.support-zone {
-  margin-top: 170%;
-  font-family: "Consolas", "Monaco", "Monospace", sans-serif;
+#support-zone {
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 100;
   font-size: 1.5em;
-  opacity: 50%;
+  opacity: 0%;
   transition: 1s;
-}
-
-.support-zone:hover {
-  opacity: 100%;
-  transition: 1s;
+  clear: both;
+  float: right;
 }
 
 .tip-button {
@@ -345,72 +225,8 @@ th, td {
   transition: 1s;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.collapsible-content {
-  padding: 0 18px;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.8s ease-out;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible-button {
-  font-family: "print_clearlyregular";
-  font-size: 1.4em;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible-button:hover {
-  border: solid;
-  transition: border 0.1s ease-out;
-}
-
-.collapsible-button:before {
-  content: '\02C3   '; /* Unicode character for right arrow */
-  font-size: 22px;
-  color: #444;
-  margin-left: 5px;
-}
-
-.section-read:after {
-  content: '\2713';
-  float: right;
-}
-
-.collapsible-button.active:before {
-  content: "\02C5   "; /* Unicode character for down arrow */
-}
-
-blockquote p::before {
-  content: "«";
-}
-blockquote p::after {
-  content: '»';
-}
-
-blockquote {
-  font-family: 'print_clearlyregular';
-}
 
 @media (max-width: 1024px) {
-
-  article img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    transition: 1s;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    border-radius: 2px;
-    opacity: 100%;
-  }
 
   
 #fixed-zone {
@@ -420,5 +236,65 @@ blockquote {
   opacity: 0%;
 } 
 
+}
+
+
+#xp_point {   
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  position:fixed;
+  display: none;
+  top:50px;
+  left:70px;
+} 
+
+#level_bar_background {
+  clear: both;
+  border: 2px solid white;
+  border-radius: 5px;
+  opacity: 30%;
+}
+
+#level_bar {
+  border-radius: 5px;
+}
+
+#level_label {
+  float: left;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 300;
+}
+
+#xp_label {
+  float: right;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 300;
+}
+
+#right_fixed-zone {
+  position        : fixed;
+  top             : 0%;
+  left            : 78%;
+  width:20%;
+}
+
+#xp_zone {
+  width: 80%;
+  float: right;
+}
+
+#rank-label {
+  text-align: center;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#header-description {
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
 }
 

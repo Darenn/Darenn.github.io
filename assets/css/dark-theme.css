@@ -32,12 +32,12 @@ h2, h3, h4, h5, h6 {
     color: #FAF2EC;
   }
 
-  .header-description {
+  #header-description {
     color: #FAF2EC;
   }
 
   article a {
-    color: #99CEC1;
+    color: #00cc99;
   }
 
   body {
@@ -84,4 +84,25 @@ h2, h3, h4, h5, h6 {
 
   .page-status {
     color: #FAF2EC;
+  }
+
+  #level_bar_background {
+    border: 1px solid #FAF2EC;
+  }
+
+  hr {
+    color: #FAF2EC;
+  }
+
+  #level_label {
+    color: #FAF2EC;
+  }
+  
+  #xp_label {
+    color: #FAF2EC;
+  }
+
+  
+  #rank-label {
+    color: #00cc99;
   }

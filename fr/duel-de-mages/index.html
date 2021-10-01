@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
   <link rel="stylesheet" href="/assets/css/w3.css">
   <link rel="stylesheet" href="/assets/css/fonts/printfont.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/post.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link id="theme" rel="stylesheet" type="text/css" href="/assets/css/light-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> <!-- https://animate.style/ -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +25,21 @@
   <script src="/assets/js/html_table_of_contents.js"></script>
   <script src="/assets/js/lang.js"></script>
   <script src="/assets/js/darkmodebutton.js"></script>
+  <script src="/assets/js/reward_progression.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKP4ES7P39"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZKP4ES7P39');
+  </script>
+
   <title></title>
 </head>
+<div id="xp_point"></div>
 <div id="fixed-zone">
   <div class ="page-status">
     <i class="fas fa-moon fa-lg black"></i>
@@ -29,25 +48,41 @@
     
         <a href="/en/duel-de-mages/" onclick="storeLang('/en/')" class="language-link">French</a>
     
+      
   </div>
-  
-  <div class="support-zone">  
-  <p>
-    Did you level up ?<br/>
-    Help me get more EXP for you.</p>
-    <!--<script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>-->
-    <!--<noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>-->
-    <!--<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>-->
-    <div>
-      <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
-    </div>
-    
-    <div>
-      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
-      <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    </div>
-  </div>
+  <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="80%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:200%; float: left; border-radius:5px;"></iframe>
 </div>
+
+<div id="right_fixed-zone">
+    <div id="xp_zone">
+      <p id="level_label">level 0</p>
+      <p id="xp_label">0 XP</p>
+      <p id="rank-label">GD Noob</p>
+      
+      <div id="level_bar_background" class="w3-center">
+        <div id="level_bar" class="" style="height:12px; width:20%; background-color:#00cc99"></div>
+      </div>
+    </div>
+
+
+    <div id="support-zone">  
+      <p style="float: right; text-align:right;">
+        Level Up !<br/>
+        You're a better GD now.<br/>
+        </p>
+        <!--<script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>-->
+        <!--<noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>-->
+        <!--<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>-->
+        <!--<div>
+          <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
+        </div>-->
+        
+      <div style="float:right;">
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+      </div>
+    </div>
+  </div>
 
 
 <div class="header">
@@ -60,9 +95,9 @@
     <a class="medium-icon" href="https://medium.com/@keller.darenn" target="_blank"> <i class="fab fa-medium fa-lg"></i></a>
     <a class="reddit-icon" href="https://www.reddit.com/user/DarennKeller" target="_blank"> <i class="fab fa-reddit-square fa-lg"></i></a>
   </nav>
-  <a class="site-title-link" href= "/"><h1 id="site-title">Meaningful Choices </br> in </br>Magic Circles</h1></a>
-  <p class="header-description">I'm Darenn Keller, Game Designer at Ubisoft.</br>
-    I write about Game Development and Lifestyle.</p>
+  <a class="site-title-link" href= "/"><h1 id="site-title">Darenn Keller</h1></a>
+  <p id="header-description">Game Designer at Ubisoft.<br/>
+    Writing about Game Development and Lifestyle.</p>
   <nav class="topnav">
     <a id="home_nav" href="/">home</a>
     <!--<a id="articles_nav" href="/pages/articles">articles</a>-->
@@ -82,8 +117,6 @@
     <h1>Duel de mages</h1>
     <h2></h2>
     <p class=post-date>Posted on December 09, 2018 ·  minutes read</p>
-    <!--<h1>Table Of Content</h1>
-    <div id="table_of_content"></div>-->
     <div id="content">
       <p>This prototype was made during a school workshop: we were asked to design an alt game for <strong>cognitively impaired players</strong>.</p>
 <p>https://www.youtube.com/watch?v=ikI-KbsqheM</p>
@@ -154,6 +187,9 @@ for (i = 0; i < coll.length; i++) {
     coll[i].classList.add('collapsible-button');
     div.classList.add('collapsible-content');
     var content = coll[i].nextElementSibling;
+    if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
+      coll[i].classList.add('section-read');
+    }
     while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
       var nextSiblingToCheck = content.nextElementSibling
       div.appendChild(content);
@@ -169,6 +205,8 @@ for (i = 0; i < coll.length; i++) {
     // add the check logo when clicked
     if(!this.classList.contains("section-read")) {
         this.classList.add("section-read");
+        localStorage.setItem(window.location.href + this.innerHTML,"true")
+        gainOneXp();
     } 
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
@@ -187,10 +225,23 @@ for (i = 0; i < coll.length; i++) {
 </div>
 
 <footer>
+  <div>
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me write more articles', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  </div>
   <p>© Darenn Keller 2021 </p>
 
 </footer>
 
-<script>plugDarkModButton("/assets/css/");</script>
+<script>
+  plugDarkModButton("/assets/css/");
+  initProgression ();
+  var mousePosX = 0;
+  var mousePosY = 0;
+  document.addEventListener('mousemove', (event) => {
+    mousePosX = event.clientX;
+    mousePosY = event.clientY;
+  });
+</script>
 </body>
 </html>
