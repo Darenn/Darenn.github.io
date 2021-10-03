@@ -1,6 +1,6 @@
 // Index is the reader level
 var rankArray = ['GD Noob', 'GD Minion', 'GD Scout', 'GD Footman', 'GD Knight', 'GD Captain', 'GD Wizard', 'GD King', 'GD Emperor'];
-var xpPerLevel = 10;
+var xpPerLevel = 25;
 
 var levelBar ;
 var xpLabel;
@@ -44,7 +44,7 @@ function initProgression () {
 
 function gainOneXp() {
   if (isMobile()) return;
-  new Audio("/assets/sounds/Pickup_XP_03.wav").play();
+  //new Audio("/assets/sounds/Pickup_XP_03.wav").play();
   var old_xp = parseInt(localStorage.getItem("xp"));
   var new_xp = old_xp + 1;
   localStorage.setItem("xp", (new_xp).toString())
