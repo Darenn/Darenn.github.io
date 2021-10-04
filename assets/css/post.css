@@ -4,8 +4,12 @@ h3, h4, h5, h6 {
 
 h2 {
     font-family: "Lato", "Futura", sans-serif;
-    font-weight: 300;
-    font-size: 1.2em;
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+h1 {
+  font-size: 2em;
 }
 
 article img {
@@ -39,8 +43,8 @@ article img {
   
   .small-remark {
     font-style:italic;
-    font-size: 60%;
-    opacity:50%;
+    font-size: 80%;
+    opacity:80%;
   }
   
   .ytb-video {
@@ -127,5 +131,51 @@ article img {
 hr {
   width: 80%;
   margin-left: 10%;
+}
+
+#table_of_content {
+  
+  overflow-y: auto;
+  max-height: 450px;
+  direction: rtl;
+  
+}
+
+#table_of_content_container {
+  margin-top: 55%;
+  margin-left:-10%;
+}
+
+.h2, .h3 {
+  margin-left: 2%;
+  direction: ltr;
+  font-family: "Lato", "Futura", sans-serif;
+  font-weight: 300;
+}
+
+.h3 {
+  margin-left: 5%;
+}
+
+.h2 a, .h3 a{
+  
+  font-size: 1em;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.h2 {
+  font-size: 1.2em
+}
+
+.h2 a:hover {
+  font-size: 1.3em;
+}
+
+.h3 a:hover {
+  font-size: 1.1em;
+  text-decoration: underline;
+  transition: .3s;
+  font-style: bold;
 }
   

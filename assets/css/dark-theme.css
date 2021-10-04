@@ -110,3 +110,23 @@ h2, h3, h4, h5, h6 {
   footer {
     color: #FAF2EC;
   }
+
+  ::-webkit-scrollbar-track {
+    background: #413B40; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #FAF2EC; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #006a4e; 
+  }
+
+  #support-zone p {
+    color: #FAF2EC;
+  }
+
+  .h3, .h2 {
+    color: #FAF2EC;
+  }

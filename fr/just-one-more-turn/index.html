@@ -39,7 +39,6 @@
 
   <title></title>
 </head>
-<div id="xp_point"></div>
 <div id="fixed-zone">
   <div class ="page-status">
     <i class="fas fa-moon fa-lg black"></i>
@@ -50,7 +49,11 @@
     
       
   </div>
-  <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:200%; float: left; border-radius:5px;"></iframe>
+  
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <div id = "table_of_content"></div>
+  </div>
 </div>
 
 <div id="right_fixed-zone">
@@ -82,6 +85,9 @@
         <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
       </div>
     </div>
+
+    <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:160%; float: right; border-radius:5px;"></iframe>
+
   </div>
 
 
@@ -116,6 +122,7 @@
   <article>
     <h1>Encore un tour...</h1>
     <h2>Conseils et astuces pour le développement de jeux vidéo par le créateur de Civilization, Sid Meier.</h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
     <p class=post-date>Posted on July 25, 2021 · 20 minutes read</p>
     <div id="content">
       <p><img src="/assets/images/articles/JustOneMoreTurn/sidmeier.jpg" alt="Photo Of Sid Meier"></p>
@@ -223,10 +230,10 @@ Ainsi, du point de vue du concepteur, une IA brillante n'est généralement pas 
 <p>C'est surtout vrai lorsque vous jouez contre l'IA, nous avons besoin d'une IA amusante, pas d'une IA intelligente. Mais je peux penser à deux exemples où nous devrions essayer d'avoir une IA brillante.</p>
 <ol>
 <li>
-<p><em>Pour effrayer le joueur</em>. Dans <em>Alien Isolation</em>, le joueur tente de survivre et de progresser dans l'histoire tout en étant traqué par un Alien. L'IA &quot;brillante&quot; de cet Alien a été acclamée. Elle intensifie vraiment l'horreur du jeu. Une IA intelligente est effrayante à cause de cette imprévisibilité qui n'est généralement pas amusante quand on l'affronte.</p>
+<p><strong>Pour effrayer le joueur</strong>. Dans <em>Alien Isolation</em>, le joueur tente de survivre et de progresser dans l'histoire tout en étant traqué par un Alien. L'IA &quot;brillante&quot; de cet Alien a été acclamée. Elle intensifie vraiment l'horreur du jeu. Une IA intelligente est effrayante à cause de cette imprévisibilité qui n'est généralement pas amusante quand on l'affronte.</p>
 </li>
 <li>
-<p><em>Aider le joueur</em>. Lorsque vous faites équipe avec l'IA, disons dans des jeux compétitifs comme Overwatch, League Of Legends, etc... Je pense que c'est une bonne chose d'avoir une IA brillante quand elle joue dans notre équipe. Au moins pour compenser le fait que le joueur quitte le jeu prématurément par exemple.</p>
+<p><strong>Pour aider le joueur</strong>. Lorsque vous faites équipe avec l'IA, disons dans des jeux compétitifs comme Overwatch, League Of Legends, etc... Je pense que c'est une bonne chose d'avoir une IA brillante quand elle joue dans notre équipe. Au moins pour compenser le fait que le joueur quitte le jeu prématurément par exemple.</p>
 </li>
 </ol>
 <h4>Un retour est toujours vrai. (Feedback is Fact)</h4>
@@ -357,6 +364,10 @@ En guise de clin d'oeil amical à notre producteur chez EA, Bing Gordon, j'ai no
 <p>Si vous avez besoin de plus de détails, ou si vous voulez simplement profiter d'une belle histoire, je vous invite à vous procurer le [livre] (https://amzn.to/2XWfeOk &quot;Link to the Sid Meier's Memoir&quot;).</p>
 <p>Quelle est votre leçon préférée ? Quels sont les conseils que vous n'approuvez pas ? Quelque chose à ajouter à propos de l'un d'entre eux ?
 N'hésitez pas à laisser un commentaire sur votre plateforme préférée, je suis impatient de le lire.</p>
+<h2>Sources.</h2>
+<p><a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">Sid Meier's Memoir book</a></p>
+<p><a href="https://www.youtube.com/watch?v=AJ-auWfJTts&amp;list=WL&amp;index=27">GDC Classic Game Postmortem: Sid Meier's Civilization </a></p>
+<p><a href="https://www.youtube.com/watch?v=MtzCLd93SyU&amp;list=WL&amp;index=26">Sid Meier's Psychology of Game Design</a></p>
 <h2>Cet article est financé par mes supporters</h2>
 <p>Un grand Merci à :
 damien et Móey Mei</p>
@@ -371,48 +382,52 @@ damien et Móey Mei</p>
 
 <script>
 
-var coll = document.getElementsByTagName("H3")
-var lastContentOpened;
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    var div = document.createElement('div');
-    coll[i].classList.add('collapsible-button');
-    div.classList.add('collapsible-content');
-    var content = coll[i].nextElementSibling;
-    if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
-      coll[i].classList.add('section-read');
-    }
-    while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
-      var nextSiblingToCheck = content.nextElementSibling
-      div.appendChild(content);
-      var content = nextSiblingToCheck;
-    }
-    coll[i].insertAdjacentElement('afterend', div);
-}
+function transformIntoCollapsible(elements) {
+  var i;
 
   for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+      var div = document.createElement('div');
+      coll[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = coll[i].nextElementSibling;
+      if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
+        coll[i].classList.add('section-read');
+      }
+      while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      coll[i].insertAdjacentElement('afterend', div);
+  }
 
-    // add the check logo when clicked
-    if(!this.classList.contains("section-read")) {
-        this.classList.add("section-read");
-        localStorage.setItem(window.location.href + this.innerHTML,"true")
-        gainOneXp();
-    } 
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-      content.style.maxHeight = content.scrollHeight + "px";
-      lastContentOpened = content;
-    }
-  });
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      lastSectionOpenened = this;
+      this.classList.toggle("active");
 
-  
+      // add the check logo when clicked
+      if(!this.classList.contains("section-read")) {
+          this.classList.add("section-read");
+          localStorage.setItem(window.location.href + this.innerHTML,"true")
+          gainOneXp();
+      } 
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        content.style.maxHeight = content.scrollHeight + "px";
+        lastContentOpened = content;
+      }
+    });
+  }
 }
+
+var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll);
+
+htmlTableOfContents();
 </script>
 
 </div>

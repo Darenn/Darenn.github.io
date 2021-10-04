@@ -300,4 +300,8 @@ iframe {
   font-weight: 300;
   font-size: 1.5em;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
 

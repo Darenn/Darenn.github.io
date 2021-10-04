@@ -39,7 +39,6 @@
 
   <title></title>
 </head>
-<div id="xp_point"></div>
 <div id="fixed-zone">
   <div class ="page-status">
     <i class="fas fa-moon fa-lg black"></i>
@@ -50,7 +49,11 @@
     
       
   </div>
-  <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:200%; float: left; border-radius:5px;"></iframe>
+  
+  <div id="table_of_content_container">
+    <h2 style="margin-left:5%;">Table Of Content</h2>
+    <div id = "table_of_content"></div>
+  </div>
 </div>
 
 <div id="right_fixed-zone">
@@ -82,6 +85,9 @@
         <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
       </div>
     </div>
+
+    <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:160%; float: right; border-radius:5px;"></iframe>
+
   </div>
 
 
@@ -116,6 +122,7 @@
   <article>
     <h1>Sim Texture Creator</h1>
     <h2></h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
     <p class=post-date>Posted on December 27, 2017 ·  minutes read</p>
     <div id="content">
       <p>One of the tasks I had to do during Visual Design courses was to create a portrait of something, without any constraints. I thought that realizing a portrait using my programming skill would be very fun and interesting and I decided to do so. Wishing to learn more about texture generation methods, I created this Sim Texture Creator. This “game” creates a “portrait” texture relative to the name and character traits of a person. I reused the character traits that we can find in the game The Sims 2. Obviously, it’s *my* portrait of a person. Everything is based on my personal feeling. For example, for a serious person, the algorithm will use value noise, because I found that it produced more checkered textures. A shy person will have a low-resolution texture, etc…</p>
@@ -132,48 +139,52 @@
 
 <script>
 
-var coll = document.getElementsByTagName("H3")
-var lastContentOpened;
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    var div = document.createElement('div');
-    coll[i].classList.add('collapsible-button');
-    div.classList.add('collapsible-content');
-    var content = coll[i].nextElementSibling;
-    if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
-      coll[i].classList.add('section-read');
-    }
-    while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
-      var nextSiblingToCheck = content.nextElementSibling
-      div.appendChild(content);
-      var content = nextSiblingToCheck;
-    }
-    coll[i].insertAdjacentElement('afterend', div);
-}
+function transformIntoCollapsible(elements) {
+  var i;
 
   for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+      var div = document.createElement('div');
+      coll[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = coll[i].nextElementSibling;
+      if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
+        coll[i].classList.add('section-read');
+      }
+      while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      coll[i].insertAdjacentElement('afterend', div);
+  }
 
-    // add the check logo when clicked
-    if(!this.classList.contains("section-read")) {
-        this.classList.add("section-read");
-        localStorage.setItem(window.location.href + this.innerHTML,"true")
-        gainOneXp();
-    } 
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-      content.style.maxHeight = content.scrollHeight + "px";
-      lastContentOpened = content;
-    }
-  });
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      lastSectionOpenened = this;
+      this.classList.toggle("active");
 
-  
+      // add the check logo when clicked
+      if(!this.classList.contains("section-read")) {
+          this.classList.add("section-read");
+          localStorage.setItem(window.location.href + this.innerHTML,"true")
+          gainOneXp();
+      } 
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        content.style.maxHeight = content.scrollHeight + "px";
+        lastContentOpened = content;
+      }
+    });
+  }
 }
+
+var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll);
+
+htmlTableOfContents();
 </script>
 
 </div>
