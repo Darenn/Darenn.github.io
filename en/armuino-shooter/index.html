@@ -57,7 +57,7 @@
 </div>
 
 <div id="right_fixed-zone">
-    <div id="xp_zone">
+    <!--<div id="xp_zone">
       <p id="level_label">level 0</p>
       <p id="xp_label">0 XP</p>
       <p id="rank-label">GD Noob</p>
@@ -73,26 +73,26 @@
         Level Up !<br/>
         You're a better GD now.<br/>
         </p>
-        <!--<script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>-->
-        <!--<noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>-->
-        <!--<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>-->
-        <!--<div>
+        <script src="https://liberapay.com/DarennKeller/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/DarennKeller/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="darennkeller" data-color="#FFDD00" data-emoji=""  data-font="Inter" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        <div>
           <a href="https://fr.tipeee.com/darennkeller" target="_blank"><img class = "tip-button" src="/assets/images/pages/tipeee_tip_btn.svg"/></a>
-        </div>-->
+        </div>
         
       <div style="float:right;">
         <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help me find more XP', '#29abe0', 'B0B25GOJO');kofiwidget2.draw();</script> 
         <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
       </div>
-    </div>
+    </div>-->
 
-    <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:160%; float: right; border-radius:5px;"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/1PTgWwVAjvJktyxbDRsOlr" width="250px" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="margin-top:5%; float: right; border-radius:5px;"></iframe>
 
   </div>
 
 
 <div class="header">
-  <nav class="socials">
+ <nav class="socials">
     <a class="twitter-icon" href="https://twitter.com/DarennKeller" target="_blank"> <i class="fab fa-twitter-square fa-lg"></i></a>
     <a class="linkdin-icon" href="https://www.linkedin.com/in/darennkeller/" target="_blank"> <i class="fab fa-linkedin fa-lg"></i></a>
     <a class="github-icon" href="https://github.com/Darenn" target="_blank"> <i class="fab fa-github-square fa-lg"></i></a>
@@ -154,52 +154,50 @@
 
 <script>
 
-function transformIntoCollapsible(elements) {
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
+function transformIntoCollapsible(elements, includeFunction) {
+  for (var i = 0; i < elements.length; i++) {
       var div = document.createElement('div');
-      coll[i].classList.add('collapsible-button');
+      elements[i].classList.add('collapsible-button');
       div.classList.add('collapsible-content');
-      var content = coll[i].nextElementSibling;
-      if (localStorage.getItem(window.location.href + coll[i].innerHTML)) {
-        coll[i].classList.add('section-read');
-      }
-      while (content != null && content.nodeName != "H3" && content.nodeName != "H2") {
+      var content = elements[i].nextElementSibling;
+      while (includeFunction(content)) {
         var nextSiblingToCheck = content.nextElementSibling
         div.appendChild(content);
         var content = nextSiblingToCheck;
       }
-      coll[i].insertAdjacentElement('afterend', div);
+      elements[i].insertAdjacentElement('afterend', div);
   }
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      lastSectionOpenened = this;
-      this.classList.toggle("active");
-
-      // add the check logo when clicked
-      if(!this.classList.contains("section-read")) {
-          this.classList.add("section-read");
-          localStorage.setItem(window.location.href + this.innerHTML,"true")
-          gainOneXp();
-      } 
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        content.style.maxHeight = content.scrollHeight + "px";
-        lastContentOpened = content;
-      }
-    });
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", onCollapsibleButtonClicked);
   }
 }
 
-var coll = document.getElementsByTagName("H3")
-transformIntoCollapsible(coll);
+function onCollapsibleButtonClicked() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    content.style.maxHeight = content.scrollHeight + "px";
+    lastContentOpened = content;
+  }
+}
 
 htmlTableOfContents();
+
+/*var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && content.nodeName != "H3" && content.nodeName != "H2"
+});*/
+
+var coll = document.getElementsByClassName("h3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && !content.classList.contains("h3")
+});
+
+
 </script>
 
 </div>
@@ -215,13 +213,7 @@ htmlTableOfContents();
 
 <script>
   plugDarkModButton("/assets/css/");
-  initProgression ();
-  var mousePosX = 0;
-  var mousePosY = 0;
-  document.addEventListener('mousemove', (event) => {
-    mousePosX = event.clientX;
-    mousePosY = event.clientY;
-  });
+  //initProgression ();
 </script>
 </body>
 </html>

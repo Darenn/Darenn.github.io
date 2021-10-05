@@ -10,7 +10,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .topnav {
-    border-bottom: 2px solid #DFD1C6;
+    border-bottom: 2px solid #413B40;
 }
 
 /* Change color on hover */
@@ -35,7 +35,7 @@ h2, h3, h4, h5, h6 {
   }
 
   article a {
-    color: #006a4e;
+    color: #00cc99;
   }
 
   body {
@@ -50,8 +50,7 @@ h2, h3, h4, h5, h6 {
   }
 
   blockquote {
-    background-color: #413B40;
-    color:#DFD1C6;
+    color:#413B40;
   }
 
   th, td {
@@ -119,6 +118,12 @@ h2, h3, h4, h5, h6 {
     color: #413B40;
   }
 
-  .h3, .h2 {
+  .h3, .h2, .h4{
     color: #413B40;
   }
+
+  h3 {
+    background-color: #FAF2EC;
+  }
+
+  

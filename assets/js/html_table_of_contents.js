@@ -17,11 +17,16 @@ function htmlTableOfContents (documentRef) {
     var toc = documentRef.getElementById('table_of_content');
     var content = documentRef.getElementById('content');
     var headings = [].slice.call(content.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+
     headings.forEach(function (heading, index) {
+
+        // Add an anchor to the header
         var anchor = documentRef.createElement('a');
         anchor.setAttribute('name', 'toc' + index);
         anchor.setAttribute('id', 'toc' + index);
+        heading.parentNode.insertBefore(anchor, heading);
 
+        // Create a link pointing to the anchor
         var link = documentRef.createElement('a');
         link.setAttribute('href', '#toc' + index);
         link.textContent = heading.textContent;
@@ -31,7 +36,7 @@ function htmlTableOfContents (documentRef) {
 
         div.appendChild(link);
         toc.appendChild(div);
-        heading.parentNode.insertBefore(anchor, heading);
+        
     });
 }
 

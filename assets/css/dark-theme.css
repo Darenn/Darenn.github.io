@@ -11,7 +11,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .topnav {
-    border-bottom: 2px solid #DFD1C6;
+    border-bottom: 2px solid #FAF2EC;
 }
 
 /* Change color on hover */
@@ -53,8 +53,8 @@ h2, h3, h4, h5, h6 {
   }
 
   blockquote {
-    background-color: #FAF2EC;
-    color:#413B40;
+    background-color: #413B40;
+    color:#FAF2EC;
   }
 
   th, td {
@@ -127,6 +127,11 @@ h2, h3, h4, h5, h6 {
     color: #FAF2EC;
   }
 
-  .h3, .h2 {
+  .h3, .h2, .h4{
     color: #FAF2EC;
+  }
+
+  h3  {
+    background-color: #413B40;
+
   }
