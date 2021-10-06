@@ -25,6 +25,7 @@ h1 {
 h4 {
   font-size: 1.2em;
   font-weight: 600;
+  margin-top: 5%;
 }
 
 article img {
@@ -33,11 +34,11 @@ article img {
     margin-right: auto;
     width: auto;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 600px;
     transition: 1s;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-top: 8%;
+    margin-bottom: 8%;
     border-radius: 2px;
   }
   
@@ -58,6 +59,8 @@ article img {
     clear: both;
     padding-left: 15px;
     border-left: solid 2px #00cc99;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   .small-remark {
