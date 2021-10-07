@@ -15,6 +15,7 @@
 function htmlTableOfContents (documentRef) {
     var documentRef = documentRef || document;
     var toc = documentRef.getElementById('table_of_content');
+    toc.parentNode.style.visibility = "visible";
     var content = documentRef.getElementById('content');
     var headings = [].slice.call(content.querySelectorAll('h1, h2, h3, h4, h5, h6'));
 
@@ -22,6 +23,7 @@ function htmlTableOfContents (documentRef) {
 
         // Add an anchor to the header
         var anchor = documentRef.createElement('a');
+        anchor.classList.add("anchor");
         anchor.setAttribute('name', 'toc' + index);
         anchor.setAttribute('id', 'toc' + index);
         heading.parentNode.insertBefore(anchor, heading);

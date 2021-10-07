@@ -177,6 +177,7 @@ hr {
   margin-top: 31%;
   margin-left:-10%;
   padding: 5px;
+  visibility: hidden;
 }
 
 .h2, .h3, .h4 {
