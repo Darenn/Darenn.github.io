@@ -24,13 +24,13 @@ function htmlTableOfContents (documentRef) {
         // Add an anchor to the header
         var anchor = documentRef.createElement('a');
         anchor.classList.add("anchor");
-        anchor.setAttribute('name', 'toc' + index);
-        anchor.setAttribute('id', 'toc' + index);
+        anchor.setAttribute('name', heading.innerHTML.replace(/\s/g, '-'));
+        anchor.setAttribute('id', heading.innerHTML.replace(/\s/g, '-'));
         heading.parentNode.insertBefore(anchor, heading);
 
         // Create a link pointing to the anchor
         var link = documentRef.createElement('a');
-        link.setAttribute('href', '#toc' + index);
+        link.setAttribute('href', '#'+ heading.innerHTML.replace(/\s/g, '-'));
         link.textContent = heading.textContent;
 
         var div = documentRef.createElement('div');

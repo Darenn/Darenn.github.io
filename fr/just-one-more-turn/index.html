@@ -48,12 +48,12 @@
     
       
 </div>
-<div id="fixed-zone">
+<aside id="fixed-zone">
   <div id="table_of_content_container">
     <h2 style="margin-left:5%;">Table Of Content</h2>
-    <div id = "table_of_content"></div>
+    <nav id = "table_of_content"></nav>
   </div>
-</div>
+</aside>
 
 <div id="right_fixed-zone">
     <!--<div id="xp_zone">
@@ -125,158 +125,142 @@
     <p class=post-date>Posted on July 25, 2021 · 20 minutes read</p>
     <div id="content">
       <p><img src="/assets/images/articles/JustOneMoreTurn/sidmeier.jpg" alt="Photo Of Sid Meier"></p>
-<p>Le jeu le plus célèbre de Sid Meier est sans aucun doute l'un de mes jeux de stratégie préférés : <em>Civilization</em>.
-Dans ses mémoires, il parle des moments clés de sa carrière et partage des anecdotes drôles et intéressantes qui en font un véritable plaisir à lire.
-Comme vous pouvez le deviner, il y a également beaucoup de conseils et de leçons de Game Design tout au long du livre, que je vais m'assurer que vous pouvez obtenir dans cet article. J'ai traduit moi même les citations depuis le livre en essayant d'interpréter le moins possible pour vous laisser ce qu'il y a de plus proche. Vous pouvez lire les citations originales sur la version anglaise de l'article.</p>
-<p>Si vous avez besoin de plus de détails, ou si vous voulez simplement profiter d'une belle histoire, je vous invite à vous procurer le <a href="https://amzn.to/3bJf0OF" title="Link to the Sid Meier's Memoir">livre</a>. <span class=small-remark>(tous les liens vers les produits sont des liens affiliés, vous payez le même prix et je reçois un petit pourcentage, merci pour votre soutien !).</span></p>
-<p><img src="/assets/images/articles/JustOneMoreTurn/sidmeierbook.jpg" alt="Photo of Sid Meier's Memoir book front cover"></p>
-<h3>Sa carrière.</h3>
-<p>Sid a commencé comme ingénieur en informatique et créait des jeux sur son temps libre. Il s'est associé à Bill Stealy à Las Vegas pour créer <a href="https://fr.wikipedia.org/wiki/MicroProse">MicroProse</a> et a commencé par des simulations de vol.</p>
-<p>Il voulait vraiment jouer la sécurité sur le plan financier. Au début, il ne travaillait que sur son temps libre, puis à temps partiel lorsqu'ils gagnaient un peu d'argent et enfin à temps plein lorsqu'ils gagnaient assez d'argent pour le payer. Ils étaient ce que nous appellerions aujourd'hui des &quot;indépendants&quot;, mais sans Internet, fabriquant eux-mêmes les copies sur des disquettes et les vendant directement aux petits magasins.</p>
-<p><img src="https://s2.qwant.com/thumbr/0x0/5/4/03ea17029c2cbfaa416fd9a5e3bdde826f6fe1fa5bd20cb8590abe5a4fff85/s-l400.jpg?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FI-AAAOSw-OVf94TI%2Fs-l400.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="Photo of civilization floppy disks"></p>
-<p>Au début, Sid faisait tout. Les visuels, la programmation, le son et la musique, la conception du jeu. Pour les jeux suivants, ils ont engagé des artistes et des concepteurs sonores afin qu'il puisse se concentrer sur la programmation et la conception des jeux. Plus tard, ils ont vendu la société. Bill a démissionné, puis Sid a suivi et a créé Firaxis.</p>
-<h3>Garder le joueur concentré sur ce qui est encore à venir.</h3>
+<h3>Introduction</h3>
+<p>L'œuvre la plus célèbre de Sid Meier est l'un de mes jeux de stratégie préférés : <em>Civilization</em>.</p>
+<p>Dans son mémoire, il parle des moments clés de sa carrière et partage des anecdotes amusantes et intéressantes qui en font un véritable plaisir à lire.</p>
+<p>Il y a également beaucoup de <strong>conseils et de leçons sur le développement de jeux</strong> tout au long du livre. Je vais m'assurer que vous les trouverez tous dans cet article.</p>
+<p><img src="/assets/images/articles/JustOneMoreTurn/sidmeierbook.jpg" alt="Photo de la couverture du livre Sid Meier's Memoir"></p>
+<p>Si vous avez besoin de plus de détails ou si vous voulez profiter d'une belle histoire, je vous invite à vous procurer le <a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">livre</a>.</p>
+<h4>La longue carrière de Sid (en très bref).</h4>
+<p>Sid a commencé comme ingénieur en programmation comptable. Lors d'un voyage à Las Vegas, il s'est associé à Bill Stealy pour créer le studio de jeux <a href="https://fr.wikipedia.org/wiki/MicroProse">MicroProse</a>. Il a commencé à créer des jeux de simulation de vol pendant son temps libre.</p>
+<p>Il travaille de plus en plus chez MicroProse, ne quittant son premier emploi que lorsque l'argent n'est plus un problème. Ils faisaient eux-mêmes la copie sur disquettes. Ils les vendaient même aux petits magasins des États-Unis, un par un.</p>
+<p><img src="https://s2.qwant.com/thumbr/0x0/5/4/03ea17029c2cbfaa416fd9a5e3bdde826f6fe1fa5bd20cb8590abe5a4fff85/s-l400.jpg?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FI-AAAOSw-OVf94TI%2Fs-l400.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="Photo of civilization floppy disks" title="Photo of civilization floppy disks"></p>
+<p>Au début, Sid faisait tout. Les visuels, la programmation, le son, la musique, la conception du jeu. Dans les jeux ultérieurs, ils ont engagé des artistes et des concepteurs sonores. Cela a permis à Sid de se concentrer sur la programmation et la conception du jeu.</p>
+<p>À un moment donné, ils ont vendu la société et Bill et Sid ont tous deux démissionné. Peu après, Sid a créé son propre studio de jeux, Firaxis, où il travaille toujours.</p>
+<h3>Conseils pour la conception de jeux</h3>
+<h4>Gardez le joueur concentré sur ce qui est encore à venir.</h4>
 <blockquote>
 <p>Une grande partie de Civilization se déroule dans ce domaine nébuleux de &quot;l'après&quot;, empilant les chemins potentiels sur les chemins réels.
 Un mauvais jeu vous retient dans le passé tandis qu'un jeu médiocre vous maintient dans le présent. Mais un très bon jeu vous garde concentré sur ce qui est encore à venir.</p>
 </blockquote>
-<p>Tout comme les cliffhangers dans les séries ou les films, vous devez teaser le joueur suffisamment pour qu'il ait envie de voir le prochain tournant/niveau. Récompensez le pour avoir joué, pour être arrivé jusqu'ici, mais ne vous ne vous attardez pas et concentrez vous sur la prochaine chose à faire. Dans Civilization, ça fonctionne très bien, à chaque fin de tour vous vous dites : <em>&quot;Juste un tour de plus...&quot;</em>. Vous voulez vraiment voir ce qui va se passer au prochain tour à cause de tous les choix que vous avez faits. Vous passez au tour suivant et découvrez ce qui se passe, faites de nouveaux choix, et ainsi de suite.</p>
-<h3>Un concepteur de jeux ne crée pas le fun, il le trouve.</h3>
-<p>Tout peut être fun, le concepteur de jeux doit trouver ce qui l'est.</p>
+<p>Comme les cliffhangers dans les séries, teasez suffisamment le joueur pour qu'il ait envie de voir le prochain tournant/niveau/coin. Récompensez-le pour y être arrivé, mais concentrez votre attention sur la <strong>prochaine chose à faire</strong>.</p>
+<p>Il y a une citation populaire parmi les joueurs de <em>Civilization</em> :</p>
 <blockquote>
-<p>Prenez l'habitude d'analyser le fonctionnement des choses, d'examiner leur effet sur les gens et de trouver ce qui est vraiment fascinant. Une fois que vous avez isolé tous les éléments intéressants d'une décision, vous êtes prêt à créer une expérience interactive qui soit à la fois nouvelle et familière.</p>
+<p>Encore un tour.</p>
 </blockquote>
-<h3>Perdre vient plus tard, après que les récompenses aient été établies.</h3>
-<p>En 1985, il a créé <em>Silent Service</em>, un jeu de stratégie de guerre navale. Il en fait la démonstration à un gros acheteur, qui se fait écraser par l'IA très rapidement après avoir commencé à jouer.</p>
+<h4>Perdre vient plus tard, après que les récompenses aient été établies.</h4>
+<p>En 1985, il a publié <a href="https://www.youtube.com/watch?v=UYJCZPT68Bs"><em>Silent Service</em></a>, un jeu de stratégie de guerre navale. Il en fait la démonstration à un gros acheteur, l'IA l'écrase en un instant.</p>
 <blockquote>
-<p>Lorsque vous êtes battu lors d'une démo, tout le monde dans la salle ressent la déception, et il est très difficile d'effacer cette première impression.</p>
+<p>Lorsque vous êtes battu lors d'une démonstration, tout le monde dans la salle ressent la déception, et il est très difficile d'effacer cette première impression.</p>
+<p>Bien sûr, le jeu ne doit pas toujours être facile, mais le temps de la défaite vient plus tard, après que les récompenses ont été fermement établies. Dans ces premières minutes cruciales, le joueur doit absolument gagner, qu'il s'agisse d'un enfant seul sur son ordinateur ou d'un groupe de vendeurs autour d'une table de conférence.</p>
 </blockquote>
-<blockquote>
-<p>Bien sûr, le jeu ne doit pas toujours être facile, mais le temps de la défaite vient plus tard, après que les récompenses aient été fermement établies. Dans ces premières minutes cruciales, le joueur doit absolument gagner, qu'il s'agisse d'un enfant seul sur son ordinateur ou d'un groupe de vendeurs autour d'une table de conférence.</p>
-</blockquote>
-<iframe class ="ytb-video" width="560" height="315" src="https://www.youtube.com/embed/UYJCZPT68Bs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3>Pas de mauvaises réponses, et plus d'une bonne réponse, mais pas trop.</h3>
-<p>En travaillant sur <em>Sid Meier Pirates</em>, Sid a réalisé que l'un des problèmes des jeux d'aventure textuels est que pour une énigme donnée, il n'y a qu'une seule solution. Par exemple, pour ouvrir une porte avec une clé, vous avez une bonne réponse <em>&quot;Déverrouiller la porte avec la clé &quot;</em> et beaucoup de mauvaises réponses <em>&quot;Ouvrir la porte avec la clé &quot;</em>, <em>&quot;Utiliser la clé pour ouvrir la porte &quot;</em>, etc...</p>
-<p><img src="https://s1.qwant.com/thumbr/700x0/b/c/9446d630b882042bc4bb3dd680cd3566e5313363d551b40137021355b13c2c/Colossal-Cave-Adventure.png?u=https%3A%2F%2Fwww.raspberrypi.org%2Fapp%2Fuploads%2F2019%2F03%2FColossal-Cave-Adventure.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Handheld text-based adventure gaming with Quest Smith ..."></p>
-<blockquote>
-<p>La fonction exécutive de notre cerveau, ou capacité de décision, s'épuise avec le temps. [...] l'importance de la tâche n'a aucune incidence sur votre épuisement. Les décisions insignifiantes demandent autant de puissance cérébrale que les décisions intéressantes, mais sans la moindre satisfaction.</p>
-</blockquote>
-<p>Voici <a href="https://pubmed.ncbi.nlm.nih.gov/18444745/">un article scientifique</a> qui le confirme. On l'appelle aussi <strong>Fatigue décisionnelle</strong>.</p>
-<blockquote>
-<p>[...] Nous voulons tout essayer, ce qui entraîne une frustration lorsque nous n'y parvenons pas. On ne veut jamais avoir l'impression d'avoir raté quelque chose de bien.</p>
-</blockquote>
-<p>De nos jours dans les jeux AAA, nous avons très souvent un monde ouvert avec une infinité d'endroits où aller, des donjons à explorer, des quêtes secondaires à accomplir, des objets à collectionner... des choix infinis. J'ai pu observé qu'un pratique courante consiste à abandonner ou ignorer tout le contenu secondaire et de se concentrer uniquement sur le <em>&quot;chemin principal &quot;</em>.</p>
-<p><img src="https://s2.qwant.com/thumbr/0x380/e/1/ef051b11245e65625ba4b2bd1d01c3e3c7d301e1349e60c3095ad4bf00fb4c/wildlands-interactivemap2.jpg?u=http%3A%2F%2Fwww.ghostrecon.net%2Fghost-recon%2Fwp-content%2Fuploads%2F2017%2F06%2Fwildlands-interactivemap2.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="60 Million Pixel Interactive Wildlands Map - Ghost Recon Net"></p>
-<p>Nous devons contrôler la quantité de contenu disponible à tout moment et guider le joueur. C'est vraiment bien d'avoir beaucoup de contenu et de laisser le joueur choisir sa propre voie. Il s'agit plutôt de ne pas accabler le joueur d'une infinité de petits choix à faire à chaque fois qu'il regarde la carte pour son prochain mouvement, encore plus dans les jeux qui font plus appel à l'action qu'aux compétences mentales.</p>
-<h3>S'assurer que le joueur est celui qui s'amuse.</h3>
-<blockquote>
-<p>Le jeu n'est pas censé nous concerner nous, le créateur. Le joueur doit être la star, et le concepteur doit être aussi invisible que possible.</p>
-</blockquote>
-<p>En créant <em>Sid Meier Railroad Tycoon</em>, Sid voulait vraiment ajouter des inondations qui détruisent les ponts. Son collègue Bruce, trouvait cela très injuste. Sid a insisté, mais a réalisé que c'était <strong>quelque chose d'amusant à créer</strong> pour lui, <strong>pas quelque chose d'amusant à jouer</strong> pour le joueur.</p>
-<p><img src="https://s1.qwant.com/thumbr/0x380/b/f/34fe2f625c48b8e4ef1cabf706336944208240fbad27152016bbc4cb090754/558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png?u=https%3A%2F%2Fwww.mobygames.com%2Fimages%2Fshots%2Fl%2F558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Sid Meier's Railroad Tycoon Deluxe Screenshots for DOS ..."></p>
-<p>Je pense que c'est un piège dans lequel nous pouvons facilement tomber. Gardez le contrôle et gardez la capacité de juger si une mécanique a vraiment sa place dans votre jeu ou si c'est juste quelque chose que vous vouliez essayer.</p>
-<h3>Toujours donner au joueur l'opportunité de répliquer.</h3>
-<p>Pour continuer sur ces inondations sur Railroad Tycoon, il a réalisé que c'était vraiment injuste et pas amusant.</p>
-<blockquote>
-<p>Un soudain revers de fortune n'est excitant ou dramatique que lorsqu'il arrive à quelqu'un d'autre. Quand ça vous arrive à vous, c'est juste une déception. J'ai réalisé que la principale différence entre un défi de jeu et une trahison était de savoir si le joueur avait une chance de l'éviter.</p>
-</blockquote>
-<p>Pour résoudre le problème, il a ajouté deux types de ponts, un pont en bois, bon marché, rapide à construire mais avec une forte probabilité d'être inond. Un pont en pierre, coûteux et lent à construire mais imperméable aux inondations. De cette façon, le joueur a le contrôle sur les risques d'inondation, en faisant une véritable source de récompense.</p>
-<h3>Lorsque vous donnez votre avis, regardez au cœur de ce que le jeu représente vraiment.</h3>
-<blockquote>
-<p>[Bruce Shelley] a souvent vu une lueur d'espoir dans une idée que j'étais prêt à abandonner. En même temps, il ne se laissait jamais distraire par les parties du jeu qui n'étaient pas encore terminées.Je pouvais lui remettre un prototype défectueux avec des graphismes épouvantables, des ennemis surpuissants et un crash après trois tours, et il pouvait passer outre ces plaintes immatérielles pour se concentrer sur le cœur du jeu. Là où il y avait du potentiel, il le voyait, et il pouvait isoler les domaines à améliorer subtilement sans se laisser distraire par ce que nous savions tous deux être facilement corrigeable.</p>
-</blockquote>
-<p>Lorsque vous réalisez un prototype ou que vous donnez votre avis à un autre développeur, ne vous attardez pas sur les détails, mais sur l'essence même du jeu. Ne vous concentrez pas sur les bugs insignifiants, les problèmes graphiques, etc. Vous savez qu'ils ne sont que temporaires ou qu'ils seront facilement corrigés.</p>
-<h3>Lorsque vous équilibrez une valeur, doublez la ou divisez la par deux.</h3>
-<blockquote>
-<p>Ne perdez pas votre temps à ajuster quelque chose de 5%, puis d'un autre... doublez-le simplement, et voyez si ça a eu l'effet que vous pensiez avoir.</p>
-</blockquote>
-<p>Testé et approuvé.</p>
-<h3>Mettre en oeuvre et essayer au lieu de réfléchir pendant des heures.</h3>
-<blockquote>
-<p>[...] Je ne laisse pas la possibilité d'erreurs me retenir. Je ne réfléchis pas pendant des heures pour savoir si une fonctionnalité est une bonne idée, je l'ajoute au jeu et je m'en assure. Si elle est mauvaise, je la supprime.</p>
-</blockquote>
-<p>Cela dépend de vos compétences en programmation et de l'ampleur de la conception à laquelle vous pensez. Est-ce vraiment intéressant ? Est-ce obligatoire pour que le jeu fonctionne ? Puis-je l'implémenter rapidement ?</p>
-<p>Mais dans tous les cas, ne perdez pas trop de temps à essayer de savoir si ça va marcher. Jouer est le meilleur moyen de savoir (certaines personnes semblent être capables de jouer le jeu dans leur tête pour voir s'il est bon). Vous ne devez pas avoir peur de faire des erreurs.</p>
-<h3>Simple plus simple égale complexe.</h3>
-<blockquote>
-<p>[...] l'une des caractéristiques les plus importantes de Civ, à savoir que simple plus simple égale complexe.</p>
-</blockquote>
-<p><img src="https://s2.qwant.com/thumbr/0x380/4/3/e42b9444f8dfee67d59b946a28b0c6daf845f9146adc557ae9e43eeaa5a7ab/latest.jpg?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fcivilization%2Fimages%2F2%2F2f%2FCiv1_Catapults_vs_city.png%2Frevision%2Flatest%3Fcb%3D20171014123229&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Category:Units (Civ1) | Civilization Wiki | FANDOM powered ..."></p>
-<p>N'essayez pas de concevoir un système très complexe dès le départ. Il vaut mieux concevoir des systèmes simples et de petite taille qui interagiront de manière complexe (intéressante). Vous pouvez penser au système très simple de &quot;pierre-feuille-ciseaux&quot; utilisé dans de nombreux jeux pour maintenir un certain équilibre tout en vous offrant des choix.</p>
-<p><img src="https://s2.qwant.com/thumbr/0x380/c/9/7af05b990894b27768c074f3c36471cb2bc53d22ab5d0aa34794d817b913a2/1200px-Rock-paper-scissors.svg.png?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F67%2FRock-paper-scissors.svg%2F1200px-Rock-paper-scissors.svg.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Rock paper scissors - Wikipedia"></p>
-<h3>Les Décisions Intéressantes dépendent avant tout de l'investissement.</h3>
-<p>Celle-ci est très <em>intéressante</em>, car Sid est très connu pour la citation suivante :</p>
+<h4>Les décisions intéressantes sont liées à l'investissement.</h4>
+<p>Sid est très connu pour la citation suivante :</p>
 <blockquote>
 <p>Un jeu est une série de décisions intéressantes.</p>
 </blockquote>
-<p>Mais ce que nous aimons vraiment, ce sont les décisions intéressantes, que vous faites déjà dans la vie de tous les jours.</p>
+<p>Mais ce que nous aimons vraiment, ce sont les décisions intéressantes, que vous prenez déjà dans la vie de tous les jours.</p>
 <blockquote>
-<p>[...] les jeux n'étaient pas le thème principal de mon enfance après tout. C'était plutôt leur précurseur : la décision intéressante. J'ai toujours été fasciné par tous les types de décisions intéressantes, et il se trouve que les jeux en sont une série bien organisée.</p>
+<p>[...] les jeux n'étaient finalement pas le thème principal de mon enfance. C'était plutôt leur précurseur : la décision intéressante. J'ai toujours été fasciné par tous les types de décisions intéressantes, et il se trouve que les jeux en sont une série bien organisée.</p>
 </blockquote>
 <p>Mais qu'est-ce qu'une décision intéressante alors ?</p>
 <blockquote>
-<p>Les décisions intéressantes ne sont pas liées aux spécificités de ce que vous laissez le joueur choisir, mais plutôt de savoir si l'investissement est à la fois personnel et significatif par rapport au résultat.</p>
+<p>Les décisions intéressantes ne sont pas liées à la spécificité de ce que vous laissez le joueur choisir, mais au fait que l'investissement soit à la fois personnel et significatif pour le résultat.</p>
 </blockquote>
 <p>Une décision doit avoir un certain <strong>impact</strong> (ou du moins le joueur doit croire qu'elle en a un). Le joueur doit avoir un certain <strong>investissement</strong> dans le choix et sentir que c'est son choix <strong>personnel</strong>.</p>
-<h3>Évitez une IA brillante et efficace.</h3>
+<h4>Un concepteur de jeux ne crée pas le fun, il le trouve.</h4>
+<p>Nous devrions avoir quelques connaissances sur la psychologie humaine (les défauts de l'humanité). Ensuite, il faut utiliser ces connaissances pour trouver ce qui rend notre expérience de jeu fun.</p>
 <blockquote>
-<p>Les IA très réalistes sont accusées de tricher encore plus souvent que leurs homologues malhonnêtes, car au fond... tous les joueurs sont découragés à l'idée qu'un ordinateur puisse être plus malin qu'eux.
-Une partie du plaisir consiste à apprendre les schémas de l'IA et à les prédire avec succès, et quand l'ordinateur n'agit pas comme un ordinateur, la seule hypothèse psychologiquement sûre est qu'il a dû accéder à des informations qu'il n'aurait pas dû.
-L'IA n'a pas le droit de bluffer, de se comporter de manière aléatoire ou de se baser sur des données - non pas parce que nous ne pouvons pas la programmer,
-mais parce que l'expérience nous dit que les joueurs seront frustrés et abandonneront. [...]
-Ainsi, du point de vue du concepteur, une IA brillante n'est généralement pas notre priorité absolue.</p>
+<p>Ce que j'aime chez Mel Brooks, et chez les comédiens en général, c'est qu'ils sont en fait très analytiques. Creuser et trouver ce qui est drôle dans une phrase ou une histoire particulière n'est pas si différent que d'isoler ce qui rend une expérience de jeu attrayante.</p>
+<p>Les deux essaient d'engager le public avec une version aiguisée de la réalité, et les deux requièrent une <strong>appréciation des défauts de l'humanité</strong> afin de savoir où l'hameçon s'adapte le mieux.</p>
+<p>Essayez de prendre l'habitude d'analyser le fonctionnement des choses, d'examiner leur effet sur les gens et de découvrir ce qui est vraiment fascinant.</p>
+<p>Une fois que vous avez isolé tous les éléments intéressants d'une décision, vous êtes prêt à construire une expérience interactive qui soit à la fois nouvelle et familière.</p>
 </blockquote>
-<p>C'est surtout vrai lorsque vous jouez contre l'IA, nous avons besoin d'une IA amusante, pas d'une IA intelligente. Mais je peux penser à deux exemples où nous devrions essayer d'avoir une IA brillante.</p>
+<p>Par exemple, qu'est-ce qui rend le système de combat de Civilization si fascinant ?</p>
+<p>Le système est partiellement aléatoire, vous pouvez estimer le résultat, mais vous ne pouvez pas en être sûr. Lorsque vous lancez une bataille, vous voyez les soldats se battre mais vous devez attendre quelques secondes pour voir le résultat final. Les chances de gagner sont truquées. Si on vous dit que vous avez 50% de chances de gagner, alors le jeu vous laissera gagner la moitié des batailles. Si vous avez 90% de chances de gagner, vous perdrez très rarement.</p>
+<p>Nous savons que les humains aiment les surprises, c'est un sentiment très fort. L'attente du résultat amplifie l'effet. Mais ils n'aiment pas l'injustice, perdre 2 combats d'affilée avec une chance sur deux de gagner semble injuste pour un humain.</p>
+<p>Nous pouvons dire que le système est amusant car :</p>
+<ol>
+<li>Le joueur peut estimer le résultat et décider de se battre -- Le hasard complet n'est pas un choix intéressant.</li>
+<li>Le pseudo-aléatoire ajoute un élément de surprise au résultat.</li>
+<li>Le joueur doit attendre le résultat, ce qui crée un suspense savoureux.</li>
+<li>Le système de combat semble équitable.</li>
+</ol>
+<h4>Pas de mauvaises réponses, et plus d'une bonne réponse, mais pas trop.</h4>
+<p>En travaillant sur <em>Sid Meier's Pirates</em>, il est tombé sur un problème commun des jeux d'aventure textuels. Pour une énigme donnée, il n'y a qu'une seule solution. Par exemple, pour ouvrir une porte avec une clé, vous avez une seule bonne réponse <em>&quot;Déverrouiller la porte avec la clé &quot;</em> et beaucoup de mauvaises réponses <em>&quot;Ouvrir la porte avec la clé &quot;</em>, <em>&quot;Utiliser la clé pour ouvrir la porte &quot;</em>, etc...</p>
+<p><img src="https://s1.qwant.com/thumbr/700x0/b/c/9446d630b882042bc4bb3dd680cd3566e5313363d551b40137021355b13c2c/Colossal-Cave-Adventure.png?u=https%3A%2F%2Fwww.raspberrypi.org%2Fapp%2Fuploads%2F2019%2F03%2FColossal-Cave-Adventure.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Handheld text-based adventure gaming with Quest Smith ..."></p>
+<blockquote>
+<p>La fonction exécutive de notre cerveau, ou capacité de prise de décision, s'épuise avec le temps. [...] l'importance de la tâche n'a aucune incidence sur votre épuisement. Les décisions insignifiantes demandent autant d'énergie cérébrale que les décisions intéressantes, mais sans la moindre satisfaction.</p>
+</blockquote>
+<p>Un <a href="https://pubmed.ncbi.nlm.nih.gov/18444745/">article scientifique</a> semble confirmer ce concept. Nous l'appelons <strong>Fatigue décisionnelle</strong>.</p>
+<blockquote>
+<p>Nous voulons tout essayer, ce qui entraîne une frustration lorsque nous n'y parvenons pas. Nous ne voulons jamais avoir l'impression d'avoir raté quelque chose de bien.</p>
+</blockquote>
+<p>De nos jours, les jeux AAA se résument à des mondes ouverts avec une infinité d'endroits où se trouver, des donjons à explorer, des quêtes secondaires à accomplir, des objets à collectionner... des choix infinis. J'ai observé qu'il est courant d'abandonner ou d'ignorer tout contenu secondaire pour se concentrer sur le <em>&quot;chemin principal&quot;</em>.</p>
+<p><img src="https://s2.qwant.com/thumbr/0x380/e/1/ef051b11245e65625ba4b2bd1d01c3e3c7d301e1349e60c3095ad4bf00fb4c/wildlands-interactivemap2.jpg?u=http%3A%2F%2Fwww.ghostrecon.net%2Fghost-recon%2Fwp-content%2Fuploads%2F2017%2F06%2Fwildlands-interactivemap2.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="60 Million Pixel Interactive Wildlands Map - Ghost Recon Net"></p>
+<p>Nous devons <strong>contrôler la quantité de contenu disponible à tout moment et guider le joueur</strong>. C'est bien d'avoir beaucoup de contenu et de laisser le joueur choisir sa propre voie. Mais ce n'est pas bien de lui imposer une infinité de petits choix à faire chaque fois qu'il regarde la carte pour son prochain mouvement. C'est encore plus vrai dans les jeux qui font plus appel à l'action qu'aux compétences mentales.</p>
+<h4>N'oubliez pas de concevoir ce qui se passe dans la tête du joueur.</h4>
+<blockquote>
+<p>Un autre concept plus général que j'ai retenu de Seven Cities of Gold est que l'anticipation de chaque nouvelle ligne d'histoire est au moins aussi importante que l'histoire elle-même.
+Dan n'a pas seulement conçu le jeu que vous pouviez voir et jouer, il a également conçu des parties du jeu qui se déroulent entièrement dans votre tête.</p>
+</blockquote>
+<h4>Assurez-vous que le joueur est celui qui s'amuse.</h4>
+<p>En créant <a href="https://www.youtube.com/watch?v=bekpo1o6rh4"><em>Sid Meier Railroad Tycoon</em></a>, Sid a ajouté des inondations qui détruisent sporadiquement les ponts. Son collègue Bruce a trouvé cela très injuste. Sid a insisté mais a réalisé que c'était <strong>quelque chose d'amusant à créer</strong> pour lui, <strong>pas quelque chose d'amusant à jouer</strong> pour le joueur.</p>
+<blockquote>
+<p>Le jeu n'est pas censé être à propos de nous. Le joueur doit être la star, et le concepteur doit être aussi invisible que possible.</p>
+</blockquote>
+<p><img src="https://s1.qwant.com/thumbr/0x380/b/f/34fe2f625c48b8e4ef1cabf706336944208240fbad27152016bbc4cb090754/558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png?u=https%3A%2F%2Fwww.mobygames.com%2Fimages%2Fshots%2Fl%2F558156-sid-meier-s-railroad-tycoon-deluxe-dos-screenshot-lots-of.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Sid Meier's Railroad Tycoon Deluxe Screenshots for DOS ..."></p>
+<p>À mon avis, c'est un piège dans lequel on peut facilement tomber. Gardez le contrôle et gardez la capacité de juger si cela a vraiment sa place dans votre jeu ou si c'est juste quelque chose que vous vouliez essayer.</p>
+<h4>Donnez toujours une chance au joueur.</h4>
+<p>Pour poursuivre sur ces inondations dans Railroad Tycoon, il a reconnu que c'était injuste. Le joueur ne pouvait pas se défendre.</p>
+<blockquote>
+<p>Un soudain retournement de fortune n'est excitant ou dramatique que lorsqu'il arrive à quelqu'un d'autre. Quand il vous arrive à vous, c'est juste une déception. J'ai compris que la principale différence entre un défi de jeu et une trahison était de savoir si le joueur avait une chance de l'éviter.</p>
+</blockquote>
+<p>Pour résoudre le problème, il a ajouté deux types de ponts :</p>
+<ul>
+<li>Un pont en bois, bon marché, rapide à construire mais avec une forte chance d'être inondé.</li>
+<li>Un pont en pierre, coûteux, long à construire, mais imperméable aux inondations.</li>
+</ul>
+<p>De cette façon, le joueur a le contrôle du risque et l'inondation est devenue une véritable source de récompense.</p>
+<h4>Simple plus simple égale complexe.</h4>
+<p>N'essayez pas de concevoir un système très complexe dès le départ. Concevez des systèmes simples et de petite taille qui interagiront de manière complexe.
+Par exemple, de nombreux jeux utilisent le principe du pierre-papier-ciseaux. Cela permet de maintenir un certain équilibre tout en vous offrant des choix.</p>
+<h4>Évitez une IA brillante et efficace.</h4>
+<blockquote>
+<p>Une IA très réaliste est accusée de tricherie encore plus souvent que ses frères malhonnêtes [les humains], parce qu'à un certain niveau, tous les joueurs sont découragés à l'idée qu'un ordinateur puisse être plus malin qu'eux.</p>
+<p><strong>Une partie du plaisir consiste à apprendre les schémas de l'IA et à les prédire avec succès</strong>,
+et lorsque l'ordinateur ne se comporte pas comme un ordinateur, la seule hypothèse psychologiquement sûre est qu'il a dû accéder à des informations qu'il n'aurait pas dû.</p>
+<p>L'IA n'a pas le droit de jouer, de se comporter de manière aléatoire ou de se baser sur des données -- non pas parce que nous ne pouvons pas la programmer, mais parce que l'expérience nous montre que les joueurs seront frustrés et abandonneront.</p>
+<p>Ainsi, du point de vue du concepteur, une IA brillante n'est généralement pas notre priorité absolue.</p>
+</blockquote>
+<p>Il est indéniable que lorsque vous jouez contre l'IA, nous avons besoin d'une IA amusante, pas d'une IA intelligente. Mais je peux penser à deux exemples où nous devrions essayer d'avoir une IA brillante.</p>
 <ol>
 <li>
-<p><strong>Pour effrayer le joueur</strong>. Dans <em>Alien Isolation</em>, le joueur tente de survivre et de progresser dans l'histoire tout en étant traqué par un Alien. L'IA &quot;brillante&quot; de cet Alien a été acclamée. Elle intensifie vraiment l'horreur du jeu. Une IA intelligente est effrayante à cause de cette imprévisibilité qui n'est généralement pas amusante quand on l'affronte.</p>
+<p><strong>Pour effrayer le joueur</strong> - Dans <em>Alien Isolation</em>, le joueur tente de survivre et de progresser dans l'histoire tout en étant traqué par un Alien. L'IA &quot;brillante&quot; sert l'objectif de ce jeu d'horreur. Une IA intelligente est effrayante en raison de cette imprévisibilité qui n'est généralement pas amusante.</p>
 </li>
 <li>
-<p><strong>Pour aider le joueur</strong>. Lorsque vous faites équipe avec l'IA, disons dans des jeux compétitifs comme Overwatch, League Of Legends, etc... Je pense que c'est une bonne chose d'avoir une IA brillante quand elle joue dans notre équipe. Au moins pour compenser le fait que le joueur quitte le jeu prématurément par exemple.</p>
+<p><strong>Aider le joueur</strong> - Lorsque vous faites équipe avec l'IA, dans des jeux compétitifs comme Overwatch ou League Of Legends. C'est bien d'avoir une bonne IA avec laquelle jouer. Au moins pour compenser les joueurs qui quittent le jeu prématurément par exemple.</p>
 </li>
 </ol>
-<h4>Un retour est toujours vrai. (Feedback is Fact)</h4>
+<h4>Les jeux n'ont pas besoin d'être réalistes.</h4>
+<p>Comme beaucoup de ses jeux ultérieurs, Sid a basé <a href="https://www.youtube.com/watch?v=0H5NhhmnwBU">Formula 1</a> sur la réalité. Même dans ce type de jeu, nous n'avons pas besoin d'un vrai pilote avec une histoire.</p>
+<p>Ce dont les jeux ont besoin, c'est de :</p>
 <blockquote>
-<p>Un retour est toujours vrai dans la mesure où il révèle comment notre jeu fait ressentir les gens, mais après cela, c'est notre travail de trouver la bonne solution à ce problème.</p>
+<p>Une combinaison d'accroches émotionnelles et psychologiques qui vous font croire, même fugitivement, que vous êtes vous-même le pilote.</p>
 </blockquote>
-<p>Mon point de vue sur ce sujet : <em>Un retour (ou feedback) n'est pas un débat</em>. Lorsque vous recevez des commentaires avec lesquels vous n'êtes pas d'accord, remerciez-les sans essayer de trouver des excuses ou de vous expliquer. Posez des questions si nécessaire et trouvez la source du problème. S'il est réellement pertinent pour vous, résolvez-le. Les retours sont gratuits et ne sont là que pour vous aider à améliorer votre jeu. Ne perdez pas de temps à vous disputer pour convaincre les autres que vous avez raison ou que c'est &quot;normal&quot;.</p>
-<h3>Suspendez la réalité, n'examinez pas la douleur des vrais dilemmes moraux.</h3>
-<p>Ici c'est très subjectif, Sid nous donne son avis sur ce qu'il a envie de créer dans ses jeux vidéo, à vous de décider ce que vous voulez créer dans les vôtres.</p>
+<h4>La caractéristique la plus élémentaire et la plus déterminante du jeu est son interactivité.</h4>
+<p>Dans un &quot;jeu RTS de dinosaures&quot; qu'il n'a jamais sorti, il a supprimé toutes les actions de microgestion. L'idée était de laisser l'IA faire la plupart des choses &quot;ennuyeuses&quot;. Le problème : le joueur n'avait plus rien d'intéressant à faire.</p>
+<p>Veillez à vous concentrer sur ce que votre joueur fait dans votre jeu, mais <strong>ne lui enlevez pas trop de contrôle</strong>.</p>
 <blockquote>
-<p>J'ai toujours pensé que notre rôle en tant que concepteurs de jeux était de suspendre la réalité, et non d'examiner la douleur des vrais dilemmes moraux.
-Il y a certainement une place pour cela dans l'art, et les jeux vidéo sont considérés comme de l'art, mais ce n'est généralement pas un endroit où les gens veulent passer leur temps après une longue journée au bureau.
-[...] les jeux sont censés conserver leur public bien plus longtemps que toute autre forme d'art. [...]
-Peu de gens sont prêts à se complaire dans les moments les plus difficiles de la vie pendant aussi longtemps [...]</p>
+<p>Les joueurs ne sont peut-être pas récompensés pour chaque choix, mais le contrôle du résultat doit être principalement entre leurs mains, sinon ils ne font que regarder un film qui demande des coups de boutons occasionnels.</p>
 </blockquote>
-<p>Si je suis tout à fait d'accord avec lui sur le fait que la plupart des jeux devraient être relaxants, les jeux vidéo ont beaucoup évolué depuis, et ne sont plus seulement un outil de relaxation. De plus, certains jeux examinent la douleur de véritables dilemmes moraux et sont encore capables de rendre le jeu relaxant et amusant. Il y a un public pour ce genre de jeu de nos jours.</p>
-<h3>N'oubliez pas de concevoir ce qui se passe dans la tête du joueur.</h3>
+<h4>Quand utiliser le temps réel plutôt que le tour par tour ?</h4>
 <blockquote>
-<p>Un autre concept plus général que j'ai retenu de Seven Cities of Gold est que l'anticipation de chaque nouvelle intrigue est au moins aussi importante que l'histoire elle-même.
-Dan n'a pas seulement conçu le jeu que vous pouvez voir et jouer, il a également conçu des parties du jeu qui se déroulent entièrement dans votre tête.</p>
-</blockquote>
-<h4>Toutes les cultures ne voient pas les jeux de la même façon.</h4>
-<blockquote>
-<p>[...] toutes les cultures ne voient pas les jeux de la même manière, et qu'il existe bel et bien un jeu américain.
-Je me suis demandé à quoi ressemblerait un jeu véritablement international, sans préjugés culturels et avec un attrait universel ?</p>
-</blockquote>
-<p>Comme pour toute œuvre d'art, chaque culture voit les jeux différemment et, par conséquent, les jeux de cultures différentes seront très différents. Si vous ciblez une culture spécifique, il serait bon de garder cela à l'esprit. Sinon, je ne pense pas qu'il soit important d'avoir un jeu véritablement international (même s'il reste intéressant du point de vue de la conception). Vous devriez créer des jeux de la manière dont vous les voyez à travers votre propre culture et votre expérience personnelle. C'est toujours rafraîchissant de jouer à des jeux issus de cultures différentes (comparez Street of Rage avec Aurion : Legacy of the kori idan, le premier jeu professionnel d'Afrique centrale que j'ai découvert pendant un event indiecade).</p>
-<p><img src="https://s1.qwant.com/thumbr/0x0/0/0/edcdc0ad64bf5501872ef84a7493d42f372c54f6bea82634b77bea3905cfdb/Aurion-1.jpg?u=https%3A%2F%2Fi1.wp.com%2Foperationrainfall.com%2Fwp-content%2Fuploads%2F2019%2F04%2FAurion-1.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="REVIEW: Aurion: Legacy of the Kori-Odan - Page 2 of 2 ..."></p>
-<p><img src="https://s2.qwant.com/thumbr/0x380/7/d/8fded6e25caf6f78f17c1bbbc2084609758761af6f56bbbe59a4084c477af5/Streets-of-Rage-4-3.png?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2018%2F09%2FStreets-of-Rage-4-3.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Streets of Rage 4 won’t rely on its past to knock you out ..."></p>
-<h3>Les jeux ne sont pas seulement une distraction.</h3>
-<p>Le premier jeu de Sid, &quot;Hostage Rescue&quot;, a été réalisé sur un Atari en BASIC avec l'aide de magazines. Vous incarnez un &quot;Hélicoptère&quot; qui tente de sauver des otages des mains de terroristes. Ils vous tirent des missiles, vous leur tirez des missiles. Mais à chaque fois que vous tirez, des otages peuvent mourir, et le décompte est affiché de manière accusatrice en bas de l'écran.</p>
-<p>Sa mère a essayé le jeu, elle était très concentrée, très impliquée dans le jeu, évitant les missiles avec son propre corps.</p>
-<blockquote>
-<p>Mais à un moment donné, elle a lâché la manette et détourné le visage. Elle ne pouvait plus jouer, son cœur s'emballait et c'était trop pour elle.</p>
-</blockquote>
-<p>Les jeux ne sont pas une distraction. <strong>Les jeux peuvent faire ressentir des émotions</strong>, tout comme la grande littérature ou toute autre forme d'art, si ce n'est plus grâce à l'interaction qui est un élément central des jeux.
-J'ai déjà lu plusieurs fois ce genre de <strong>moment de révélation</strong> dans plusieurs articles et livres d'autres concepteurs de jeux, cela semble être un événement commun que nous partageons tous.</p>
-<h3>Temps réel contre tour par tour.</h3>
-<blockquote>
-<p>C'était l'éternel clivage dans le genre de la stratégie : temps réel contre tour par tour.</p>
-<p>Lorsque l'horloge tourne et que tout le monde peut jouer en même temps, il y a une augmentation immédiate de l'excitation. La rapidité d'esprit est récompensée par rapport à la précision, et les joueurs à faible capacité d'attention ont enfin leur heure de gloire.
+<p>Lorsque l'horloge tourne et que tout le monde peut jouer en même temps, l'excitation augmente immédiatement. La rapidité d'esprit est récompensée par rapport à la précision, et ceux qui ont une capacité d'attention limitée ont enfin leur heure de gloire.
 Mais si le gain est instantané et continu, l'intensité croissante peut facilement déboucher sur la confusion et la frustration.</p>
 <p>Le jeu au tour par tour, quant à lui, est lent et méthodique, et toute excitation ressentie au début est au mieux anticipée. Le manque relatif d'intensité peut faire sombrer dans l'ennui, mais à la fin, le gain est généralement plus important, car vous avez investi plus de temps et de choix personnels dans le résultat.</p>
 </blockquote>
+<p>Résumons les caractéristiques des deux conceptions :</p>
 <table>
 <thead>
 <tr>
@@ -300,75 +284,225 @@ Mais si le gain est instantané et continu, l'intensité croissante peut facilem
 <td>Anticipatif</td>
 <td>Lent et méthodique</td>
 <td>Faible, peut être ennuyeux</td>
-<td>Grand, plus et choix personnel dans le résultat</td>
+<td>Grand et choix personnel dans le résultat</td>
 </tr>
 </tbody>
 </table>
-<h3>Soyez doux avec l'ego des joueurs.</h3>
+<p>Maintenant, pensez à votre jeu, et choisissez un design en fonction des caractéristiques que vous souhaitez.</p>
+<h4>Soyez attentionné avec l'ego du joueur.</h4>
 <blockquote>
-<p>Dans notre métier, tout doit être au service du fun, et il se trouve qu'apprendre l'histoire est souvent amusant. Mais parfois, c'est aussi super déprimant.
-Nous devons offrir une clarté morale à nos joueurs et éliminer les dilemmes douloureux, car contrairement à d'autres formes de narration, ils représentent et incarnent personnellement notre personnage principal.
-Leur ego est en jeu, et nous devons être doux avec lui.</p>
+<p>Dans notre métier, tout doit être au service du plaisir, et il se trouve qu'apprendre l'histoire est souvent amusant. Mais parfois, c'est aussi super déprimant.</p>
+<p>Nous devons offrir une clarté morale à nos joueurs et éliminer les dilemmes douloureux, car contrairement à d'autres formes de narration, ils se substituent personnellement à notre personnage principal.</p>
+<p>Leur ego est en jeu, et nous devons être attentionné avec lui.</p>
 </blockquote>
-<p>Je pense qu'il veut dire que le joueur doit avoir l'impression de jouer le gentil. Pas mal de jeux nous ont montrée que ce n'était pas le cas, les joueurs aiment jouer les méchants. Par contre, il faut vraiment garder en tête cette question d'ego, c'est probablement désagréable de jouer un personnage qui se fait ridiculisé ou qui ne correspond pas à nos valeurs, ça va dépendre des joueurs.</p>
-<h3>Connecter les gens à travers leur expérience commune.</h3>
+<p>Ici je comprends qu'il pense que le joueur doit avoir l'impression de jouer le gentil.</p>
+<p>Beaucoup de jeux nous ont montré que ce n'est pas le cas, les joueurs aiment jouer les méchants. D'un autre côté, il faut garder à l'esprit la question de l'ego. Ce n'est probablement pas amusant de jouer un personnage qui est ridiculisé ou qui ne correspond pas à vos valeurs.</p>
+<h4>Soyez réducteur de manière équilibrée et polie.</h4>
 <blockquote>
-<p>Le jeu est pour tout le monde - et pas seulement à un niveau individuel, mais dans son ensemble. C'est pour tout le monde ensemble.
-Je n'ai pas toujours su ce qui plaisait aux personnes qui n'étaient pas spécifiquement moi, mais j'ai toujours cherché à le découvrir,
-et quand il s'agit de jeux, je pense que l'addiction n'est généralement qu'un autre mot pour désigner la connexion intense que nous ressentons envers une œuvre d'art.
-En tant qu'artiste, mon travail consiste à favoriser cette connexion de manière constructive - et si j'ai de la chance, à connecter les gens les uns aux autres par le biais de notre expérience commune.</p>
+<p>[À propos de personnages et d'événements historiques caricaturés dans Civ] Tous les jeux sont intrinsèquement réducteurs. Mais nous nous efforçons d'être réducteurs de manière équilibrée et polie, et toujours dans le but d'améliorer l'expérience globale du joueur.</p>
 </blockquote>
-<p>Une façon de voir notre rôle d'artiste.</p>
-<h3>Les gens sont généralement peu coopératifs par nature.</h3>
+<p>Dans <em>Civilization</em>, chaque civ a ses propres bâtiments, unités et avantages. Par exemple, dans Civ 6, la Norvège a des bonus pour les unités navales, les raids navals et les pillages.</p>
+<p>Imaginez le nombre d'avantages uniques nécessaires pour représenter &quot;fidèlement&quot; la Norvège. Ils ont choisi les meilleurs pour une expérience de jeu satisfaisante, basée sur des faits historiques.</p>
+<p>En outre, vous ne jouez pas la nation norvégienne, mais le chef Harald Hardrada de Norvège. Il s'agit d'une distinction subtile mais importante pour éviter tout retour de bâton - &quot;Voulez-vous dire que les Norvégiens sont des pillards sauvages ?&quot;.</p>
+<p>Il est délicat de créer des œuvres sur des événements historiques. Plus votre jeu est célèbre, plus il est important de gérer cela. Chez Ubisoft, nous avons des équipes entières qui travaillent sur ce sujet spécifique. Et nous rencontrons toujours des problèmes, comme des PNJ portant le mauvais type de bouclier pour l'époque.</p>
+<p>Énumérons quelques règles pour gérer les personnages et les événements historiques dans un jeu historiquement exact :</p>
+<ol>
+<li><strong>Toujours utiliser des faits historiques, pas des préjugés</strong> -- Beaucoup de pillages et de raids ont été effectivement faits sous Harald.</li>
+<li><strong>Restez neutre</strong> -- Rien ne vous dit que les Norvégiens sont des sauvages à cause des raids.</li>
+<li><strong>Évitez de cibler un grand groupe de personnes, soyez plus précis</strong> -- Le jeu parle de la potentielle &quot;Norvège d'Harald&quot;, pas de la Norvège réelle.</li>
+</ol>
+<h3>Conseils pour le développement de jeux</h3>
+<h4>Toutes les cultures ne voient pas les jeux de la même manière.</h4>
+<p>Nous voyons et créons des jeux à travers le prisme de notre culture.</p>
 <blockquote>
-<p>CivWorld a eu un certain nombre de problèmes, dont le plus important était la nature généralement peu coopérative des personnes réelles lorsqu'elles étaient mises à l'épreuve.
-[...] pour la plupart, tout le monde choisissait de laisser ses amis souffrir.</p>
+<p>Je me suis dit que toutes les cultures ne voyaient pas les jeux de la même manière et qu'il existait bel et bien un jeu américain.
+Je me suis demandé à quoi ressemblerait un jeu véritablement international, sans préjugés culturels et avec un attrait universel ?</p>
 </blockquote>
-<p>Pas une preuve scientifique mais un bon exemple à considérer.</p>
-<h3>Les microtransactions sont détestées mais efficaces.</h3>
+<p>Si vous ciblez une culture spécifique, il peut être judicieux de garder cela à l'esprit. Mais je crois <strong>que nous devrions créer des jeux de la manière dont nous les voyons à travers notre propre culture et notre expérience personnelle</strong>.</p>
+<p>C'est toujours rafraîchissant de jouer à des jeux issus d'une culture différente (comparez Street of Rage avec Aurion : Legacy of the kori idan, le premier jeu professionnel d'Afrique centrale que j'ai découvert pendant indiecade).</p>
+<p><img src="https://s1.qwant.com/thumbr/0x0/0/0/edcdc0ad64bf5501872ef84a7493d42f372c54f6bea82634b77bea3905cfdb/Aurion-1.jpg?u=https%3A%2F%2Fi1.wp.com%2Foperationrainfall.com%2Fwp-content%2Fuploads%2F2019%2F04%2FAurion-1.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="REVIEW: Aurion: Legacy of the Kori-Odan - Page 2 of 2 ..."></p>
+<p><img src="https://s2.qwant.com/thumbr/0x380/7/d/8fded6e25caf6f78f17c1bbbc2084609758761af6f56bbbe59a4084c477af5/Streets-of-Rage-4-3.png?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2018%2F09%2FStreets-of-Rage-4-3.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Streets of Rage 4 won’t rely on its past to knock you out ..."></p>
+<h4>Implémentez et essayez au lieu de réfléchir pendant des heures.</h4>
 <blockquote>
-<p>Si vous demandiez à un groupe de joueurs leur opinion sur ces soi-disant &quot;microtransactions&quot;, la plupart répondraient probablement par une série de mots grossiers. Mais les recettes racontent une histoire différente.
-[...] Nous disons que nous détestons ça, mais les bilans prouvent le contraire.</p>
+<p>Je ne laisse pas la possibilité de faire des erreurs me retenir. Je ne réfléchis pas pendant des heures pour savoir si une fonctionnalité est une bonne idée, je la lance dans le jeu et je m'en assure. Si elle est maladroite, je la supprime à nouveau.</p>
 </blockquote>
+<p>Cela dépend de vos compétences en programmation et de l'ampleur de la conception à laquelle vous pensez.</p>
+<ul>
+<li>Est-ce vraiment intéressant ?</li>
+<li>Est-il obligatoire pour que le jeu fonctionne ?</li>
+<li>Puis-je l'implémenter rapidement ?</li>
+</ul>
+<p>Mais dans tous les cas, ne perdez pas trop de temps à essayer de savoir si ça va marcher. <strong>Jouer est le meilleur moyen de savoir</strong>. Vous ne devez pas avoir peur de faire des erreurs.</p>
+<h4>Lorsque vous équilibrez une valeur, doublez-la ou coupez-la en deux.</h4>
+<p>Disons que vous essayez de trouver la vitesse de mouvement parfaite dans votre jeu FPS. Au lieu de l'ajuster par petites quantités, doublez-la ou coupez-la en deux directement, et observez le résultat. S'il est beaucoup trop lent, doublez la vitesse et répétez le processus.</p>
+<p>Cette méthode est en fait inspirée de <a href="https://fr.wikipedia.org/wiki/Recherche_dichotomique">l'algorithme de recherche dichotomique</a>.</p>
+<h4>Un bon jeu vaut mieux que deux grands jeux.</h4>
 <blockquote>
+<p>Il est parfois plus important de décider de ce qui ne doit pas entrer dans le jeu que de décider de ce qui doit y entrer.
+Un bon jeu vaut mieux que deux grands jeux.</p>
+</blockquote>
+<p>Il vaut mieux faire un bon jeu que de faire deux grands jeux en un seul. Vous allez créer plusieurs jeux. Évitez d'appliquer toutes vos idées dans un seul jeu si elles vous semblent mieux adaptées à un autre jeu.</p>
+<h4>La règle des tiers.</h4>
+<p>Les concepteurs de  Civ appliquent une règle des tiers. Un tiers de la version précédente reste en place, un tiers est mis à jour, et un tiers est complètement nouveau.</p>
+<p>D'après mon expérience, chez Ubisoft, c'est plutôt 90 % de réutilisation ou de mise à jour et 10 % de nouveautés.</p>
+<h4>Cherchez la joie ailleurs, car on ne sait jamais quand l'inspiration va frapper.</h4>
+<p>En tant que concepteurs, une partie de notre travail est très rigoureuse et analytique. Mais l'autre partie est basée sur la créativité, que nous alimentons par nos expériences quotidiennes.</p>
+<p>L'un des premiers jeux jamais créés était basé sur le tennis, et je parie que le concepteur aimait jouer au tennis.</p>
+<p>Bien sûr, vous pouvez vous inspirer d'autres jeux. Mais veillez à ne pas servir le même plat à chaque fois et à créer vos propres concepts uniques. <strong>Assurez-vous de lire, d'apprendre et de chercher la joie ailleurs</strong> On ne sait jamais quand l'inspiration peut frapper.</p>
+<h4>Voir la technologie en termes de progrès, plutôt que de limites.</h4>
+<blockquote>
+<p>Je voyais généralement la technologie en termes de progrès plutôt que de limites, et je vivais dans un état d'excitation quasi perpétuel face à ce que nous pouvions accomplir.</p>
+</blockquote>
+<p>Je me demande si c'est encore vrai de nos jours. Il semble qu'il n'y ait plus de limites, sauf si l'on parle de réalisme et de taille. Beaucoup de nouvelles technologies ne sont pas encore appliquées aux jeux vidéo. Cela peut être dû au prix, au confort et au manque d'intérêt des développeurs.</p>
+<p>Cependant, certaines d'entre elles ont un impact énorme sur la conception des jeux. Pokémon Go est un énorme succès qui a utilisé la technologie de la réalité augmentée, on ne voit pas ça dans tous les jeux mobiles.</p>
+<p><img src="https://s2.qwant.com/thumbr/474x842/e/d/067595d8ef0202d6697c949f11dd98a9c7413bfbe503cdca7f014d1daaff65/th.jpg?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2WGpqiE4iwl4FshNWLzNVwHaNK%26pid%3DApi&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="pokemon-go-.jpg"></p>
+<p>J'ai l'impression que beaucoup de développeurs n'ont aucune envie de transformer le média. Je développe des jeux pour jouer avec un pad ou un clavier. Je garde les technologies exotiques pour les <a href="https://www.youtube.com/watch?v=YqzS-1oZxA0">petits projets amusants</a>. Ce n'est pas une mauvaise chose de continuer à faire ce que l'on aime -- iIl y a des jeux qui sortent encore sur des consoles rétro et que les gens apprécient.</p>
+<p>Mais <strong>tenons-nous au courant des nouvelles technologies</strong> et réfléchissons à ce que nous pouvons réaliser avec toutes ces nouvelles choses.</p>
+<h3>Conseils pour le travail en équipe</h3>
+<h4>Feedback is Fact.</h4>
+<p>Je garde le titre en anglais car feedback est un mot très utilisé en France. Il s'agit tout simplement des retours que quequ'un peut vous faire à propos de votre travail.</p>
+<blockquote>
+<p>Le feedback est toujours vrai dans la mesure où il révèle comment notre jeu fait ressentir les gens, mais après cela, c'est à nous de trouver la bonne solution à ce problème.</p>
+</blockquote>
+<p>Mon avis sur la question : <strong>Le feedback n'est pas un débat</strong>.</p>
+<p>Vous avez reçu des commentaires avec lesquels vous n'êtes pas d'accord ? Remerciez-les sans essayer de trouver des excuses ou de vous expliquer. Posez des questions si nécessaire et trouvez la source du problème. Si celui-ci est réellement pertinent pour vous, résolvez-le.</p>
+<p>Les retours sont gratuits et ne sont là que pour vous aider à améliorer votre jeu. Ne perdez pas de temps à vous justifier pour convaincre les gens qu'ils ne devraient pas avoir ce sentiment.</p>
+<h4>Lorsque vous donnez votre avis, regardez au cœur de ce qu'est réellement le jeu.</h4>
+<blockquote>
+<p>[Bruce Shelley] a souvent vu une lueur de valeur dans une idée que j'étais prêt à abandonner. En même temps, il ne se laissait jamais distraire par les parties du jeu qui n'étaient pas encore terminées.</p>
+<p>Je pouvais lui remettre un prototype défectueux avec des graphismes épouvantables, des ennemis surpuissants et un crash au bout de trois tours, et il pouvait passer outre ces plaintes immatérielles pour s'intéresser au cœur même du jeu.</p>
+<p>Là où il y avait du potentiel, il le voyait, et il pouvait subtilement isoler les zones à améliorer sans se laisser distraire par ce que nous savions tous deux être facilement réparable.</p>
+</blockquote>
+<p>Lorsque vous réalisez un prototype ou que vous faites part de vos commentaires à un autre développeur, ne vous arrêtez pas aux détails et regardez au cœur de ce que le jeu représente vraiment. Ne vous concentrez pas sur les bug insignifiants ou les problèmes graphiques. Vous savez qu'ils sont là temporairement et qu'ils finiront par être corrigés.</p>
+<h4>Porter plusieurs casquettes</h4>
+<blockquote>
+<p>En tant que concepteur, il est important d'avoir plusieurs casquettes.
+Comprendre les besoins de chaque département et apprendre les outils dont ils ont besoin améliorera votre rendement, la compréhension des besoins de chaque département et l'apprentissage des outils nécessaires amélioreront votre production, faciliteront la communication avec vos collègues et vous apporteront un point de vue critique lorsque vous devrez admettre que vous vous êtes trompé sur une idée.
+Mais surtout, cela vous rendra plus autonome.</p>
+</blockquote>
+<p>J'ai déjà rencontré des personnes ayant cette polyvalence. Des experts dans leur domaine, et familiers avec les disciplines de leurs collègues.</p>
+<p>J'ai étudié l'informatique pendant 5 ans. D'abord, ça m'aide à interagir avec les programmeurs. Je suis organisé, rigoureux et je préfère concevoir des systèmes de jeu plutôt que des histoires. Et bien sûr, je peux créer des jeux ou des prototypes par moi-même, ce qui est très utile.</p>
+<p>Par exemple, je suis sûr que les &quot;artistes concepteurs de jeux&quot; ont aussi leurs propres avantages. Ils peuvent dessiner le design, le rendre attrayant mais clair. C'est bien mieux que les carrés froids et laids remplis de texte que j'utilise.</p>
+<h4>Dans une équipe, évitez de partager les mêmes tâches.</h4>
+<p>L'apprentissage du travail en équipe est difficile, et la création de jeux vidéo est généralement un travail d'équipe.</p>
+<blockquote>
+<p>La dichotomie entre le talent de quelqu'un d'autre et le vôtre est un motif de réjouissance, car plus vous êtes éloignés l'un de l'autre, plus vous pouvez vous offrir mutuellement.
+Mais l'inverse est également vrai. Je sais où sont mes propres talents, et je trouve que le partage de ces tâches se situe généralement entre l'inefficacité et la frustration.</p>
+<p>Je veux combiner l'expertise unique des autres avec la mienne, et créer quelque chose qu'aucun d'entre nous n'aurait pu faire seul - et non pas faire des compromis sur la même tâche jusqu'à ce qu'elle soit inférieure à la somme de ses parties.</p>
+</blockquote>
+<p>Chez Ubisoft, chaque concepteur de jeu est le propriétaire de caractéristiques spécifiques. Par exemple, j'étais responsable des quêtes procédurales dans Ghost Recon : Breakpoint. Le game designer travaille sur le design; le lead ou le directeur le valide avant de lancer la production.</p>
+<p>Les bons concepteurs de jeux écoutent le reste de l'équipe pour améliorer la conception. Mais <strong>vous n'avez pas à faire de compromis; Vous êtes le seul responsable, ce qui rend les choses plus faciles à gérer</strong>.</p>
+<p>Imaginez que les 200 personnes de l'équipe doivent être d'accord sur tout ?</p>
+<p>L'un des inconvénients est qu'il est plus difficile de relier les différents systèmes de jeu entre eux. Vous êtes tellement occupé par votre fonctionnalité que vous ne savez pas comment le développement progresse sur les autres. Vous pouvez vous sentir un peu à l'écart, ou être en désaccord total avec le fonctionnement des autres systèmes de jeu.</p>
+<h3>Les opinions de Sid</h3>
+<h4>Tricher peut être amusant.</h4>
+<p>Sid méprisait les cheats code dans les jeux.</p>
+<blockquote>
+<p>Plus le jeu devient rapide et facile, moins il est considéré comme un jeu.</p>
+</blockquote>
+<p>Mais le concepteur en charge de la sortie de Civ II a ignoré les conseils de Sid. Il a livré le jeu avec un menu de triche accessible. Après avoir vu son fils jouer avec des cheat codes, Sid a changé d'avis.</p>
+<p><img src="https://fartinvite.com/pics/civilization-2-pc-cheats-3.png" alt="civilization-2-pc-cheats-2.jpg"></p>
+<blockquote>
+<p>J'ai regardé par-dessus l'épaule de mon fils Ryan alors qu'il lançait avec joie une légion de chars au Moyen-Âge pour écraser quelques piquiers, et j'ai réalisé qu'il pouvait y avoir un certain niveau de plaisir derrière la triche après tout, du moins une fois qu'elle devient suffisamment gratuite.</p>
+</blockquote>
+<p>Selon moi, <strong>nous devrions donner la possibilité de casser ou de modifier le jeu</strong>, via des codes de triche ou des outils de modding. Il peut être difficile d'accepter que les joueurs modifient ce que vous avez conçu, mais beaucoup de jeux ont prouvé que c'était très amusant de le faire. J'ai commencé à &quot;créer des jeux&quot; avec l'éditeur de carte du monde de Warcraft 3. C'est aussi sur ce jeu que j'ai apprécié mes premiers codes de triche.</p>
+<p>Si les outils de modding doivent être disponibles dès le départ, les <strong>cheat codes doivent être gagnés</strong>.</p>
+<p>Par exemple, après avoir gagné le jeu au moins une fois, en respectant les règles. Le joueur continue à profiter du jeu comme nous le voulions, mais il est capable de détruire toutes les règles qu'il a respectées jusqu'à présent.</p>
+<h4>Les micro-transactions sont détestées mais efficaces.</h4>
+<blockquote>
+<p>Si vous demandiez à un groupe de joueurs leur avis sur ces &quot;microtransactions&quot;, la plupart répondraient probablement par une série de mots grossiers.
+Nous disons que nous les détestons, mais les bilans prouvent le contraire.</p>
 <p>Mais on ne peut échapper au fait que de nombreux jeux gratuits sont prédateurs, surtout lorsqu'ils ciblent les jeunes enfants, ou qu'ils brouillent la frontière entre les mises à jour et le contenu nécessaire.
 Il doit y avoir un produit qui en vaut la peine et une relation respectueuse et honnête avec les joueurs sur ce qu'ils obtiennent pour leur argent.</p>
 </blockquote>
-<p>Je les déteste aussi. Je n'achète jamais dans ces magasins, je serais un piètre concepteur à ce sujet.
-Non pas que je n'aime pas le contenu qu'ils proposent, mais je ne veux pas payer pour des choses très optionnelles que je préférerais gagner en jouant. Bien sûr, il y a des jeux dans lesquels vous pouvez gagner des choses décoratives en jouant, mais c'est rarement les trucs sympas. Un contre exemple est Overwatch, vous pouvez débloquer presque tout en jouant.</p>
-<p>D'un autre côté, j'aime beaucoup les DLC, je pense qu'il est normal de payer pour avoir plus de contenu, à moins qu'il y ait eu une promesse d'ajouter plus de contenu lorsque vous avez acheté le jeu.</p>
-<h3>Voir la technologie en termes de progrès, plutôt que de limites.</h3>
+<p>Je les déteste aussi. Je n'achète jamais dans ces magasins virtuels, je serais un piètre concepteur à ce sujet.
+Non pas que je n'aime pas le contenu qu'ils proposent. Mais je ne veux pas payer pour du contenu optionnel que j'aurais dû pouvoir mériter en jouant.</p>
+<p>Bien sûr, dans la plupart des jeux, vous pouvez gagner du contenu décoratif en jouant. Mais il s'agit rarement du contenu le plus recherché. Un contre-exemple est Overwatch, vous pouvez presque tout débloquer en jouant.</p>
+<p>D'un autre côté, j'aime les DLC parce que <strong>on achète réellement plus de contenu de gameplay</strong>, pas des skins optionnels. En général, on achète des DLC parce qu'on aime le jeu et qu'on a envie d'en avoir plus, et non parce qu'on y est obligé pour apprécier le jeu.</p>
+<p>Les grands studios comme Ubisoft vendent différents packs pour le même jeu. Le pack premium comprend tous les DLC à venir. Il y a plusieurs avantages pour le développeur :</p>
+<ol>
+<li>Les DLC sont déjà payés - Vous pouvez budgétiser votre production.</li>
+<li>Vous pouvez modifier le contenu des DLC en tenant compte des commentaires des joueurs.</li>
+<li>Les DLC sont moins chers à fabriquer.</li>
+<li>Vous pouvez commencer le développement des DLC avant même la sortie du jeu. Chez Ubisoft, les DLC sont planifiés longtemps à l'avance et leur développement est partagé entre plusieurs équipes.</li>
+</ol>
+<p>Mais il faut rester vigilant : le jeu original (sans aucun DLC) doit être complet.</p>
+<p>Les joueurs paient pour quelque chose qui n'existe pas encore. Ils seront très mécontents si le contenu est de mauvaise qualité.</p>
+<h4>Suspendre la réalité, ne pas examiner la douleur des vrais dilemmes moraux.</h4>
+<p>Sid nous donne son avis sur ce qu'il veut créer dans ses jeux vidéo, à vous de décider ce que vous voulez créer dans les vôtres.</p>
 <blockquote>
-<p>Je voyais généralement la technologie en termes de progrès, plutôt que de limites, et je vivais dans un état d'excitation presque perpétuel face à ce que nous pouvions accomplir.</p>
+<p>J'ai toujours pensé que notre rôle en tant que concepteurs de jeux est de suspendre la réalité, et non d'examiner la douleur des vrais dilemmes moraux.
+Il y a certainement une place pour cela dans l'art, et les jeux vidéo sont considérés comme de l'art, mais ce n'est généralement pas un endroit où les gens veulent passer leur temps après une longue journée au bureau.</p>
+<p>Les jeux sont censés conserver leur public bien plus longtemps que toute autre forme d'art. [...]
+Peu de gens sont prêts à se complaire dans les moments les plus difficiles de la vie aussi longtemps.</p>
 </blockquote>
-<p>Je me demande si c'est encore vrai de nos jours, il semble qu'il n'y ait plus de limites, sauf si l'on parle de réalisme et de taille. Il y a beaucoup de nouvelles technologies qui n'ont pas encore été massivement utilisées dans les jeux vidéo et qui ont un impact énorme sur la conception des jeux. Bien sûr, cela peut être dû au prix et au confort (Réalité Virtuelle), mais il suffit de regarder des jeux comme Pokemon Go, qui a connu un énorme succès et a utilisé la technologie de la réalité augmentée, ce que l'on ne voit pas dans tous les jeux mobiles.</p>
-<p><img src="https://s2.qwant.com/thumbr/474x842/e/d/067595d8ef0202d6697c949f11dd98a9c7413bfbe503cdca7f014d1daaff65/th.jpg?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2WGpqiE4iwl4FshNWLzNVwHaNK%26pid%3DApi&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="pokemon-go-.jpg"></p>
-<p>Je pense que beaucoup de developeurs sont enfermés dans ce que les jeux étaient et sont actuellemnt, et n'ont pas vraiment envie de transformer le média. J'admets que je veux toujours faire des jeux qui se jouent avec un pad, un clavier parfois, rarement en VR, et jamais sur d'autres technologies sauf si c'est pour un petit projet. Ce n'est pas un mal de continuer de faire ce qu'on aime (vous pouvez regarder tous ces jeux qui sortent encore sur des consoles rétro) mais <strong>restons à jour sur les nouvelles technologies</strong> et réfléchissons à ce que nous pouvons faire avec toutes ces nouvelles choses.</p>
-<h3>La règle des tiers.</h3>
-<p>Les concepteurs de Civilization suivent traditionnellement une &quot;règle des tiers&quot;. Un tiers de la version précédente reste en place, un tiers est mis à jour, et un tiers est complètement nouveau.</p>
-<h3>Le Bingosaur.</h3>
-<p>Celui-là est juste drôle.</p>
+<p>Je suis d'accord que la plupart des jeux devraient être relaxants. Mais <strong>les jeux vidéo ont mûri, et ne sont plus seulement un outil de relaxation</strong>. De plus, certains jeux examinent la douleur de véritables dilemmes moraux et sont encore capables de rendre le jeu relaxant et amusant. Il y a un public pour ce genre de jeux de nos jours.</p>
+<h4>La violence n'est pas nécessaire.</h4>
+<p>Comme les bons jeux doivent avoir un impact sur le joueur, il veut éviter de mettre trop de violence dans ses jeux. Cela peut avoir un impact négatif sur nos joueurs, même sur les personnes matures qui peuvent déterminer que c'est de la fantaisie.</p>
 <blockquote>
-<p>[...] J'ai abandonné toute prétention au réalisme et j'ai inventé un dinosaure qui pouvait cracher du poison.
-En guise de clin d'oeil amical à notre producteur chez EA, Bing Gordon, j'ai nommé ma nouvelle espèce le Bingosaur.</p>
+<p>Les jeux vidéo sont une forme d'art, et ce n'est jamais une bonne idée d'étouffer la créativité.
+Je peux dire avec certitude que les joueurs sont des personnes matures et intelligentes, et que nous sommes capables de faire la distinction entre la fantaisie et la réalité.
+Mais lorsqu'il s'agit des créations qui m'inspirent, je ne pense pas que la violence soit nécessaire. Le monde est souvent un endroit très négatif, et je préfère le pousser dans la direction opposée chaque fois que je le peux.</p>
+<p>Il est possible d'argumenter qu'en exposant la réalité désagréable de la violence, vous pouvez inciter les autres à la combattre également, mais cela nécessite généralement une perspective éloignée, plutôt que la nature inhérente des jeux à la première personne.
+Il est difficile de prétendre que nos produits sont immersifs, tout en insistant sur le fait que l'expérience n'a aucun impact.
+<strong>Un jeu sans impact est simplement un mauvais jeu.</strong>&quot;</p>
 </blockquote>
-<h3>Le bug de Gandhi n'existe pas.</h3>
-<p>J'ai toujours pensé que c'était vrai...</p>
+<p>Encore une fois, c'est son opinion. Vous êtes libre de ne pas être d'accord et d'utiliser la violence comme un outil pour influencer le joueur comme vous le souhaitez (je pense ici à <em>The Last Of Us 2</em>).</p>
+<h4>Les bons jeux doivent mettre en lumière nos peurs les plus profondes.</h4>
 <blockquote>
-<p>Mais ce ne sont pas les innombrables rappels et références qui rendent l'histoire du Gandhi nucléaire si drôle à mes yeux. C'est le fait que rien de tout cela n'est vrai. L'erreur de débordement (overflow) ne s'est jamais produite.
-[...] Pour moi, la question la plus intéressante est la suivante : qu'est-ce qui rend cette histoire si fascinante pour qu'elle continue à générer du trafic chaque fois qu'elle est mentionnée ?</p>
+<p>Peut-être que la chose qui rend Civ si bon est qu'il éclaire nos peurs les plus profondes sur nous-mêmes.
+Il est difficile de jouer à un fantasme de domination mondiale sans se demander de temps en temps si l'on est vraiment la meilleure personne pour le faire après tout.</p>
+<p>Dans le bon contexte, un jeu n'est pas seulement un moyen de s'amuser, mais un exercice d'autodétermination et de confiance.
+Les bons jeux nous apprennent qu'il y a des compromis pour tout, que les actions mènent à des résultats et qu'il y a presque toujours une chance de réessayer.</p>
+</blockquote>
+<h4>Relier les gens par leurs expériences communes.</h4>
+<p>Une façon intéressante de voir notre rôle d'artiste.</p>
+<blockquote>
+<p>Le jeu est pour tout le monde -- et pas seulement à un niveau individuel, mais dans son ensemble. C'est pour tout le monde ensemble.
+Je n'ai pas toujours su ce qui attirait les gens qui ne sont pas spécifiquement moi, mais j'ai toujours voulu le découvrir,
+et quand il s'agit de jeux, je pense que l'addiction n'est généralement qu'un autre mot pour désigner la connexion intense que nous ressentons envers une œuvre d'art.</p>
+<p>En tant qu'artiste, mon travail consiste à favoriser cette connexion de manière constructive et, si j'ai de la chance, à relier les gens entre eux par le biais de notre expérience commune.</p>
+</blockquote>
+<h4>Les jeux ne sont pas seulement une distraction.</h4>
+<p>Sid a créé son premier jeu, <em>Hostage Rescue</em>, sur une Atari en BASIC avec l'aide de magazines. Vous incarnez un &quot;Hélicoptère&quot; qui tente de sauver des otages des mains de terroristes. Ils vous tirent des missiles, vous leur tirez des missiles. Mais à chaque fois que vous tirez, des otages peuvent mourir. Le décompte est affiché de manière accusatrice en bas de l'écran.</p>
+<p>Sa mère a essayé le jeu, elle était très concentrée, à fond dans le jeu, évitant les missiles avec son propre corps.</p>
+<blockquote>
+<p>Mais à un moment donné, elle a lâché la manette et a détourné le visage. Elle ne pouvait plus jouer, son cœur s'emballait et c'était trop pour elle.</p>
+</blockquote>
+<p>Les jeux ne sont pas une distraction. <strong>Les jeux peuvent faire ressentir des émotions</strong>, comme la grande littérature ou d'autres formes d'art. Peut-être même plus grâce à l'interaction qui est un élément central des jeux.
+J'ai déjà lu plusieurs fois des articles sur ce <strong>moment de révélation</strong>. Il semble que ce soit un événement commun que nous partageons tous.</p>
+<h4>Les gens sont généralement peu coopératifs par nature.</h4>
+<p>Ce n'est pas une preuve scientifique mais un bon exemple à considérer.</p>
+<blockquote>
+<p>CivWorld avait un certain nombre de problèmes, dont le plus important était la nature généralement peu coopérative des personnes réelles lorsqu'elles étaient mises à l'épreuve.
+[...] pour la plupart, tout le monde choisissait de laisser ses amis souffrir.</p>
+</blockquote>
+<h3>Funny Anecdoctes</h3>
+<h4>Le Bingosaur.</h4>
+<blockquote>
+<p>J'ai abandonné toute prétention au réalisme et j'ai inventé un dinosaure qui pouvait cracher du poison.
+En guise de clin d'œil amical à notre producteur chez EA, Bing Gordon, j'ai nommé ma nouvelle espèce le Bingosaur.</p>
+</blockquote>
+<h4>Gandhi bug is Fake.</h4>
+<blockquote>
+<p>Mais ce ne sont pas les innombrables rappels et références qui rendent l'histoire du Gandhi nucléaire si drôle à mes yeux. C'est le fait que rien de tout cela n'est vrai. L'erreur de débordement ne s'est jamais produite.
+Pour moi, la question la plus intéressante est la suivante : qu'est-ce qui rend cette histoire si fascinante qu'elle continue à générer du trafic chaque fois qu'elle est mentionnée ?</p>
 </blockquote>
 <p><img src="https://s2.qwant.com/thumbr/0x380/5/6/89478e91918c3ab638090bd3320ea6ff1a950405c75b720ec4bdeb2f170c8b/132e1e08428fb2ec1561cad9f84322bfc958a119r1-800-566v2_hq.jpg?u=https%3A%2F%2Fpm1.narvii.com%2F7618%2F132e1e08428fb2ec1561cad9f84322bfc958a119r1-800-566v2_hq.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="Ghandi Nuke Image"></p>
-<h2>Notes finales.</h2>
+<h3>Notes finales</h3>
 <p>Si vous avez besoin de plus de détails, ou si vous voulez simplement profiter d'une belle histoire, je vous invite à vous procurer le [livre] (https://amzn.to/2XWfeOk &quot;Link to the Sid Meier's Memoir&quot;).</p>
-<p>Quelle est votre leçon préférée ? Quels sont les conseils que vous n'approuvez pas ? Quelque chose à ajouter à propos de l'un d'entre eux ?
-N'hésitez pas à laisser un commentaire sur votre plateforme préférée, je suis impatient de le lire.</p>
-<h2>Sources.</h2>
-<p><a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">Sid Meier's Memoir book</a></p>
-<p><a href="https://www.youtube.com/watch?v=AJ-auWfJTts&amp;list=WL&amp;index=27">GDC Classic Game Postmortem: Sid Meier's Civilization </a></p>
-<p><a href="https://www.youtube.com/watch?v=MtzCLd93SyU&amp;list=WL&amp;index=26">Sid Meier's Psychology of Game Design</a></p>
-<h2>Cet article est financé par mes supporters</h2>
-<p>Un grand Merci à :
+<ol>
+<li>Quelle est votre leçon préférée ?</li>
+<li>Quels sont les conseils avec lesquels vous n'êtes pas d'accord ?</li>
+<li>Quelque chose à ajouter sur l'un d'entre eux ?</li>
+</ol>
+<p>N'hésitez pas à me laisser un commentaire sur votre plateforme préférée, je suis impatient de le lire.</p>
+<h4>Sources</h4>
+<p><a href="https://amzn.to/2XWfeOk" title="Lien vers le livre Sid Meier's Memoir">Livre Sid Meier's Memoir</a>
+<a href="https://www.youtube.com/watch?v=AJ-auWfJTts&amp;list=WL&amp;index=27">GDC Classic Game Postmortem : Sid Meier's Civilization </a>
+<a href="https://www.youtube.com/watch?v=MtzCLd93SyU&amp;list=WL&amp;index=26">Psychologie de la conception de jeux de Sid Meier</a></p>
+<h4>Cet article est financé par mes supporters</h4>
+<p>Mes plus grands remerciements à :
 damien et Móey Mei</p>
 
     </div>

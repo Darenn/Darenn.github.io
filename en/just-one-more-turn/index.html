@@ -48,12 +48,12 @@
     
       
 </div>
-<div id="fixed-zone">
+<aside id="fixed-zone">
   <div id="table_of_content_container">
     <h2 style="margin-left:5%;">Table Of Content</h2>
-    <div id = "table_of_content"></div>
+    <nav id = "table_of_content"></nav>
   </div>
-</div>
+</aside>
 
 <div id="right_fixed-zone">
     <!--<div id="xp_zone">
@@ -128,7 +128,7 @@
 <h3>Introduction</h3>
 <p>Sid Meier's most famous work is one of my favorite strategy games: <em>Civilization</em>.</p>
 <p>In his memoir, he talks about the key moments of his career and shares funny and interesting anecdotes that make it a real pleasure to read.</p>
-<p>There are also a lot of <strong>Game Development tips and lessons</strong>s throughout the book. I'm gonna make sure you can get them all in this article.</p>
+<p>There are also a lot of <strong>Game Development tips and lessons</strong> throughout the book. I'm gonna make sure you can get them all in this article.</p>
 <p><img src="/assets/images/articles/JustOneMoreTurn/sidmeierbook.jpg" alt="Photo of Sid Meier's Memoir book front cover"></p>
 <p>If you need more details or want to enjoy a nice story, I invite you to get the <a href="https://amzn.to/2XWfeOk" title="Link to the Sid Meier's Memoir">book</a>.</p>
 <h4>Sid's long career (in very short).</h4>
@@ -177,7 +177,7 @@ A bad game strands you in the past while a mediocre one keeps you in the present
 <p>Once you have isolated all of the interesting part of any decision, then you’re ready to build an interactive experience that feels new but familiar.</p>
 </blockquote>
 <p>For example, what makes the battle system in Civilization so compelling?</p>
-<p>The system is partly random, you can estimate the outcome, but you can't be sure of it. When launching a battle, you see the soldiers fighting but have to wait a few seconds to see the final result. Chances of winning are faked. If you're told you have a 50% chance of winning, then the game will let you win 1/2 battles. If you have 90% of winning, you will lose very rarely.</p>
+<p>The system is partly random, you can estimate the outcome, but you can't be sure of it. When launching a battle, you see the soldiers fighting but have to wait a few seconds to see the final result. Chances of winning are faked. If you're told you have a 50% chance of winning, then the game will let you win half the battles. If you have 90% of winning, you will lose very rarely.</p>
 <p>We know humans love surprises, it's a very strong feeling. The waiting of the result amplifies the effect. But they don't like unfairness, losing 2 fights in a row with a 50% chance of winning seems unfair to a human.</p>
 <p>We can say the system is fun because :</p>
 <ol>
@@ -187,7 +187,7 @@ A bad game strands you in the past while a mediocre one keeps you in the present
 <li>The battle system seems fair.</li>
 </ol>
 <h4>No wrong answers, and more than one right answer, but not too many.</h4>
-<p>While working on Sid Meier Pirates, he stumbled upon a problem of textual adventure games. For a given puzzle, there is only one solution. For example, to open a door with a key, you have one good answer <em>&quot;Unlock door with key&quot;</em> and a lot of wrong answers <em>&quot;Open door with key&quot;</em>, <em>&quot;Use key to open door&quot;</em>, etc...</p>
+<p>While working on <em>Sid Meier's Pirates</em>, he stumbled upon a common problem of textual adventure games. For a given puzzle, there is only one solution. For example, to open a door with a key, you have only one good answer <em>&quot;Unlock door with key&quot;</em> and a lot of wrong answers <em>&quot;Open door with key&quot;</em>, <em>&quot;Use key to open door&quot;</em>, etc...</p>
 <p><img src="https://s1.qwant.com/thumbr/700x0/b/c/9446d630b882042bc4bb3dd680cd3566e5313363d551b40137021355b13c2c/Colossal-Cave-Adventure.png?u=https%3A%2F%2Fwww.raspberrypi.org%2Fapp%2Fuploads%2F2019%2F03%2FColossal-Cave-Adventure.png&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="Handheld text-based adventure gaming with Quest Smith ..."></p>
 <blockquote>
 <p>Our brains'executive function, or decision-making capability, tires out over time. [...] the importance of the task has no bearing on your exhaustion. Insignificant decisions take just as much brain power as interesting ones, but without any of the satisfaction.</p>
@@ -198,14 +198,14 @@ A bad game strands you in the past while a mediocre one keeps you in the present
 </blockquote>
 <p>Nowadays, AAA is all about open worlds with endless places to be, dungeons to explore, side quests to complete, collectibles to get... endless choices. I observed that it's common practice to quit or ignore all side content and focus on the <em>&quot;main path&quot;</em>.</p>
 <p><img src="https://s2.qwant.com/thumbr/0x380/e/1/ef051b11245e65625ba4b2bd1d01c3e3c7d301e1349e60c3095ad4bf00fb4c/wildlands-interactivemap2.jpg?u=http%3A%2F%2Fwww.ghostrecon.net%2Fghost-recon%2Fwp-content%2Fuploads%2F2017%2F06%2Fwildlands-interactivemap2.jpg&amp;q=0&amp;b=1&amp;p=0&amp;a=1" alt="60 Million Pixel Interactive Wildlands Map - Ghost Recon Net"></p>
-<p>We need to <strong>control how much content is available at all times and guide the player</strong>. It's nice to have a lot of content and let the player choose his own way. It's not to burden the player with endless small choices to make each time he's looking at the map for his next move. It's even more true in games that are more about action than mental skills.</p>
+<p>We need to <strong>control how much content is available at all times and guide the player</strong>. It's nice to have a lot of content and let the player choose his own way. It's not good to burden the player with endless small choices to make each time he's looking at the map for his next move. It's even more true in games that are more about action than mental skills.</p>
 <h4>Don't forget to design what happens in the head of the player.</h4>
 <blockquote>
 <p>Another more general concept that I took from Seven Cities of Gold was that the anticipation of each new story line was at least as important as the story itself.
 Dan didn't just design the game you could see and play, he also designed parts of the game that would take place entirely in your head.</p>
 </blockquote>
 <h4>Make sure the player is the one having fun.</h4>
-<p>While creating <a href="https://www.youtube.com/watch?v=bekpo1o6rh4"><em>Sid Meier Railroad Tycoon</em></a>, Sid really wanted to add floods that randomly appears and destroy bridges. His colleague Bruce, found it very unfair. Sid insisted but realized it was <strong>something fun to create</strong> for him, <strong>not something fun to play</strong> for the player.</p>
+<p>While creating <a href="https://www.youtube.com/watch?v=bekpo1o6rh4"><em>Sid Meier Railroad Tycoon</em></a>, Sid added flood that sporadically destroy bridges. His colleague Bruce, found it very unfair. Sid insisted but realized it was <strong>something fun to create</strong> for him, <strong>not something fun to play</strong> for the player.</p>
 <blockquote>
 <p>The game isn't supposed to be about us. The player must be the star, and the designer has to be as invisible as possible.</p>
 </blockquote>
@@ -252,8 +252,7 @@ and when computer don't act like computers, the only psychologically safe assump
 <p>In a &quot;Dinosaur RTS game&quot; that he never released, he removed all the micromanagement actions. The idea was to let the AI do most of the &quot;boring&quot; stuff. The problem: the player did not have anything interesting to do anymore.</p>
 <p>Be sure to focus on what your player is doing in your game, but <strong>don't remove too much control from him</strong>.</p>
 <blockquote>
-<p>Players may not be rewarded for every choice, but the control over the outcome must be primarily in their hands,
-otherwise they're just watching a movie that demands occasional button jabs.</p>
+<p>Players may not be rewarded for every choice, but the control over the outcome must be primarily in their hands, otherwise they're just watching a movie that demands occasional button jabs.</p>
 </blockquote>
 <h4>When should you use Real-time versus Turn-based?</h4>
 <blockquote>
@@ -357,8 +356,8 @@ One good game is better than two great games.</p>
 <p>I'm wondering if it's still true nowadays. It seems like there are no limits anymore unless you're talking about realism and size. A lot of new technologies aren't widely applied to video games yet. It might be because of price, comfort, and the lack of interest from developers.</p>
 <p>However, some of them have a huge impact on the design of games. Pokémon Go is a huge hit that used Augmented Reality technology, you don't see that in every mobile game.</p>
 <p><img src="https://s2.qwant.com/thumbr/474x842/e/d/067595d8ef0202d6697c949f11dd98a9c7413bfbe503cdca7f014d1daaff65/th.jpg?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2WGpqiE4iwl4FshNWLzNVwHaNK%26pid%3DApi&amp;q=0&amp;b=1&amp;p=0&amp;a=0" alt="pokemon-go-.jpg"></p>
-<p>I feel like a lot of developers have no desire to transform the media. I develop games to play with a pad or keyboard. I keep the exotic techs for small and <a href="https://www.youtube.com/watch?v=YqzS-1oZxA0">funny projects</a>. It's not a bad thing to keep doing what you love -- Games that are still released on retro consoles and people enjoy it.</p>
-<p>But let's keep updated about new technologies and think about what we can achieve with all this new stuff.</p>
+<p>I feel like a lot of developers have no desire to transform the media. I develop games to play with a pad or keyboard. I keep the exotic techs for small and <a href="https://www.youtube.com/watch?v=YqzS-1oZxA0">funny projects</a>. It's not a bad thing to keep doing what you love -- There are games that are still released on retro consoles and people enjoy it.</p>
+<p>But <strong>let's keep updated about new technologies</strong> and think about what we can achieve with all this new stuff.</p>
 <h3>Teamwork Tips</h3>
 <h4>Feedback is fact.</h4>
 <blockquote>
@@ -382,7 +381,7 @@ ease communication with your coworkers, and provide a critical perspective when 
 <p>But most importantly, it will make you more self-sufficient.</p>
 </blockquote>
 <p>I already met some people with this versatility. Experts in their domain, and familiar with their colleagues' disciplines.</p>
-<p>I studied computer science for 5 years. For once, it helps me interact with programmers. It also <strong>alters my design process in a positive way.</strong> I am organized, rigorous and I prefer designing complex game systems more than stories. And of course, I can create games or prototypes on my own, which is very useful.</p>
+<p>I studied computer science for 5 years. First, it helps me interact with programmers. It also <strong>alters my design process in a positive way.</strong> I am organized, rigorous and I prefer designing complex game systems more than stories. And of course, I can create games or prototypes on my own, which is very useful.</p>
 <p>For example, I'm sure &quot;artists game designers&quot; have their own advantages too. They can draw the design, make it appealing but clear. Much better than the ugly-cold squares filled with text that I use.</p>
 <h4>In a team, avoid sharing the same duties.</h4>
 <p>Learning teamwork is hard, and making video games is usually a team effort.</p>
@@ -412,8 +411,7 @@ But the opposite is also true. I know where my own talents are, and I find that 
 <h4>Micro-Transactions are hated but effective.</h4>
 <blockquote>
 <p>If you were to ask a group of gamers their opinion on these so-called &quot;micro transactions&quot;, most would probably respond with a string of rude words. But the revenues tell a different story.
-[...] We say we hate it, but the balance sheets prove otherwise.</p>
-<p>But there's no escaping the fact that many free-to-play games are predatory, especially when they target young children, or blur the line between upgrades and necessary content.
+But there's no escaping the fact that many free-to-play games are predatory, especially when they target young children, or blur the line between upgrades and necessary content.
 There has to be a worthwhile product underneath, and a respectful, honest relationship with players about what they're getting for their money.</p>
 </blockquote>
 <p>I hate them too. I never buy from these stores, I would be a poor designer on this subject.
