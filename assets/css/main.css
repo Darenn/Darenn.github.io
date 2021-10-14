@@ -40,11 +40,13 @@ footer {
   .main-content  {
     width: 90%;
     margin: 0;
+    margin-left:5%;
   }
 
   .header {
     width: 90%;
     margin: 0;
+    margin-left:5%;
   }
 }
 
