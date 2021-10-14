@@ -38,12 +38,12 @@ footer {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .main-content  {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 
   .header {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 }
