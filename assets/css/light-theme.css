@@ -130,4 +130,9 @@ h2, h3, h4, h5, h6 {
     background-color: #f5f5f5;
   }
 
+  pre {
+    background-color: #413B40;
+    color: #FAF2EC;   
+  }
+
   
