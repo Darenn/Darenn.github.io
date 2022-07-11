@@ -47,6 +47,7 @@
   }
   #banner {
     width:100%;
+    border-radius: 1%;
   }
   #fact-sheet {
     column-count: 3;
@@ -63,6 +64,10 @@
   #fact-sheet {
     column-count: 1;
     column-fill: balance;
+  }
+
+  body {
+    width:90%;
   }
 }
 
@@ -124,8 +129,7 @@
 
   h1, h2, h3 {
     clear:both;
-    padding-bottom:2%;
-    padding-top:4%;
+    padding-top:3%;
   }
 
   .row {
@@ -167,6 +171,8 @@
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+  margin-top:4%;
+  margin-bottom:4%;
 }
 
 .video {
@@ -181,14 +187,19 @@
 </style>
 <body>
     <h1 id="page-title">Last In Space Press Kit</h1>
+    
+    <div class="w3-button w3-teal w3-round" style="margin-bottom:4%;margin-top:2%; margin-left: auto;margin-right: auto;display: block;max-width: 25%;">
+      <a href="https://drive.google.com/file/d/136wTsic9ZRu087OVDNkS2zNrCdnlZHo6/view?usp=sharing" target="_blank" style="text-decoration: none;" download="Last In Space Press Kit">
+        <i class="fa fa-download fa-lg"></i> <span style="text-align: center; vertical-align: middle; padding-bottom:5px;padding-left:10px;">Download Press Kit</span></a>
+    </div>
     <img id="banner" src="/assets/images/presskits/lis/lis_cover_final.png">
   <div id="outline">
     <a href="#fact-sheet">Fact Sheet</a>
     <a href="#description">Description</a>
     <a href="#features">Features</a>
-    <a href="#developer-history">Developer History</a>
-    <a href="#promotionnal-images">Promotionnal Images</a>
+    <a href="#developer-history">About the Developer</a>
     <a href="#trailer">Trailer</a>
+    <a href="#promotionnal-images">Promotional Images</a>
     <a href="#screenshots">Screenshots</a>
     <a href="#videos">Videos</a>
   </div>
@@ -228,7 +239,7 @@
     <p>
       Last In Space is a Minimalist Strategy Shooter in a retro style. 
       Play as the last survivor of the human species and eradicate the zorgs from the galaxy and across all dimensions !
-      The Hive Mind is strong, and you won't be able to destroy it only with brute force. Collect minerals to build survival and military infrastructures on planets. 
+      The Hive Mind is strong, and you won't be able to destroy it with brute force alone. Collect minerals to build survival and military infrastructures on planets. 
       Always keep an eye on your oxygen and energy levels, or you won't survive long. Be sure to act fast, as the Hive becomes stronger over time by infesting planets with nests. 
       Nests crawl with zorgs that won't wait for you to come to them...
     </p>
@@ -244,15 +255,21 @@
         <li>A unique and interesting take on retro top-down-shooter mixed with minimalist strategy.</li>
         <li>The first successful commercial title for the Tic-80 fantasy computer (top 6 best selling strategy games in june on itch.io).</li>
       </ul>
-    <h2 id="developer-history">Developer History</h2>
+    <h2 id="developer-history">About the Developer</h2>
     <p>
       Darenn Keller started as Gameplay Programmer in small game companies during his studies. 
-      After graduating, he worked at Ubisoft Bordeaux for 3 years as Game Designer on <span class="name">Ghost Recon: Breakpoint</span> and <span class="name"></span>Assasin's Creed: Valhalla</span>.
+      After graduating, he worked at Ubisoft Bordeaux for 3 years as Game Designer on <span class="name">Ghost Recon: Breakpoint</span> and <span class="name">Assasin's Creed: Valhalla</span>.
       He left Ubisoft to become an independant game developer in solo, and released his first game <span class="name">Last In Space</span> in only 1 month.
     </p>
 
 
-    <h2 id="promotionnal-images">Promotionnal images</h2>
+    <h2 id="trailer">Trailer</h2>
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/Pt7XuYj8MAs" allowfullscreen></iframe>
+    </div>
+
+
+    <h2 id="promotionnal-images">Promotional images</h2>
     <div class="gallery">
       <a target="_blank" href="/assets/images/presskits/lis/manual.gif">
         <img src="/assets/images/presskits/lis/manual.png" alt="Last In Space Manual" width="600" height="400">
@@ -316,11 +333,6 @@
     </div>
 
 
-    <h2 id="trailer">Trailer</h2>
-    
-    <div class="video-container">
-      <iframe class="video" src="https://www.youtube.com/embed/Pt7XuYj8MAs" allowfullscreen></iframe>
-    </div>
     <h2 id="screenshots">Screenshots</h2>
     <div class="row">
       <div class="column">
@@ -338,10 +350,21 @@
         <div class="grid-item"><img src="/assets/images/presskits/lis/screen7.gif" alt=""></div>
       </div>   
     </div> 
-    <h2 id="videos">Gameplay Video</h2>
+    <h2 id="videos">Videos</h2>
     <div class="video-container">
       <iframe class="video" src="https://www.youtube.com/embed/t8LJs74cujc" allowfullscreen></iframe>
-     
+    </div>
+
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/i7DpFtVkt4c" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/Gqznyjoz_FA"  allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/ensRwT_8GtA" allowfullscreen></iframe>
     </div>
 
 </body>
