@@ -58,6 +58,14 @@
     padding: 10px;
   }
 
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1100px) {
+  #fact-sheet {
+    column-count: 1;
+    column-fill: balance;
+  }
+}
+
   #fact-sheet h2 {
     column-span: all;
   }
@@ -117,7 +125,7 @@
   h1, h2, h3 {
     clear:both;
     padding-bottom:2%;
-    padding-top:5%;
+    padding-top:4%;
   }
 
   .row {
@@ -126,7 +134,7 @@
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   max-width: 50%;
@@ -153,6 +161,21 @@
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 </style>
@@ -294,7 +317,10 @@
 
 
     <h2 id="trailer">Trailer</h2>
-    <iframe width="100%" height="540" src="https://www.youtube-nocookie.com/embed/Pt7XuYj8MAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/Pt7XuYj8MAs" allowfullscreen></iframe>
+    </div>
     <h2 id="screenshots">Screenshots</h2>
     <div class="row">
       <div class="column">
@@ -313,8 +339,10 @@
       </div>   
     </div> 
     <h2 id="videos">Gameplay Video</h2>
-    <iframe width="100%" height="540" src="https://www.youtube-nocookie.com/embed/t8LJs74cujc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/t8LJs74cujc" allowfullscreen></iframe>
+     
+    </div>
 
 </body>
 
