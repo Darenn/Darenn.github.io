@@ -90,7 +90,8 @@
   margin-right: auto;
   padding-right: 4%;
   display: block;
-  width: 20%;
+  max-width: 150px;
+  text-align: center;
 }
 
 img {
@@ -98,7 +99,7 @@ img {
   margin-right: auto;
   display: block;
   float: center;
-  max-width: 40%;
+  max-width: 400px;
   transition: 0.2s;
   border-radius: 3%;
   margin-top: 5%;
@@ -107,22 +108,22 @@ img {
 
 a img:hover {
   transition: 0.2s;
-  max-width: 45%;
+  max-width: 410px;
   border-radius: 0%;
 }
 
 .btn i {
-  margin: 5% 7% 5% 5%;
+  margin: 0% 5% 0% 0%;
 }
 
 .ko-fi {
   margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    width:20%;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  width:20%;
 }
 
 span.blockspam {
@@ -131,6 +132,20 @@ span.blockspam {
 
 p {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 200px;
+  }
+
+  a img:hover {
+  max-width: 210px;
+  }
+
+  body {
+    width:70%;
+  }
 }
 
 </style>
