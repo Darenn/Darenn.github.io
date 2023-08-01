@@ -37,14 +37,14 @@
     gtag('config', 'G-ZKP4ES7P39');
   </script>
 
-  <title>Meaningful Choices in a Magic Circle, a Game Design blog by Darenn Keller</title>
+  <title></title>
 </head>
 <div class ="page-status">
     <i class="fas fa-moon fa-lg black"></i>
     <button id="theme-toggle" class="fas fa-toggle-off"></button>
     -
     
-        <a href="/fr/" onclick="storeLang('/fr/')" class="language-link">English</a>
+        <a href="/fr/sending_bulk_mails/" onclick="storeLang('/fr/')" class="language-link">English</a>
     
       
 </div>
@@ -116,142 +116,123 @@
 
 <div class="main-content">
     
-  
+
+<div class="leftcolumn">
+<p></p>
+</div>
+<div class="middlecolumn">
+  <article>
+    <h1>How I contacted 6000 influencers for free in 10 minutes</h1>
+    <h2>Let's see what software I use to send mails in bulk to influencers.</h2>
+    <span class=small-remark>All links to products are affiliated link, you pay the same price and I get a small percentage, thanks for your support!</span>
+    <p class=post-date>Posted on September 01, 2023 · 10 minutes read</p>
+    <div id="content">
+      <h3>Introduction</h3>
+<p>It's actually pretty simple, but it has some drawbacks.
+Here I'm focusing on the influencers/press mails.</p>
+<p>First you need to gather your press list. It can be very long and it's a lot of work collecting the mails on press website/youtube/blogs/etc... That's why you should not ask casually the press list of someone, this is definitely something with great value.</p>
+<p>The first way to contact them would be to send the mail yourself, but you'll be very limited. For example gmail can consider your mail spam if you sent more that 40 mails the same day.</p>
+<p>The second way would be to use paid stuff like YAAM to send mail in bulk.</p>
+<p>A third way (the one we will use) would be to take advantages of the free plans from newsletter softwares.</p>
+<h3>How To Use The Newsletter Software</h3>
+<p>The idea is to subscribe your press lit on the newsletter software, then send them mails like they were subscribers from your newsletter. BE CAREFUL not to really spam them with a real newsletter! It's forbidden to send promotionnal mails like this without consent. The only thing you can do with those press mail is send them business inquiries about your game. That's why you should be very careful if you use a press list from someone else (you never know how they got the mails).</p>
+<p><img src="/assets/images/ko-fi/brevo_screenshot.png" alt="brevo dashboard"></p>
+<p>I recommend using <a href="https://app.brevo.com/">Brevo</a>, which in my opinion has the best free plan for this because:</p>
+<ul>
+<li>Unlimited number of contacts</li>
+<li>300 mails per day</li>
+<li>You can contact everyone with by configuring one campaign only (but you'll need to come back every day)</li>
+</ul>
+<p>So here's what you're gonna do:</p>
+<ul>
+<li>Create a Brevo account</li>
+<li>Add your presslist mails to you subcribers</li>
+<li>Create a campaign with the mail you want to send to the press</li>
+<li>Send the mail</li>
+</ul>
+<p>You're done!</p>
+<p>Well not completely. Since you have a 300 mails per day limit, it won´t send the mail to your whole list if you have more than 300 (which you should).
+Instead it will put the campain on hold. You will have to come back the next day and requeue the campaign to keep sending it.
+If you don't want to come back every day to requeue, you can divide your contacts in groups of 300 and schedule several campaigns. It will take longer to setup but you won't have to think about requeuing your mail.</p>
+<h3>My tips to use this at his best</h3>
+<p>Let's review the pros and cons.</p>
+<p>Pros:</p>
+<ul>
+<li>Free.</li>
+<li>Easy.</li>
+<li>Fast.</li>
+<li>Should not finish in spam folder since it's a known newsletter software.</li>
+<li>Press can remove themselves from your press list if they're not interested.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>It will take a few days to contact everyone (300 mails per day).</li>
+<li>Unless you schedule (which takes more time) you have to come back everyday.</li>
+<li>You need to have an unsubcribe link, which could be confusing for them.</li>
+</ul>
+<p>Here are a few tips:</p>
+<ul>
+<li>Use the mandatory &quot;unsubscribe&quot; link as a &quot;I don't want news from your games&quot; link. It's a win-win really. If they are not interested you won't spam them, and you don't want send mails to people who don't care (and could add you into their spam folder decreasing your credibility for mail providers).</li>
+<li>Put the biggest influencers in a different list. When you select the campaign recipients, put them first so that they have the mail first.</li>
+<li>Avoid sending more than one mail a month. My idea is to send them something only when there's something new. A new level in the demo, a big update or maybe an event or prize won by the game. Your goal is to reming them play your game without looking like useless spam.</li>
+</ul>
+<p>Do you have better ways of doing this? Let me know!</p>
+
+    </div>
+  </article>
+</div>
+<div class="rightcolumn">
+
+<p></p>
+</div>
+
 <script>
-  document.getElementById("home_nav").classList.add('active');
+
+function transformIntoCollapsible(elements, includeFunction) {
+  for (var i = 0; i < elements.length; i++) {
+      var div = document.createElement('div');
+      elements[i].classList.add('collapsible-button');
+      div.classList.add('collapsible-content');
+      var content = elements[i].nextElementSibling;
+      while (includeFunction(content)) {
+        var nextSiblingToCheck = content.nextElementSibling
+        div.appendChild(content);
+        var content = nextSiblingToCheck;
+      }
+      elements[i].insertAdjacentElement('afterend', div);
+  }
+
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener("click", onCollapsibleButtonClicked);
+  }
+}
+
+function onCollapsibleButtonClicked() {
+  this.classList.toggle("active");
+  var content = this.nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    this.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    content.style.maxHeight = content.scrollHeight + "px";
+    lastContentOpened = content;
+  }
+}
+
+htmlTableOfContents();
+
+/*var coll = document.getElementsByTagName("H3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && content.nodeName != "H3" && content.nodeName != "H2"
+});*/
+
+var coll = document.getElementsByClassName("h3")
+transformIntoCollapsible(coll, function(content) {
+  return content != null && !content.classList.contains("h3")
+});
+
+
 </script>
-
-
-  <!-- <h1>Meaningful Choices in a Magic Circle, a Game Design blog by Darenn Keller</h1> -->
-  
-    <div class="post-card">
-      <a href="/en/sending_bulk_mails/">
-        <div class="post_card_description_bloc">
-          <img src="/assets/images/devlogs/click4ide/its_raining_cats.gif">
-          <span class="post-card-title">How I contacted 6000 influencers for free in 10 minutes</span>
-          <p class="post-card-brief">Let's see what software I use to send mails in bulk to influencers.</p>
-          <!--<p>Tags:
-          
-            
-          
-            
-              posts_en 
-            
-          
-        </p>-->
-          <p class="post-card-date">Posted on September 01, 2023 · 10 minutes read</p>
-        </div>
-
-      </a>
-    </div>
-  
-    <div class="post-card">
-      <a href="/en/lueur_playtest_1_analysis/">
-        <div class="post_card_description_bloc">
-          <img src="/assets/images/devlogs/playtest_lueur_1/fun_version.png">
-          <span class="post-card-title">Lueur's Playtest Analysis</span>
-          <p class="post-card-brief">The first playtest for Lueur lasted 10 days with over 40 participants. What can I get from it ?</p>
-          <!--<p>Tags:
-          
-            
-          
-            
-              devlogs 
-            
-          
-            
-          
-            
-              devlogs 
-            
-          
-            
-          
-            
-              posts_en 
-            
-          
-        </p>-->
-          <p class="post-card-date">Posted on December 17, 2022 · 15 minutes read</p>
-        </div>
-
-      </a>
-    </div>
-  
-    <div class="post-card">
-      <a href="/en/click4_ide/">
-        <div class="post_card_description_bloc">
-          <img src="/assets/images/devlogs/click4ide/its_raining_cats.gif">
-          <span class="post-card-title">Create an IDE with Godot</span>
-          <p class="post-card-brief">I wanted to create a game, but I created a basic IDE for the Click4 fantasy console.</p>
-          <!--<p>Tags:
-          
-            
-          
-            
-              devlogs 
-            
-          
-            
-          
-            
-              devlogs 
-            
-          
-            
-          
-            
-              posts_en 
-            
-          
-        </p>-->
-          <p class="post-card-date">Posted on March 30, 2022 · 15 minutes read</p>
-        </div>
-
-      </a>
-    </div>
-  
-    <div class="post-card">
-      <a href="/en/just-one-more-turn/">
-        <div class="post_card_description_bloc">
-          <img src="/assets/images/articles/JustOneMoreTurn/sidmeier.jpg">
-          <span class="post-card-title">Just one more turn.</span>
-          <p class="post-card-brief">Game Development tips and tricks from the creator of Civilization, Sid Meier.</p>
-          <!--<p>Tags:
-          
-            
-          
-            
-              article 
-            
-          
-            
-          
-            
-              book review 
-            
-          
-            
-              posts_en 
-            
-          
-        </p>-->
-          <p class="post-card-date">Posted on July 25, 2021 · 20 minutes read</p>
-        </div>
-
-      </a>
-    </div>
-   <!-- end for posts loop -->
- <!--
-  <div class="w3-center w3-margin-top">
-    <nav aria-labelledby="post-pagination" class="w3-bar">
-        First
-        &laquo;
-        <a href="/en/" aria-current="page" class="w3-button">1</a>
-        &raquo;
-        Last
-    </nav>-->
-  </div>
 
 </div>
 
